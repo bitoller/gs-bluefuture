@@ -1,10 +1,16 @@
+import notFoundImg from "../../assets/page-not-found-img.jpg";
 import { Link } from "react-router-dom";
 import { StyledPageNotFound } from "./style";
 
 export function PageNotFound() {
   return (
     <StyledPageNotFound>
-      <Link to="/">Retornar para a home</Link>
+      <img
+        src={notFoundImg}
+        alt={"imagem de dois peixes laranja no meio de uma anêmona."}
+      />
+      <p>Você encontrou o Nemo, mas não a página que estava procurando.</p>
+      <Link to="/welcome">Retornar para a página inicial</Link>
     </StyledPageNotFound>
   );
 }
