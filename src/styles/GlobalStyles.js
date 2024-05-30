@@ -40,6 +40,7 @@ body {
 body::-webkit-scrollbar {
   background: transparent;
   width: 0.1875rem;
+  display: none;
 }
 
 body::-webkit-scrollbar-thumb {
