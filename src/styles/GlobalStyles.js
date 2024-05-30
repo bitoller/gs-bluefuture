@@ -22,7 +22,8 @@ time, mark, audio, video, button, input {
 	vertical-align: baseline;
   box-sizing: border-box;
   text-decoration: none;
-  /* font-family: var(--font-family-2); */
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-primary);
   list-style-type: none;
 }
 
@@ -31,13 +32,28 @@ button, a, input {
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+/*   height: 100vh;
+  width: 100vw; */
   font-size: 1rem;
 }
 
-/* :root {
-  --color-primary: #0b0c12;
-  --color-accent: #d02030;
-} */
+body::-webkit-scrollbar {
+  background: transparent;
+  width: 0.1875rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  background-color: transparent;
+}
+
+:root {
+  --color-primary: #FFFFFF;
+  --color-accent: #0F71D3;
+}
 `;

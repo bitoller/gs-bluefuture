@@ -1,5 +1,3 @@
-import { StyledDonate } from "./style";
-
 export function Donate() {
-  return <StyledDonate></StyledDonate>;
+  return <main></main>;
 }

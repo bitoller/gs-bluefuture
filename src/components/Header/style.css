@@ -1,0 +1,7 @@
+nav > a {
+  font-size: 26px;
+}
+
+nav > a:hover {
+  color: var(--color-accent);
+}

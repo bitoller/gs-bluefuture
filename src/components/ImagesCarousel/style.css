@@ -1,0 +1,11 @@
+.carousel-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+}
