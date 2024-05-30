@@ -10,10 +10,10 @@ export function Header() {
         <img src={logo} alt={"logo da blue future"} className="img-fluid" />
       </div>
       <nav className="navbar d-flex gap-4">
-        <Link to="/home">Início</Link>
-        <Link to="/about">Corais</Link>
-        <Link to="/the_idea">A ideia</Link>
-        <Link to="/donate">Doações</Link>
+        <Link to="/home">INÍCIO</Link>
+        <Link to="/about">CORAIS</Link>
+        <Link to="/the_idea">A IDEIA</Link>
+        <Link to="/donate">DOAÇÕES</Link>
       </nav>
     </header>
   );
