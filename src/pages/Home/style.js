@@ -5,6 +5,7 @@ export const StyledHome = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
 
   > h1 {
     font-size: 1.75rem;
@@ -16,12 +17,22 @@ export const StyledHome = styled.main`
     flex-direction: column;
     gap: 30px;
     width: 100%;
-    height: 500px;
+    height: auto;
   }
 
   .group-container > a {
-    width: 50%;
-    height: 30%;
+    width: 100%;
+    height: 50%;
+  }
+
+  .group-container > a:nth-of-type(1) {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .group-container > a:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-end;
   }
 
   .group-member {
@@ -29,7 +40,7 @@ export const StyledHome = styled.main`
     gap: 30px;
     align-items: center;
     width: 50%;
-    height: 30%;
+    height: 50%;
     box-shadow: rgba(0, 0, 0, 0.35) 0rem 0.3125rem 0.9375rem;
     padding: 10px;
   }
