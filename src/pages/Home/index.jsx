@@ -91,7 +91,7 @@ export function Home() {
           {/* video pitch vem aqui */}
         </section>
         <section ref={containerRef} className="group-container">
-          <h2>Conheça os nossos devs:</h2>
+          <h2>Conheça os devs do Team Coral:</h2>
           <div
             className={`color-group-1 group-member ${
               animate ? "animate-left" : ""
@@ -114,6 +114,7 @@ export function Home() {
                   Software Engineer | JavaScript | TypeScript | C# | Python |
                   Node.js | .Net | PostgreSQL
                 </p>
+                <p>RM 553134</p>
               </div>
             </a>
           </div>
@@ -138,6 +139,7 @@ export function Home() {
                 <p className="member-info-stack">
                   Software Engineer | UI & UX Design | HTML | CSS | JavaScript
                 </p>
+                <p>RM 553314</p>
               </div>
             </a>
           </div>
