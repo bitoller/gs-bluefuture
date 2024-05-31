@@ -1,0 +1,7 @@
+.home-content {
+  height: 800px;
+}
+.home-content > h1 {
+  font-size: 28px;
+  color: black;
+}
