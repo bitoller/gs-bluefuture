@@ -19,26 +19,28 @@ export const StyledPageNotFound = styled.main`
 
   .text-container {
     position: absolute;
-    top: 30%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 3.75rem;
-    width: auto;
+    width: 30%;
     height: auto;
     background-color: #003b59d0;
     border-radius: 10px;
     padding: 3.125rem;
+    transform: translate(-50%, -50%);
   }
 
   .text-container > p {
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 30px;
   }
 
   .text-container > a {
+    font-size: 20px;
     font-weight: 700;
     text-decoration: underline;
     text-align: center;
@@ -47,5 +49,12 @@ export const StyledPageNotFound = styled.main`
 
   .text-container > a:hover {
     color: #f58b01;
+  }
+
+  @media (max-width: 923px) {
+    .text-container {
+      width: 80%;
+      padding: 2rem;
+    }
   }
 `;
