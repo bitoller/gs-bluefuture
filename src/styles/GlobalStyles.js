@@ -23,7 +23,7 @@ time, mark, audio, video, button, input {
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  color: var(--color-primary);
+  color: var(--color-gray-1);
   list-style-type: none;
 }
 
@@ -54,7 +54,8 @@ body::-webkit-scrollbar-track {
 }
 
 :root {
-  --color-primary: #FFFFFF;
-  --color-accent: #0F71D3;
+  --color-primary: #0F71D3;
+  --color-accent: #F58B01;
+  --color-gray-1: #FFFFFF;
 }
 `;

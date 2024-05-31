@@ -1,6 +1,6 @@
 import logo from "../../assets/blue-future-logo.png";
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./style.css";
 
 export function Header() {
@@ -10,10 +10,30 @@ export function Header() {
         <img src={logo} alt={"logo da blue future"} className="img-fluid" />
       </div>
       <nav className="navbar d-flex gap-4">
-        <Link to="/home">INÍCIO</Link>
-        <Link to="/about">CORAIS</Link>
-        <Link to="/the_idea">A IDEIA</Link>
-        <Link to="/donate">DOAÇÕES</Link>
+        <NavLink
+          to="/home"
+          className={({ isActive }) => (isActive ? "active-link" : "")}
+        >
+          INÍCIO
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => (isActive ? "active-link" : "")}
+        >
+          CORAIS
+        </NavLink>
+        <NavLink
+          to="/the_idea"
+          className={({ isActive }) => (isActive ? "active-link" : "")}
+        >
+          A IDEIA
+        </NavLink>
+        <NavLink
+          to="/donate"
+          className={({ isActive }) => (isActive ? "active-link" : "")}
+        >
+          DOAÇÕES
+        </NavLink>
       </nav>
     </header>
   );
