@@ -6,7 +6,7 @@ import coralReef5 from "../../assets/coral-reef-5.jpg";
 import coralReef6 from "../../assets/coral-reef-6.jpg";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import "./style.css";
+import "./style.imgcarousel.css";
 
 export function ImagesCarousel() {
   const items = [

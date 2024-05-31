@@ -1,6 +1,6 @@
-import { Header } from "../../components/Header";
-import { ImagesCarousel } from "../../components/ImagesCarousel";
-import "./style.css";
+import { Header } from "../../components/Header/index.header";
+import { ImagesCarousel } from "../../components/ImagesCarousel/index.imgcarousel";
+import "./style.donate.css";
 
 export function Donate() {
   return (

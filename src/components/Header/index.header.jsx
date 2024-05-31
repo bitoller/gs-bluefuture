@@ -2,7 +2,7 @@ import logo from "../../assets/blue-future-logo.png";
 import dropdownWave from "../../assets/dropdown-wave.svg";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./style.css";
+import "./style.header.css";
 
 export function Header() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
