@@ -1,13 +1,15 @@
 import { Header } from "../../components/Header";
 import { ImagesCarousel } from "../../components/ImagesCarousel";
 import { Footer } from "../../components/Footer";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
+import "intersection-observer";
 import { StyledHome } from "./style";
 
 export function Home() {
   const [users, setUsers] = useState([]);
   const [animationClass, setAnimationClass] = useState(["", ""]);
+  const observerRefs = useRef([null, null]);
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -18,7 +20,6 @@ export function Home() {
           getGitHubUser("BrunoMarc59", storedUsers.BrunoMarc59),
         ]);
         setUsers(usersData);
-        setAnimationClass(["animate-left", "animate-right"]);
 
         localStorage.setItem(
           "githubUsers",
@@ -34,6 +35,36 @@ export function Home() {
 
     fetchUsers();
   }, []);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1,
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target === observerRefs.current[0]) {
+            setAnimationClass((prev) => ["animate-left", prev[1]]);
+          } else if (entry.target === observerRefs.current[1]) {
+            setAnimationClass((prev) => [prev[0], "animate-right"]);
+          }
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, options);
+    if (observerRefs.current[0]) observer.observe(observerRefs.current[0]);
+    if (observerRefs.current[1]) observer.observe(observerRefs.current[1]);
+
+    return () => {
+      if (observerRefs.current[0]) observer.unobserve(observerRefs.current[0]);
+      if (observerRefs.current[1]) observer.unobserve(observerRefs.current[1]);
+    };
+  }, [users]);
 
   const getGitHubUser = async (user, storedUser) => {
     try {
@@ -67,7 +98,10 @@ export function Home() {
         </section>
         <section className="group-container">
           <h2>Conheça os nossos devs:</h2>
-          <div className={`color-group-1 group-member ${animationClass[0]}`}>
+          <div
+            ref={(el) => (observerRefs.current[0] = el)}
+            className={`color-group-1 group-member ${animationClass[0]}`}
+          >
             <a href="https://www.linkedin.com/in/bianca-toller" target="_blank">
               <div className="member-pic-container">
                 {users.length > 0 && (
@@ -88,7 +122,10 @@ export function Home() {
               </div>
             </a>
           </div>
-          <div className={`color-group-2 group-member ${animationClass[1]}`}>
+          <div
+            ref={(el) => (observerRefs.current[1] = el)}
+            className={`color-group-2 group-member ${animationClass[1]}`}
+          >
             <a href="https://www.linkedin.com/in/bruno-marc/" target="_blank">
               <div className="member-pic-container">
                 {users.length > 1 && (
