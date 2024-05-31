@@ -8,8 +8,8 @@ import { StyledHome } from "./style";
 
 export function Home() {
   const [users, setUsers] = useState([]);
-  const [animationClass, setAnimationClass] = useState(["", ""]);
-  const observerRefs = useRef([null, null]);
+  const [animate, setAnimate] = useState(false);
+  const containerRef = useRef(null);
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -46,25 +46,19 @@ export function Home() {
     const observerCallback = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          if (entry.target === observerRefs.current[0]) {
-            setAnimationClass((prev) => ["animate-left", prev[1]]);
-          } else if (entry.target === observerRefs.current[1]) {
-            setAnimationClass((prev) => [prev[0], "animate-right"]);
-          }
+          setAnimate(true);
           observer.unobserve(entry.target);
         }
       });
     };
 
     const observer = new IntersectionObserver(observerCallback, options);
-    if (observerRefs.current[0]) observer.observe(observerRefs.current[0]);
-    if (observerRefs.current[1]) observer.observe(observerRefs.current[1]);
+    if (containerRef.current) observer.observe(containerRef.current);
 
     return () => {
-      if (observerRefs.current[0]) observer.unobserve(observerRefs.current[0]);
-      if (observerRefs.current[1]) observer.unobserve(observerRefs.current[1]);
+      if (containerRef.current) observer.unobserve(containerRef.current);
     };
-  }, [users]);
+  }, []);
 
   const getGitHubUser = async (user, storedUser) => {
     try {
@@ -96,11 +90,12 @@ export function Home() {
         <section className="video-container">
           {/* video pitch vem aqui */}
         </section>
-        <section className="group-container">
+        <section ref={containerRef} className="group-container">
           <h2>Conheça os nossos devs:</h2>
           <div
-            ref={(el) => (observerRefs.current[0] = el)}
-            className={`color-group-1 group-member ${animationClass[0]}`}
+            className={`color-group-1 group-member ${
+              animate ? "animate-left" : ""
+            }`}
           >
             <a href="https://www.linkedin.com/in/bianca-toller" target="_blank">
               <div className="member-pic-container">
@@ -123,8 +118,9 @@ export function Home() {
             </a>
           </div>
           <div
-            ref={(el) => (observerRefs.current[1] = el)}
-            className={`color-group-2 group-member ${animationClass[1]}`}
+            className={`color-group-2 group-member ${
+              animate ? "animate-right" : ""
+            }`}
           >
             <a href="https://www.linkedin.com/in/bruno-marc/" target="_blank">
               <div className="member-pic-container">
