@@ -1,11 +1,15 @@
 .carousel-container {
   width: 100%;
+  height: calc(100vh - 80px);
+  overflow: hidden;
   position: absolute;
   top: 0;
   z-index: -1;
 }
 
 .carousel-img {
-  width: 100%;
-  height: auto;
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
 }
