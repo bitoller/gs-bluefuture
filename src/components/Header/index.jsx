@@ -1,15 +1,25 @@
 import logo from "../../assets/blue-future-logo.png";
-import React from "react";
+import dropdownWave from "../../assets/dropdown-wave.svg";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./style.css";
 
 export function Header() {
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
+
   return (
-    <header className="d-flex justify-content-between align-items-center p-5">
+    <header className="header">
       <div className="logo-container">
         <img src={logo} alt={"logo da blue future"} className="img-fluid" />
       </div>
-      <nav className="navbar d-flex gap-4">
+      <div className="dropdown-icon" onClick={toggleDropdown}>
+        <img src={dropdownWave} alt={"dropdown menu icon"} />
+      </div>
+      <nav className={`custom-nav ${isDropdownOpen ? "open" : ""}`}>
         <NavLink
           to="/home"
           className={({ isActive }) => (isActive ? "active-link" : "")}
@@ -38,5 +48,3 @@ export function Header() {
     </header>
   );
 }
-
-/* TODO: menu dropdown para telas menores */

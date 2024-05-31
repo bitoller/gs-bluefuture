@@ -6,8 +6,9 @@ export function Donate() {
   return (
     <>
       <Header />
-      <main>
-        <ImagesCarousel />
+      <ImagesCarousel />
+      <main className="donate-content">
+        <h1>eu sou a doe screen</h1>
       </main>
     </>
   );

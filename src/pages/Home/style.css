@@ -1,7 +1,8 @@
 .home-content {
-  height: 800px;
+  height: 50rem;
 }
+
 .home-content > h1 {
-  font-size: 28px;
+  font-size: 1.75rem;
   color: black;
 }

@@ -19,8 +19,8 @@
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 20px;
-  font-size: 30px;
+  padding: 1.25rem;
+  font-size: 1.875rem;
   font-weight: 700;
   text-align: center;
   background-color: #003c59;

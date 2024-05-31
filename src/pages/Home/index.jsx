@@ -8,8 +8,7 @@ export function Home() {
       <Header />
       <ImagesCarousel />
       <main className="home-content">
-        <h1>teste da onde a main vai estar pc/mobile</h1>
-        <p>os testes resultaram em tristeza :(</p>
+        <h1>eu sou a home screen</h1>
       </main>
     </>
   );

@@ -6,8 +6,9 @@ export function Idea() {
   return (
     <>
       <Header />
-      <main>
-        <ImagesCarousel />
+      <ImagesCarousel />
+      <main className="idea-content">
+        <h1>eu sou a ideias screen</h1>
       </main>
     </>
   );

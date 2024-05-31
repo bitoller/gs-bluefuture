@@ -1,1 +1,8 @@
+.about-content {
+  height: 50rem;
+}
 
+.about-content > h1 {
+  font-size: 1.75rem;
+  color: black;
+}

@@ -6,8 +6,9 @@ export function About() {
   return (
     <>
       <Header />
-      <main>
-        <ImagesCarousel />
+      <ImagesCarousel />
+      <main className="about-content">
+        <h1>eu sou a corais screen</h1>
       </main>
     </>
   );
