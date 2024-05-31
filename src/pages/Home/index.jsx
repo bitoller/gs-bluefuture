@@ -149,3 +149,5 @@ export function Home() {
     </>
   );
 }
+
+/* TODO: adicionar video pitch e breve descricao da solucao */
