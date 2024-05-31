@@ -6,3 +6,11 @@ nav > a {
 nav > a:hover {
   color: var(--color-accent);
 }
+
+header {
+  background-image: url("../../assets/wave-menu.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 14rem;
+}
