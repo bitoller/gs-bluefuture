@@ -8,75 +8,85 @@ export const StyledHome = styled.main`
   gap: 30px;
 
   > h1 {
-    font-size: 1.75rem;
-    color: black;
+    font-size: 30px;
+    color: var(--color-primary);
+    font-weight: 500;
   }
 
   .group-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
     width: 100%;
     height: auto;
   }
 
-  .group-container > a {
-    width: 100%;
-    height: 50%;
-  }
-
-  .group-container > a:nth-of-type(1) {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .group-container > a:nth-of-type(2) {
-    display: flex;
-    justify-content: flex-end;
+  .group-container > h2 {
+    color: var(--color-accent);
+    font-size: 30px;
   }
 
   .group-member {
     display: flex;
-    gap: 30px;
-    align-items: center;
-    width: 50%;
-    height: 50%;
+    justify-content: center;
+    width: 25%;
+    height: auto;
+    padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0rem 0.3125rem 0.9375rem;
-    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .group-member > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .color-group-1 {
+    background-color: var(--color-accent);
+  }
+
+  .color-group-2 {
+    background-color: var(--color-primary);
   }
 
   .member-pic-container > img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid var(--color-accent);
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-fill-mode: both;
   }
 
   .member-info-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
+    text-align: center;
   }
 
   .member-info-name {
-    color: var(--color-primary);
+    color: var(--color-gray-1);
     font-size: 30px;
     font-weight: 700;
   }
 
   .member-info-stack {
-    color: black;
+    color: var(--color-gray-1);
     font-size: 20px;
   }
 
   .animate-left {
-    animation: slideInLeft 1s forwards;
+    animation: slideInLeft 2s forwards;
   }
 
   .animate-right {
-    animation: slideInRight 1s forwards;
+    animation: slideInRight 2s forwards;
   }
 
   @keyframes slideInLeft {
@@ -98,6 +108,13 @@ export const StyledHome = styled.main`
     100% {
       transform: translateX(0);
       opacity: 1;
+    }
+  }
+
+  @media (max-width: 923px) {
+    .group-member {
+      min-width: 226px;
+      min-height: 451px;
     }
   }
 `;

@@ -66,8 +66,9 @@ export function Home() {
           {/* video pitch vem aqui */}
         </section>
         <section className="group-container">
-          <a href="https://www.linkedin.com/in/bianca-toller" target="_blank">
-            <div className={`group-member ${animationClass[0]}`}>
+          <h2>Conheça os nossos devs:</h2>
+          <div className={`color-group-1 group-member ${animationClass[0]}`}>
+            <a href="https://www.linkedin.com/in/bianca-toller" target="_blank">
               <div className="member-pic-container">
                 {users.length > 0 && (
                   <img
@@ -85,10 +86,10 @@ export function Home() {
                   Node.js | .Net | PostgreSQL
                 </p>
               </div>
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/in/bruno-marc/" target="_blank">
-            <div className={`group-member ${animationClass[1]}`}>
+            </a>
+          </div>
+          <div className={`color-group-2 group-member ${animationClass[1]}`}>
+            <a href="https://www.linkedin.com/in/bruno-marc/" target="_blank">
               <div className="member-pic-container">
                 {users.length > 1 && (
                   <img
@@ -102,12 +103,11 @@ export function Home() {
               <div className="member-info-container">
                 <p className="member-info-name">Bruno Marcelino Guimarães</p>
                 <p className="member-info-stack">
-                  Estudante de Engenharia de Software na FIAP | UI & UX Desing |
-                  HTML | CSS | Javascript
+                  Software Engineer | UI & UX Design | HTML | CSS | JavaScript
                 </p>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </section>
       </StyledHome>
       <Footer />
