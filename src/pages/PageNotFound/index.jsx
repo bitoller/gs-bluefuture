@@ -1,10 +1,10 @@
 import notFoundImg from "../../assets/page-not-found-img.jpg";
 import { Link } from "react-router-dom";
-import "./style.notfound.css";
+import { StyledPageNotFound } from "./style";
 
 export function PageNotFound() {
   return (
-    <main>
+    <StyledPageNotFound>
       <div className="img-container">
         <img
           className="not-found-img"
@@ -16,6 +16,6 @@ export function PageNotFound() {
           <Link to="/welcome">Retornar para a página inicial</Link>
         </div>
       </div>
-    </main>
+    </StyledPageNotFound>
   );
 }

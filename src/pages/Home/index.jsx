@@ -1,9 +1,9 @@
-import { Header } from "../../components/Header/index.header";
-import { ImagesCarousel } from "../../components/ImagesCarousel/index.imgcarousel";
-import { Footer } from "../../components/Footer/index.footer";
+import { Header } from "../../components/Header";
+import { ImagesCarousel } from "../../components/ImagesCarousel";
+import { Footer } from "../../components/Footer";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./style.home.css";
+import { StyledHome } from "./style";
 
 export function Home() {
   const [users, setUsers] = useState([]);
@@ -60,7 +60,7 @@ export function Home() {
     <>
       <Header />
       <ImagesCarousel />
-      <main className="home-content">
+      <StyledHome>
         <h1>Como os recifes de corais impactam no mundo em que vivemos</h1>
         <section className="video-container">
           {/* video pitch vem aqui */}
@@ -109,7 +109,7 @@ export function Home() {
             </div>
           </a>
         </section>
-      </main>
+      </StyledHome>
       <Footer />
     </>
   );

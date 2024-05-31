@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import "./style.cover.css";
+import { StyledCover } from "./style.js";
 
 export function Cover() {
   return (
-    <main>
+    <StyledCover>
       <div className="video-container">
         <video className="video-background" autoPlay loop muted>
           <source
@@ -14,6 +14,6 @@ export function Cover() {
         </video>
         <Link to="/home">VAMOS MERGULHAR?</Link>
       </div>
-    </main>
+    </StyledCover>
   );
 }

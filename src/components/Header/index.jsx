@@ -2,7 +2,7 @@ import logo from "../../assets/blue-future-logo.png";
 import dropdownWave from "../../assets/dropdown-wave.svg";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./style.header.css";
+import { StyledHeader } from "./style.js";
 
 export function Header() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -12,7 +12,7 @@ export function Header() {
   };
 
   return (
-    <header className="header">
+    <StyledHeader>
       <div className="logo-container">
         <img src={logo} alt={"logo da blue future"} className="img-fluid" />
       </div>
@@ -45,6 +45,6 @@ export function Header() {
           DOAÇÕES
         </NavLink>
       </nav>
-    </header>
+    </StyledHeader>
   );
 }

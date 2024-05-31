@@ -6,7 +6,7 @@ import coralReef5 from "../../assets/coral-reef-5.jpg";
 import coralReef6 from "../../assets/coral-reef-6.jpg";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import "./style.imgcarousel.css";
+import { StyledImagesCarousel } from "./style.js";
 
 export function ImagesCarousel() {
   const items = [
@@ -50,7 +50,7 @@ export function ImagesCarousel() {
   };
 
   return (
-    <div className="carousel-container">
+    <StyledImagesCarousel>
       <AliceCarousel
         items={items}
         autoPlay={true}
@@ -62,6 +62,6 @@ export function ImagesCarousel() {
         responsive={responsive}
         animationType="fadeout"
       />
-    </div>
+    </StyledImagesCarousel>
   );
 }
