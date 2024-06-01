@@ -1,5 +1,6 @@
 import { Header } from "../../components/Header";
 import { ImagesCarousel } from "../../components/ImagesCarousel";
+import { BackToTopArrow } from "../../components/BackToTopArrow";
 import { Footer } from "../../components/Footer";
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
@@ -145,6 +146,7 @@ export function Home() {
           </div>
         </section>
       </StyledHome>
+      <BackToTopArrow />
       <Footer />
     </>
   );
