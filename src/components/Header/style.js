@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import WaveMenu from "../../assets/wave-menu-top.svg";
 
 export const StyledHeader = styled.header`
   display: flex;
@@ -6,7 +7,7 @@ export const StyledHeader = styled.header`
   align-items: center;
   gap: 1.5625rem;
   padding: 1.25rem;
-  background-image: url("../../assets/wave-menu.svg");
+  background-image: url(${WaveMenu});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -16,6 +17,11 @@ export const StyledHeader = styled.header`
   left: 0;
   width: 100%;
   z-index: 2000;
+
+  .img-fluid {
+    width: 80%;
+    height: auto;
+  }
 
   .custom-nav {
     display: flex;
