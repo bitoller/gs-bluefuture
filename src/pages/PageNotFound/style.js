@@ -36,11 +36,11 @@ export const StyledPageNotFound = styled.main`
 
   .text-container > p {
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .text-container > a {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     text-decoration: underline;
     text-align: center;
