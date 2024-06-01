@@ -26,13 +26,13 @@ export const StyledCover = styled.main`
     font-size: 1.875rem;
     font-weight: 700;
     text-align: center;
-    background-color: #003c59;
+    background-color: var(--color-primary);
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s;
   }
 
   .video-container > a:hover {
-    background-color: #f58b01;
+    background-color: var(--color-accent);
   }
 `;
