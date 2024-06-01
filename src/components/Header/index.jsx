@@ -1,4 +1,4 @@
-import logo from "../../assets/blue-future-logo.png";
+import blueFutureLogo from "../../assets/blue-future-logo.png";
 import dropdownWave from "../../assets/dropdown-wave.svg";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
@@ -14,10 +14,14 @@ export function Header() {
   return (
     <StyledHeader>
       <div className="logo-container">
-        <img src={logo} alt={"logo da blue future"} className="img-fluid" />
+        <img
+          src={blueFutureLogo}
+          alt={"logo da blue future"}
+          className="img-fluid"
+        />
       </div>
       <div className="dropdown-icon" onClick={toggleDropdown}>
-        <img src={dropdownWave} alt={"dropdown menu icon"} />
+        <img src={dropdownWave} alt={"ícone de ondas"} />
       </div>
       <nav className={`custom-nav ${isDropdownOpen ? "open" : ""}`}>
         <NavLink
