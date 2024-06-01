@@ -7,6 +7,7 @@ export const StyledImagesCarousel = styled.div`
   position: relative;
   top: 0;
   z-index: -1;
+  box-shadow: 0px 20px 16px 0px rgba(0, 0, 0, 0.1);
 
   .carousel-img {
     height: 100%;
