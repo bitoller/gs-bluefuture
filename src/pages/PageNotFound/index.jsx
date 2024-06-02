@@ -1,4 +1,4 @@
-import notFoundImg from "../../assets/page-not-found-img.jpg";
+import notFoundImg from "../../assets/coral-reefs/page-not-found-img.jpg";
 import { Link } from "react-router-dom";
 import { StyledPageNotFound } from "./style";
 

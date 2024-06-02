@@ -1,10 +1,10 @@
-import blueFutureLogo from "../../assets/blue-future-logo.png";
-import selectLogo from "../../assets/select-logo.png";
-import softtekLogo from "../../assets/softtek-logo.png";
-import globalPactLogo from "../../assets/global-pact-logo.png";
-import unescoLogo from "../../assets/unesco-logo.png";
-import awsLogo from "../../assets/aws-logo.png";
-import oceans20Logo from "../../assets/oceans20-logo.png";
+import logoBlueFuture from "../../assets/logos/logo-blue-future.png";
+import logoSelect from "../../assets/logos/logo-select.png";
+import logoSofttek from "../../assets/logos/logo-softtek.png";
+import logoGlobalPact from "../../assets/logos/logo-global-pact.png";
+import logoUnesco from "../../assets/logos/logo-unesco.png";
+import logoAws from "../../assets/logos/logo-aws.png";
+import logoOceans20 from "../../assets/logos/logo-oceans20.png";
 import { NavLink } from "react-router-dom";
 import { StyledFooter } from "./style";
 
@@ -13,7 +13,7 @@ export function Footer() {
     <StyledFooter>
       <div className="logo-menu-container">
         <img
-          src={blueFutureLogo}
+          src={logoBlueFuture}
           alt={"logo da blue future"}
           className="img-fluid"
         />
@@ -25,17 +25,17 @@ export function Footer() {
         </nav>
       </div>
       <div className="sponsors-container">
-        <img src={selectLogo} alt={"logo da select"} className="img-fluid" />
-        <img src={softtekLogo} alt={"logo da softtek"} className="img-fluid" />
+        <img src={logoSelect} alt={"logo da select"} className="img-fluid" />
+        <img src={logoSofttek} alt={"logo da softtek"} className="img-fluid" />
         <img
-          src={globalPactLogo}
+          src={logoGlobalPact}
           alt={"logo do pacto global"}
           className="img-fluid"
         />
-        <img src={unescoLogo} alt={"logo da unesco"} className="img-fluid" />
-        <img src={awsLogo} alt={"logo da aws"} className="img-fluid" />
+        <img src={logoUnesco} alt={"logo da unesco"} className="img-fluid" />
+        <img src={logoAws} alt={"logo da aws"} className="img-fluid" />
         <img
-          src={oceans20Logo}
+          src={logoOceans20}
           alt={"logo da oceans 2024 brasil"}
           className="img-fluid"
         />
@@ -43,3 +43,5 @@ export function Footer() {
     </StyledFooter>
   );
 }
+
+/* TODO: arrumar tamanho da logo dos sponsors. tamanhos nao batem e parecem estar tortos. */

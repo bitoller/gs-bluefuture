@@ -1,20 +1,20 @@
+import backToMapBtn from "../../assets/icons/back-to-map.svg";
+import mapAustralia from "../../assets/maps/map-australia.jpg";
+import mapEastPacific from "../../assets/maps/map-eastern-pacific.jpg";
+import mapCaribbean from "../../assets/maps/map-caribbean.jpg";
+import mapWesternIndian from "../../assets/maps/map-western-indian.jpg";
+import mapRedSea from "../../assets/maps/map-red-sea.jpg";
+import mapRopme from "../../assets/maps/map-ropme.jpg";
+import mapSouthAsia from "../../assets/maps/map-south-asia.jpg";
+import mapEastAsia from "../../assets/maps/map-east-asia.jpg";
+import mapPacific from "../../assets/maps/map-pacific.jpg";
+import mapBrazil from "../../assets/maps/map-brazil.jpg";
+import coralGraphic from "../../assets/coral-graphic.png";
+import data from "./data.json";
 import React, { useEffect, useState, useRef } from "react";
-import { StyledSVGContainer, StyledRegion } from "./style";
 import tippy from "tippy.js";
 import "tippy.js/dist/tippy.css";
-import MapBr from "../../assets/brazil.jpg";
-import grafics from "../../assets/grafics.png";
-import data from "./data.json";
-import backbtn from "../../assets/back-to-map.svg";
-import MapAust from "../../assets/australia.jpg";
-import MapEastPac from "../../assets/eastern-pacific.jpg";
-import MapCarib from "../../assets/caribbean.jpg";
-import MapEastIndian from "../../assets/western-indian.jpg";
-import MapRedSea from "../../assets/red-sea.jpg";
-import MapRopme from "../../assets/ropme.jpg";
-import MapSoAsia from "../../assets/south-asia.jpg";
-import MapEsAsia from "../../assets/east-asia.jpg";
-import MapPacific from "../../assets/pacific.jpg";
+import { StyledSVGContainer, StyledRegion } from "./style";
 
 export function WorldMap() {
   const [svgLoaded, setSvgLoaded] = useState(false);
@@ -22,24 +22,22 @@ export function WorldMap() {
   const [countryInfo, setCountryInfo] = useState(null);
   const [showMap, setShowMap] = useState(true);
   const [regionImage, setRegionImage] = useState(null);
-  const [scrollPosition, setScrollPosition] = useState(0); // State para armazenar a posição do scroll
-  const regionRef = useRef(null); // Ref para a div de informações da região
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const regionRef = useRef(null);
 
   useEffect(() => {
     if (showMap) {
-      console.log("Showing map...");
       fetchAndAppendSVG();
     }
-    // Restaurar a posição do scroll quando voltar ao mapa
+
     if (showMap && regionRef.current && scrollPosition) {
-      console.log("Scrolling to position:", scrollPosition);
       window.scrollTo(0, scrollPosition);
     }
   }, [showMap]);
 
-  async function fetchAndAppendSVG() {
+  const fetchAndAppendSVG = async () => {
     try {
-      const response = await fetch("/src/assets/world.svg");
+      const response = await fetch("./src/assets/maps/map-world.svg");
       const svgText = await response.text();
       const parser = new DOMParser();
       const svgDOM = parser.parseFromString(svgText, "image/svg+xml");
@@ -57,12 +55,10 @@ export function WorldMap() {
 
       svgContainer.addEventListener("mouseover", handleMouseOver);
       svgContainer.addEventListener("mouseout", handleMouseOut);
-    } catch (error) {
-      console.error("Erro ao carregar ou manipular o SVG:", error);
-    }
-  }
+    } catch (error) {}
+  };
 
-  function initializeTooltips() {
+  const initializeTooltips = () => {
     const paths = document.querySelectorAll("path");
     paths.forEach((path) => {
       const title = path.getAttribute("title");
@@ -73,48 +69,48 @@ export function WorldMap() {
         });
       }
     });
-  }
+  };
 
-  function handleCountryClick(event) {
+  const handleCountryClick = (event) => {
     const className = event.target.getAttribute("class");
     const countryName = className.replace("hovered", "").trim();
     const info = data.regions.find((region) => region.class === countryName);
     setCountryClicked(countryName);
     setCountryInfo(info);
-    setShowMap(false); // Esconder o mapa e mostrar as informações da região
+    setShowMap(false);
     setRegionImage(getRegionImage(countryName));
-    setScrollPosition(window.pageYOffset); // Salvar a posição do scroll
+    setScrollPosition(window.pageYOffset);
     event.target.style.outline = "none";
-  }
+  };
 
-  function getRegionImage(countryName) {
+  const getRegionImage = (countryName) => {
     switch (countryName) {
       case "brazil":
-        return MapBr;
+        return mapBrazil;
       case "australia":
-        return MapAust;
+        return mapAustralia;
       case "eastern-pacific":
-        return MapEastPac;
+        return mapEastPacific;
       case "caribbean":
-        return MapCarib;
+        return mapCaribbean;
       case "western-indian":
-        return MapEastIndian;
+        return mapWesternIndian;
       case "red-sea":
-        return MapRedSea;
+        return mapRedSea;
       case "ropme":
-        return MapRopme;
+        return mapRopme;
       case "south-asia":
-        return MapSoAsia;
+        return mapSouthAsia;
       case "east-asia":
-        return MapEsAsia;
+        return mapEastAsia;
       case "pacific":
-        return MapPacific;
+        return mapPacific;
       default:
         return null;
     }
-  }
+  };
 
-  function handleMouseOver(event) {
+  const handleMouseOver = (event) => {
     const className = event.target.getAttribute("class");
     if (className) {
       const elementsWithSameClass = document.querySelectorAll(`.${className}`);
@@ -122,20 +118,21 @@ export function WorldMap() {
         element.classList.add("hovered");
       });
     }
-  }
+  };
 
-  function handleMouseOut() {
+  const handleMouseOut = () => {
     const elementsWithHover = document.querySelectorAll(".hovered");
     elementsWithHover.forEach((element) => {
       element.classList.remove("hovered");
     });
-  }
+  };
 
-  function handleBackToMap() {
-    setShowMap(true); // Mostrar o mapa e esconder as informações da região
-    setCountryInfo(null); // Limpar as informações do país
-    window.scrollTo({ top: scrollPosition, behavior: "smooth" }); // Rolagem suave para a posição salva
-  }
+  const handleBackToMap = () => {
+    setShowMap(true);
+    setCountryInfo(null);
+    window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+  };
+
   return (
     <div>
       {showMap ? (
@@ -145,15 +142,14 @@ export function WorldMap() {
           {countryInfo && (
             <div key={countryInfo.name}>
               <button className="back-to-map" onClick={handleBackToMap}>
-                <img src={backbtn} alt="seta para esqueda" />
+                <img src={backToMapBtn} alt={"seta para esqueda"} />
                 Voltar ao mapa
               </button>
               <div className="region-header">
                 <div>
                   <h2>Região</h2>
                   <p>{countryInfo.name}</p>
-                  <img src={regionImage} alt="" />{" "}
-                  {/* Use a imagem correspondente à região selecionada */}
+                  <img src={regionImage} alt={"imagem da região"} />
                 </div>
                 <div className="countries-included">
                   <h3>
@@ -205,7 +201,6 @@ export function WorldMap() {
                   </div>
                 </div>
               </div>
-
               <div className="key-numbers">
                 <h3>Números Chave</h3>
                 <div className="key-numbers-content">
@@ -221,7 +216,7 @@ export function WorldMap() {
             </div>
           )}
           <div className="section">
-            <img src={grafics} alt="" />
+            <img src={coralGraphic} alt={"gráfico sobre corais"} />
           </div>
         </StyledRegion>
       )}

@@ -1,5 +1,5 @@
-import blueFutureLogo from "../../assets/blue-future-logo.png";
-import dropdownWave from "../../assets/dropdown-wave.svg";
+import logoBlueFuture from "../../assets/logos/logo-blue-future.png";
+import dropdownWave from "../../assets/icons/dropdown-wave.svg";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { StyledHeader } from "./style.js";
@@ -15,7 +15,7 @@ export function Header() {
     <StyledHeader>
       <div className="logo-container">
         <img
-          src={blueFutureLogo}
+          src={logoBlueFuture}
           alt={"logo da blue future"}
           className="img-fluid"
         />

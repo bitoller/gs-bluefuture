@@ -1,17 +1,22 @@
 import styled from "styled-components";
+import WaveMenuBottom from "../../assets/wave-menu-bottom.svg";
 
 export const StyledFooter = styled.footer`
-  background-color: #893e3e; //obviamente trocar a cor teste
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   gap: 1.5625rem;
   padding: 1.25rem;
-  background-image: url("../../assets/wave-menu-bottom.svg");
+  background-image: url(${WaveMenuBottom});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 13rem;
+  height: 17rem;
+
+  .img-fluid {
+    width: 80%;
+    height: auto;
+  }
 
   .logo-menu-container {
     display: flex;
@@ -37,12 +42,19 @@ export const StyledFooter = styled.footer`
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 48%;
-    height: 100%;
+    justify-content: flex-end;
+    width: 80%;
+    height: 60%;
   }
 
   .sponsors-container > img {
-    width: 9.375rem;
+    width: 10%;
     height: auto;
+  }
+
+  @media (max-width: 1290px) {
+    .sponsors-container > img {
+      display: none;
+    }
   }
 `;

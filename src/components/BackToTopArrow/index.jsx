@@ -1,4 +1,4 @@
-import backToTopArrow from "../../assets/arrow-up.svg";
+import backToTopArrow from "../../assets/icons/arrow-up.svg";
 import React from "react";
 import { StyledBackToTopArrow } from "./style";
 
