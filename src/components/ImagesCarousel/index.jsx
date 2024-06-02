@@ -1,3 +1,5 @@
+import React from "react";
+import PropTypes from "prop-types";
 import coralReef1 from "../../assets/coral-reefs/coral-reef-1.jpg";
 import coralReef2 from "../../assets/coral-reefs/coral-reef-2.jpg";
 import coralReef3 from "../../assets/coral-reefs/coral-reef-3.jpg";
@@ -6,41 +8,60 @@ import coralReef5 from "../../assets/coral-reefs/coral-reef-5.jpg";
 import coralReef6 from "../../assets/coral-reefs/coral-reef-6.jpg";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import { StyledImagesCarousel } from "./style.js";
+import {
+  StyledImagesCarousel,
+  CarouselItem,
+  TextOverlayLeft,
+  TextOverlayRight,
+} from "./style.js";
 
-export function ImagesCarousel() {
+export function ImagesCarousel({ height }) {
   const items = [
-    <img
-      src={coralReef1}
-      alt={"imagem de um recife de corais"}
-      className="carousel-img"
-    />,
-    <img
-      src={coralReef2}
-      alt={"imagem de um recife de corais"}
-      className="carousel-img"
-    />,
-    <img
-      src={coralReef3}
-      alt={"imagem de um recife de corais"}
-      className="carousel-img"
-    />,
-    <img
-      src={coralReef4}
-      alt={"imagem de um recife de corais"}
-      className="carousel-img"
-    />,
-    <img
-      src={coralReef5}
-      alt={"imagem de um recife de corais"}
-      className="carousel-img"
-    />,
-    <img
-      src={coralReef6}
-      alt={"imagem de um recife de corais"}
-      className="carousel-img"
-    />,
+    {
+      image: coralReef1,
+      textLeft: "Belo recife de corais 1",
+      textRight: "Exploração submarina",
+    },
+    {
+      image: coralReef2,
+      textLeft: "Belo recife de corais 2",
+      textRight: "Vida marinha vibrante",
+    },
+    {
+      image: coralReef3,
+      textLeft: "Belo recife de corais 3",
+      textRight: "Colorido e diversificado",
+    },
+    {
+      image: coralReef4,
+      textLeft: "Belo recife de corais 4",
+      textRight: "Um mundo subaquático",
+    },
+    {
+      image: coralReef5,
+      textLeft: "Belo recife de corais 5",
+      textRight: "Tesouro do oceano",
+    },
+    {
+      image: coralReef6,
+      textLeft: "Belo recife de corais 6",
+      textRight: "Beleza natural",
+    },
   ];
+
+  const carouselItems = items.map((item, index) => (
+    <CarouselItem key={index}>
+      <img
+        src={item.image}
+        alt={`imagem de um recife de corais ${index + 1}`}
+        className="carousel-img"
+      />
+      <div>
+        <TextOverlayLeft>{item.textLeft}</TextOverlayLeft>
+        <TextOverlayRight>{item.textRight}</TextOverlayRight>
+      </div>
+    </CarouselItem>
+  ));
 
   const responsive = {
     0: {
@@ -49,15 +70,19 @@ export function ImagesCarousel() {
     },
   };
 
+  ImagesCarousel.propTypes = {
+    height: PropTypes.string, // Removido o isRequired
+  };
+
   return (
-    <StyledImagesCarousel>
+    <StyledImagesCarousel style={{ height: height }}>
       <AliceCarousel
-        items={items}
+        items={carouselItems}
         autoPlay={true}
         infinite={true}
-        autoPlayInterval={3000}
+        autoPlayInterval={5000} // Alterado para 5 segundos
         disableButtonsControls={true}
-        itemsInSlide={6}
+        itemsInSlide={1}
         disableDotsControls={true}
         responsive={responsive}
         animationType="fadeout"
