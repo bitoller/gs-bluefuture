@@ -302,12 +302,9 @@
      id="botswana"
      d="M508.51,411.23l2.15,0.66l-0.3,6.15l2.21,0.3l5.08-4.58l6.1,0.66l1.62-4.1l7.72-7.05l-9.27-10.67l-0.12-1.75l-1.02-0.3l-2.81,2.59l-7.3,0.18l-1.02,9.1l-2.87,0.66L508.51,411.23L508.51,411.23z" /><path
      id="swaziland"
-     class="western-indian"
-     title="Oceano Índico Ocidental: 10 países"
      d="M540.87,414l-2.51,0.42l-1.08,2.95l1.92,1.75h2.33l1.97-2.83L540.87,414L540.87,414z" /><path
      id="lesotho"
-     class="western-indian"
-     title="Oceano Índico Ocidental: 10 países"
+    
      d="M527.41,425.39l3.05-2.35l1.44,0.06l1.74,2.17l-0.18,2.17l-2.93,1.08v0.84l-3.23-0.18l-0.78-2.35L527.41,425.39L527.41,425.39z" /><path
      id="south africa"
      class="western-indian"
@@ -432,8 +429,8 @@
      title='Pacífico'
      d="M923.45,414.37l-0.62,0.94l0.93,1.04l1.55-0.52L923.45,414.37L923.45,414.37z" /><path
      id="fiji"
-     class="east-asia"
-     title="Ásia Oriental: 14 países e estados"
+     class="pacific"
+     title='Pacífico'
      d="M948.62,412.29l-1.24,1.66l-0.1,1.87l1.44,1.46L948.62,412.29L948.62,412.29z" /><path
      id="palawan"
      class="east-asia"
