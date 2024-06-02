@@ -19,9 +19,10 @@ export function Footer() {
         />
         <nav className="custom-nav">
           <NavLink to="/home">INÍCIO</NavLink>
-          <NavLink to="/about">CORAIS</NavLink>
-          <NavLink to="/the_idea">A IDEIA</NavLink>
-          <NavLink to="/donate">DOAÇÕES</NavLink>
+          <NavLink to="/about_the_corals">CORAIS</NavLink>
+          <NavLink to="/monitoring">MONITORAMENTO</NavLink>
+          <NavLink to="/restoration">REPLANTIO</NavLink>
+          <NavLink to="/contribution">CONTRIBUIÇÃO</NavLink>
         </nav>
       </div>
       <div className="sponsors-container">

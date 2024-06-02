@@ -31,22 +31,28 @@ export function Header() {
           INÍCIO
         </NavLink>
         <NavLink
-          to="/about"
+          to="/about_the_corals"
           className={({ isActive }) => (isActive ? "active-link" : "")}
         >
           CORAIS
         </NavLink>
         <NavLink
-          to="/the_idea"
+          to="/monitoring"
           className={({ isActive }) => (isActive ? "active-link" : "")}
         >
-          A IDEIA
+          MONITORAMENTO
         </NavLink>
         <NavLink
-          to="/donate"
+          to="/restoration"
           className={({ isActive }) => (isActive ? "active-link" : "")}
         >
-          DOAÇÕES
+          REPLANTIO
+        </NavLink>
+        <NavLink
+          to="/contribution"
+          className={({ isActive }) => (isActive ? "active-link" : "")}
+        >
+          CONTRIBUIÇÃO
         </NavLink>
       </nav>
     </StyledHeader>

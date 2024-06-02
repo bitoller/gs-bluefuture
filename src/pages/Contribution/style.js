@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledIdea = styled.main`
+export const StyledContribution = styled.main`
   height: 50rem;
 
   > h1 {

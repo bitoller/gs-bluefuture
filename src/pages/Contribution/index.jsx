@@ -2,16 +2,16 @@ import { Header } from "../../components/Header";
 import { ImagesCarousel } from "../../components/ImagesCarousel";
 import { BackToTopArrow } from "../../components/BackToTopArrow";
 import { Footer } from "../../components/Footer";
-import { StyledDonate } from "./style";
+import { StyledContribution } from "./style";
 
-export function Donate() {
+export function Contribution() {
   return (
     <>
       <Header />
       <ImagesCarousel />
-      <StyledDonate>
+      <StyledContribution>
         <h1>eu sou a doe screen</h1>
-      </StyledDonate>
+      </StyledContribution>
       <BackToTopArrow />
       <Footer />
     </>

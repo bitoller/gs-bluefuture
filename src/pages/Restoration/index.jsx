@@ -2,16 +2,16 @@ import { Header } from "../../components/Header";
 import { ImagesCarousel } from "../../components/ImagesCarousel";
 import { BackToTopArrow } from "../../components/BackToTopArrow";
 import { Footer } from "../../components/Footer";
-import { StyledIdea } from "./style";
+import { StyledRestoration } from "./style";
 
-export function Idea() {
+export function Restoration() {
   return (
     <>
       <Header />
       <ImagesCarousel />
-      <StyledIdea>
-        <h1>eu sou a ideias screen</h1>
-      </StyledIdea>
+      <StyledRestoration>
+        <h1>eu sou a tela de replantio</h1>
+      </StyledRestoration>
       <BackToTopArrow />
       <Footer />
     </>

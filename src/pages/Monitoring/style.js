@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledDonate = styled.main`
+export const StyledMonitoring = styled.main`
   height: 50rem;
 
   > h1 {
