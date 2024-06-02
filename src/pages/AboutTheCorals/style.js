@@ -8,6 +8,6 @@ export const StyledAbout = styled.main`
     color: var(--color-primary);
     font-weight: 500;
     text-align: center;
-    margin: 20px 0;
+    margin: 1.25rem 0;
   }
 `;

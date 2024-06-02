@@ -32,8 +32,6 @@ button, a, input {
 }
 
 body {
-/*   height: 100vh;
-  width: 100vw; */
   font-size: 1rem;
 }
 
@@ -57,5 +55,9 @@ body::-webkit-scrollbar-track {
   --color-primary: #0F71D3;
   --color-accent: #F58B01;
   --color-gray-1: #FFFFFF;
+  --color-gray-2: #7A7A7A;
+  --color-gray-3: #000000;
+  --color-blue-1: #0B468A;
+  --color-blue-2: #5199BA;
 }
 `;

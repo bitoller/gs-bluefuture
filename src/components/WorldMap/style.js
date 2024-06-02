@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
-const anima = keyframes`
+const animated = keyframes`
   0% {
     opacity: 0;
   }
@@ -11,11 +11,11 @@ const anima = keyframes`
 
 export const StyledSVGContainer = styled.div`
   width: 100%;
-  max-width: 1000px;
+  max-width: 62.5rem;
   height: auto;
   margin: 0 auto;
   position: relative;
-  animation: ${anima} 1s;
+  animation: ${animated} 1s;
 
   svg {
     width: 100%;
@@ -25,15 +25,15 @@ export const StyledSVGContainer = styled.div`
   }
 
   path {
-    fill: #ffffff;
-    stroke: #5199ba;
+    fill: var(--color-gray-1);
+    stroke: var(--color-blue-2);
     stroke-width: 0.7px;
     transition: fill 0.5s ease;
   }
 
   .brazil {
     fill: #8ae7b9;
-    stroke: #5199ba;
+    stroke: var(--color-blue-2);
     stroke-width: 0.7px;
     transition: fill 0.5s ease;
   }
@@ -81,6 +81,7 @@ export const StyledSVGContainer = styled.div`
   .red-sea {
     fill: #d96a87;
   }
+
   .red-sea:hover,
   .red-sea.hovered {
     fill: #c61d4a;
@@ -94,6 +95,7 @@ export const StyledSVGContainer = styled.div`
   .south-asia.hovered {
     fill: #e2d92b;
   }
+
   .east-asia {
     fill: #baf2ea;
   }
@@ -123,8 +125,8 @@ export const StyledSVGContainer = styled.div`
 `;
 
 export const StyledRegion = styled.div`
-  color: #000;
-  animation: ${anima} 2s;
+  color: var(--color-gray-3);
+  animation: ${animated} 2s;
 
   .region-header {
     width: 100%;
@@ -139,12 +141,12 @@ export const StyledRegion = styled.div`
     h2 {
       font-size: 2rem;
       margin-bottom: 0.5rem;
-      color: #000; /* Cor do texto preto */
+      color: var(--color-gray-3);
     }
 
     p {
       font-size: 1.25rem;
-      color: #000; /* Cor do texto preto */
+      color: var(--color-gray-3);
     }
   }
 
@@ -164,31 +166,30 @@ export const StyledRegion = styled.div`
 
   .countries-included {
     background-color: #e0f5fc;
-    width: 320px;
-    min-height: 510px;
+    width: 20rem;
+    min-height: 31.875rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
     padding: 2rem;
     justify-self: start;
     align-items: flex-start;
 
     h3 {
-      color: #0b468a;
-      font-size: 30px;
+      color: var(--color-blue-1);
+      font-size: 1.875rem;
     }
 
-    h3 span {
-      color: #0b468a;
-      border-bottom: 1px solid #0b468a;
-      padding-bottom: 10px;
+    h3 > span {
+      color: var(--color-blue-1);
+      border-bottom: 1px solid var(--color-blue-1);
+      padding-bottom: 0.625rem;
     }
 
     p {
-      font-size: 16px;
-      color: #7a7a7a;
+      color: var(--color-gray-2);
       text-align: start;
-      margin-top: 10px;
+      margin-top: 0.625rem;
     }
   }
 
@@ -205,63 +206,64 @@ export const StyledRegion = styled.div`
 
   .regional-context-content {
     width: 70%;
-    margin: 0 auto; /* Centraliza o elemento horizontalmente */
-    padding: 2rem 0; /* Adiciona espaçamento vertical */
+    margin: 0 auto;
+    padding: 2rem 0;
     text-align: start;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    min-height: 350px;
+    gap: 1.25rem;
+    min-height: 21.875rem;
 
     h3 {
-      color: #0b468a;
-      font-size: 52px;
-      display: inline-block; /* Permite que o border-bottom se ajuste ao tamanho do texto */
+      color: var(--color-blue-1);
+      font-size: 3.25rem;
+      display: inline-block;
       font-weight: 600;
-      margin-bottom: 30px;
+      margin-bottom: 1.875rem;
     }
 
-    h3 span {
-      color: #0b468a;
-      border-bottom: 2px solid #0b468a;
-      padding-bottom: 15px;
+    h3 > span {
+      color: var(--color-blue-1);
+      border-bottom: 2px solid var(--color-blue-1);
+      padding-bottom: 0.9375rem;
     }
 
     h4 {
-      color: #0b468a;
-      font-size: 30px;
-      margin-left: 15px;
+      color: var(--color-blue-1);
+      font-size: 1.875rem;
+      margin-left: 0.9375rem;
       font-weight: 500;
     }
 
     p {
-      margin-top: 20px;
-      color: #7a7a7a;
-      line-height: 25px;
-      margin-left: 15px;
+      margin-top: 1.25rem;
+      color: var(--color-gray-2);
+      line-height: 1.5625rem;
+      margin-left: 0.9375rem;
     }
   }
 
   .additional-info-item {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 60px;
+    grid-column-gap: 3.75rem;
   }
 
   @media (max-width: 768px) {
-    .regional-context-content h3 span {
-      padding-bottom: 2px;
+    .regional-context-content > h3 > span {
+      padding-bottom: 0.125rem;
     }
 
     .additional-info-item {
       grid-template-columns: 1fr;
-      gap: 40px;
+      gap: 2.5rem;
     }
+
     .regional-context-content {
       width: 90%;
 
       h3 {
-        font-size: 32px;
+        font-size: 2rem;
         font-weight: 500;
       }
     }
@@ -273,85 +275,86 @@ export const StyledRegion = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-    padding: 20px;
+    padding: 1.25rem;
 
     h3 {
-      color: #0b468a;
-      font-size: 50px;
+      color: var(--color-blue-1);
+      font-size: 3.125rem;
       font-weight: 600;
-      margin-bottom: 20px; /* Adiciona margem inferior para separar do conteúdo abaixo */
+      margin-bottom: 1.25rem;
     }
   }
 
   .key-numbers-content {
     display: flex;
     flex-wrap: wrap;
-    min-height: 300px;
-    gap: 40px;
+    min-height: 18.75rem;
+    gap: 2.5rem;
     align-items: center;
     justify-content: space-between;
 
     div {
-      max-width: 200px;
+      max-width: 12.5rem;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-top: 20px; /* Adiciona margem superior para ajustar a posição abaixo do h3 */
+      margin-top: 1.25rem;
     }
 
     h4 {
-      font-size: 50px;
+      font-size: 3.125rem;
       font-weight: 600;
-      color: #0b468a;
+      color: var(--color-blue-1);
     }
 
     p {
       display: flex;
       align-items: center;
-      color: #0b468a;
-      font-size: 20px;
+      color: var(--color-blue-1);
+      font-size: 1.25rem;
       width: 100%;
-      height: 100px;
+      height: 6.25rem;
     }
   }
 
   @media (max-width: 768px) {
     .key-numbers {
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 1.25rem;
     }
+
     .key-numbers-content {
       flex-direction: column;
       align-items: center;
     }
 
-    .key-numbers-content div {
+    .key-numbers-content > div {
       max-width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
     }
   }
 
   .back-to-map {
-    background-color: #0b468a;
-    margin: 20px;
+    background-color: var(--color-blue-1);
+    margin: 1.25rem;
     display: flex;
     align-items: center;
-    padding: 10px 20px 10px 10px;
+    padding: 0.625rem 1.25rem 0.625rem 0.625rem;
     border-radius: 5px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Adicionando transição para o box-shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }
 
-  .back-to-map img {
-    width: 32px;
-    height: 32px;
+  .back-to-map > img {
+    width: 2rem;
+    height: 2rem;
     transition: transform 0.3s ease;
   }
 
   .back-to-map:hover {
     background-color: #0b6cb1;
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3); /* Box shadow adicionado ao hover */
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
   }
 
   .section {
