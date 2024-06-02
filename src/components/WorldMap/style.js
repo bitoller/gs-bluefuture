@@ -1,16 +1,26 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const anima = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
 
 export const StyledSVGContainer = styled.div`
   width: 100%;
-  max-width: 1000px; /* Define a largura máxima do contêiner SVG */
-  height: auto; /* Altura ajustável proporcionalmente à largura */
-  margin: 0 auto; /* Centraliza o contêiner */
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
   position: relative;
+  animation: ${anima} 1s;
 
   svg {
-    width: 100%; /* Ocupa 100% da largura do contêiner */
-    height: auto; /* Altura ajustável proporcionalmente à largura */
-    max-height: 100vh; /* Altura máxima igual à altura da tela */
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
     z-index: -1;
   }
 
@@ -29,7 +39,7 @@ export const StyledSVGContainer = styled.div`
   }
 
   .brazil:hover {
-    fill: #44dd8c; /* Altere para a cor desejada quando o mouse passar sobre o caminho */
+    fill: #44dd8c;
   }
 
   .eastern-pacific {
@@ -114,6 +124,7 @@ export const StyledSVGContainer = styled.div`
 
 export const StyledRegion = styled.div`
   color: #000;
+  animation: ${anima} 2s;
 
   .region-header {
     width: 100%;
@@ -320,6 +331,27 @@ export const StyledRegion = styled.div`
       max-width: 100%;
       margin-bottom: 20px;
     }
+  }
+
+  .back-to-map {
+    background-color: #0b468a;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Adicionando transição para o box-shadow */
+  }
+
+  .back-to-map img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+  }
+
+  .back-to-map:hover {
+    background-color: #0b6cb1;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3); /* Box shadow adicionado ao hover */
   }
 
   .section {

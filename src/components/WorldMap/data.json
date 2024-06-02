@@ -1,8 +1,9 @@
 {
   "regions": [
     {
-      "name": "brazil",
-      "countries": ["Brazil"],
+      "class": "brazil",
+      "name": "Brasil",
+      "countries": ["Brasil"],
       "contacts": [
         {
           "name": "Beatrice Padovani Ferreira",
@@ -36,7 +37,8 @@
       }
     },
     {
-      "name": "australia",
+      "class": "australia",
+      "name": "Austrália",
       "countries": ["Austrália"],
       "contacts": [
         {
@@ -78,7 +80,8 @@
       }
     },
     {
-      "name": "eastern-pacific",
+      "class": "eastern-pacific",
+      "name": "Pacífico Tropical Oriental",
       "countries": [
         "Mexico, France (Clipperton Atoll), Costa Rica, Nicaragua, El Salvador, Guatemala, Panama, Colombia, Ecuador, Chile (Rapa Nui)"
       ],
@@ -113,7 +116,8 @@
       }
     },
     {
-      "name": "caribbean",
+      "class": "caribbean",
+      "name": "Caribe",
       "countries": [
         "Antigua and Barbuda, Aruba, Bahamas, Barbados, Belize, British Virgin Islands, Colombia, Costa Rica, Cuba, Curaçao, Dominica, Dominican Republic, Grenada, Guadeloupe, Guatemala, Haiti, Honduras, Jamaica, Martinique, Mexico, Montserrat, Nicaragua, Panama, Puerto Rico, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Trinidad and Tobago, US Virgin Islands, Venezuela."
       ],
@@ -152,7 +156,8 @@
       }
     },
     {
-      "name": "western-indian",
+      "class": "western-indian",
+      "name": "Oceano Índico Ocidental",
       "countries": [
         "Somália, Quénia, Tanzânia, Moçambique, África do Sul, Maurícias, Madagáscar, Comores, Seicheles, Reunião (França)"
       ],
@@ -191,7 +196,8 @@
       }
     },
     {
-      "name": "red-sea",
+      "class": "red-sea",
+      "name": "Mar Vermelho e Golfo de Aden",
       "countries": [
         "Djibuti, Egito, Eritreia, Israel, Jordânia, Arábia Saudita, Somália, Sudão e Iémen"
       ],
@@ -230,7 +236,8 @@
       }
     },
     {
-      "name": "ropme",
+      "class": "ropme",
+      "name": "Organização Regional para a Proteção do Meio Marinho (ROPME)",
       "countries": [
         "Bahrein, Irã, Iraque, Kuwait, Omã, Catar, Arábia Saudita, Emirados Árabes Unidos."
       ],
@@ -269,7 +276,8 @@
       }
     },
     {
-      "name": "south-asia",
+      "class": "south-asia",
+      "name": "Sul da Ásia",
       "countries": [
         "Bangladesh, Índia, Maldivas, Mianmar, Paquistão, Sri Lanka e Arquipélago de Chagos"
       ],
@@ -308,7 +316,8 @@
       }
     },
     {
-      "name": "east-asia",
+      "class": "east-asia",
+      "name": "Leste da Ásia",
       "countries": [
         "China, Hong Kong, Taiwan, Japão, Coreia do Sul, Brunei Darussalam, Camboja, Indonésia, Malásia, Mianmar, Filipinas, Singapura, Tailândia e Vietname."
       ],
@@ -347,7 +356,8 @@
       }
     },
     {
-      "name": "pacific",
+      "class": "pacific",
+      "name": "Pacífico",
       "countries": [
         "Samoa Americana (EUA), Comunidade das Marianas do Norte (EUA), Ilhas Cook, Fiji, Estados Federados da Micronésia, Polinésia Francesa, Ilhas Havaianas Principais e do Noroeste (EUA), Reino de Tonga, República de Kiribati, República das Ilhas Marshall , Nauru, Nova Caledônia (França), Niue, República de Palau, Pitcairn (Reino Unido), Área Insular Remota do Pacífico (EUA), Papua Nova Guiné, Samoa, Ilhas Salomão, Tokelau (NZ), Tuvalu, Vanuatu e Wallis e Futuna (França)."
       ],

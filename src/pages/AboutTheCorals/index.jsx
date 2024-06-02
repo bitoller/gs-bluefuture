@@ -11,7 +11,7 @@ export function About() {
       <Header />
       <ImagesCarousel />
       <StyledAbout>
-        <h1>eu sou a corais screen</h1>
+        <h1>Selecione uma região para saber mais sobre os recifes de corais</h1>
         <WorldMap />
       </StyledAbout>
       <BackToTopArrow />
