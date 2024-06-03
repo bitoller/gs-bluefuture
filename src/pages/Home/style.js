@@ -8,7 +8,7 @@ export const StyledHome = styled.main`
   gap: 1.875rem;
 
   > h1 {
-    font-size: 1.875rem;
+    font-size: 2.5rem;
     color: var(--color-primary);
     font-weight: 500;
   }
