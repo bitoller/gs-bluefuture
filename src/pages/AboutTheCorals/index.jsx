@@ -12,8 +12,8 @@ export function About() {
       <Header />
       <ImagesCarousel />
       <StyledAbout>
-        <h1>Como os recifes de corais impactam o mundo em que vivemos</h1>
         <section className="about-corals">
+          <h1>Como os recifes de corais impactam o mundo em que vivemos</h1>
           <p>
             Os recifes de coral abrigam um quarto de toda a vida marinha nos
             oceanos e são o ecossistema marinho mais diverso da Terra. Milhões

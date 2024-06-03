@@ -22,6 +22,7 @@ export const StyledSVGContainer = styled.div`
     height: auto;
     max-height: 100vh;
     z-index: -1;
+    background-color: #effafe;
   }
 
   path {
