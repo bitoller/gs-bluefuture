@@ -33,9 +33,7 @@ export function Home() {
             BrunoMarc59: usersData[1],
           })
         );
-      } catch (error) {
-        console.error("Error fetching users:", error);
-      }
+      } catch (error) {}
     };
 
     fetchUsers();
@@ -84,12 +82,10 @@ export function Home() {
         if (response.status === 200) {
           return response.data;
         } else {
-          console.error("Unexpected status code:", response.status);
           return null;
         }
       }
     } catch (error) {
-      console.error("Error fetching GitHub user:", error);
       return null;
     }
   };
@@ -122,7 +118,7 @@ export function Home() {
                   um papel crucial na preservação desse ecossistema vital.
                 </p>
                 <button onClick={handleCoverClick}>
-                  <span>Assistir o video</span>
+                  <span>Assistir o vídeo</span>
                   <div className="wave-btn"></div>
                 </button>
               </div>
@@ -142,56 +138,61 @@ export function Home() {
         </section>
         <section ref={containerRef} className="group-container">
           <h2>Conheça os devs do Grupo TC:</h2>
-          <div
-            className={`color-group-1 group-member ${
-              animate ? "animate-left" : ""
-            }`}
-          >
-            <a href="https://www.linkedin.com/in/bianca-toller" target="_blank">
-              <div className="member-pic-container">
-                {users.length > 0 && (
-                  <img
-                    src={users[0] ? users[0].avatar_url : ""}
-                    alt={`${
-                      users[0] ? users[0].login : "User"
-                    }'s GitHub profile`}
-                  />
-                )}
-              </div>
-              <div className="member-info-container">
-                <p className="member-info-name">Bianca Toller</p>
-                <p className="member-info-stack">
-                  Software Engineer | JavaScript | TypeScript | C# | Python |
-                  Node.js | .Net | PostgreSQL
-                </p>
-                <p>RM 553134</p>
-              </div>
-            </a>
-          </div>
-          <div
-            className={`color-group-2 group-member ${
-              animate ? "animate-right" : ""
-            }`}
-          >
-            <a href="https://www.linkedin.com/in/bruno-marc/" target="_blank">
-              <div className="member-pic-container">
-                {users.length > 1 && (
-                  <img
-                    src={users[1] ? users[1].avatar_url : ""}
-                    alt={`${
-                      users[1] ? users[1].login : "User"
-                    }'s GitHub profile`}
-                  />
-                )}
-              </div>
-              <div className="member-info-container">
-                <p className="member-info-name">Bruno Marcelino Guimarães</p>
-                <p className="member-info-stack">
-                  Software Engineer | UI & UX Design | HTML | CSS | JavaScript
-                </p>
-                <p>RM 553314</p>
-              </div>
-            </a>
+          <div className="group-cards">
+            <div
+              className={`color-group-1 group-member ${
+                animate ? "animate-left" : ""
+              }`}
+            >
+              <a
+                href="https://www.linkedin.com/in/bianca-toller"
+                target="_blank"
+              >
+                <div className="member-pic-container">
+                  {users.length > 0 && (
+                    <img
+                      src={users[0] ? users[0].avatar_url : ""}
+                      alt={`${
+                        users[0] ? users[0].login : "User"
+                      }'s GitHub profile`}
+                    />
+                  )}
+                </div>
+                <div className="member-info-container">
+                  <p className="member-info-name">Bianca Toller</p>
+                  <p className="member-info-stack">
+                    Software Engineer | JavaScript | TypeScript | C# | Python |
+                    Node.js | .Net | PostgreSQL
+                  </p>
+                  <p>RM 553134</p>
+                </div>
+              </a>
+            </div>
+            <div
+              className={`color-group-2 group-member ${
+                animate ? "animate-right" : ""
+              }`}
+            >
+              <a href="https://www.linkedin.com/in/bruno-marc/" target="_blank">
+                <div className="member-pic-container">
+                  {users.length > 1 && (
+                    <img
+                      src={users[1] ? users[1].avatar_url : ""}
+                      alt={`${
+                        users[1] ? users[1].login : "User"
+                      }'s GitHub profile`}
+                    />
+                  )}
+                </div>
+                <div className="member-info-container">
+                  <p className="member-info-name">Bruno Marcelino Guimarães</p>
+                  <p className="member-info-stack">
+                    Software Engineer | UI & UX Design | HTML | CSS | JavaScript
+                  </p>
+                  <p>RM 553314</p>
+                </div>
+              </a>
+            </div>
           </div>
         </section>
       </StyledHome>
@@ -200,3 +201,6 @@ export function Home() {
     </>
   );
 }
+
+/* TODO: remover a animacao do video, talvez colocar um hover onde ai o card laranja vai um pouco pra esquerda e volta
+quando o mouse sai */
