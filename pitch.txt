@@ -1,12 +1,12 @@
 /----------------------------O problema que se propõe a resolver---------------------------/
 
-Os recifes de corais estão morrendo em um ritmo alarmante devido a diversos fatores, 
-principalmente as mudanças climáticas, a poluição e a pesca destrutiva. 
-O aquecimento global está aumentando a temperatura dos oceanos, 
-levando ao branqueamento dos corais – um processo em que eles perdem suas cores vibrantes 
-e a capacidade de sustentar a vida marinha. Além disso, poluentes como esgoto e produtos químicos 
-contribuem para o declínio da saúde dos corais, enquanto práticas de pesca destrutivas, como o uso de dinamite, 
-destroem fisicamente os recifes.
+Os recifes de corais estão morrendo em um ritmo alarmante devido a diversos fatores,
+principalmente as mudanças climáticas, a poluição e a pesca destrutiva.
+O aquecimento global está aumentando a temperatura dos oceanos,
+levando ao branqueamento dos corais – um processo em que eles perdem suas cores vibrantes
+e a capacidade de sustentar a vida marinha. Além disso, poluentes como esgoto e produtos químicos
+contribuem para o declínio da saúde dos corais, enquanto práticas de pesca insustentáveis, como a sobrepesca,
+desequilibram o ecossistema marinho e reduzem a resiliência dos recifes.
 
 /----------------------------O público-alvo, potenciais clientes---------------------------/
 
