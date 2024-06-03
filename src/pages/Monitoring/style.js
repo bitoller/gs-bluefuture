@@ -14,13 +14,16 @@ export const StyledMonitoring = styled.main`
   }
 
   p {
-    color: var(--color-gray-3);
+    color: #333333;
+    line-height: 30px;
+    font-size: 1.2rem;
   }
 
   .monitoring-container {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    align-items: center;
+    gap: 2rem;
   }
 
   .first-section,
@@ -28,7 +31,12 @@ export const StyledMonitoring = styled.main`
   .third-section {
     display: flex;
     align-items: center;
-    gap: 0.9375rem;
+    gap: 2rem;
+    max-width: 80%;
+  }
+
+  img {
+    width: 80%;
   }
 
   .second-section-text-container,
@@ -41,5 +49,20 @@ export const StyledMonitoring = styled.main`
   .second-section-text-container > h3,
   .third-section-text-container > h3 {
     color: var(--color-accent);
+    font-size: 2rem;
+  }
+
+  @media (max-width: 923px) {
+    .first-section,
+    .second-section,
+    .third-section {
+      flex-direction: column;
+      text-align: center;
+      max-width: 90%;
+    }
+    p {
+      font-size: 1rem;
+      text-align: left;
+    }
   }
 `;
