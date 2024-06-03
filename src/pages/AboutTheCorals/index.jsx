@@ -12,13 +12,13 @@ export function About() {
       <Header />
       <ImagesCarousel />
       <StyledAbout>
-        <h1>Como os recifes de corais impactam no mundo em que vivemos</h1>
+        <h1>Como os recifes de corais impactam o mundo em que vivemos</h1>
         <section className="about-corals">
           <p>
             Os recifes de coral abrigam um quarto de toda a vida marinha nos
             oceanos e são o ecossistema marinho mais diverso da Terra. Milhões
-            de pessoas ao redor do mundo também dependem da pesca, turismo e
-            proteção costeira fornecida por recifes de coral saudáveis - no
+            de pessoas ao redor do mundo dependem da pesca, do turismo e da
+            proteção costeira fornecida por recifes de coral saudáveis. No
             entanto, eles estão entre os ecossistemas mais ameaçados do planeta.
             Os recifes de coral são incrivelmente sensíveis, a ponto de apenas
             um grau de mudança na temperatura do oceano poder causar efeitos
@@ -27,11 +27,11 @@ export function About() {
             coral por meio de um aumento já mensurável na temperatura da água do
             mar, causado predominantemente pela atividade humana. Não apenas os
             corais são parte integrante dos ecossistemas marinhos, mas também
-            atuam como um filtro natural para o oceano - contribuindo para o
+            atuam como um filtro natural para o oceano, contribuindo para o
             ciclo de carbono oceânico por meio da fotossíntese, respiração,
             calcificação e dissolução. Esses processos reciclam seus nutrientes
             de forma eficiente e sequestram enormes quantidades de carbono do
-            dióxido de carbono dissolvido como carbonato - para que o carbono
+            dióxido de carbono dissolvido como carbonato, para que o carbono
             permaneça dentro do sistema de recifes e fora do oceano e da
             atmosfera.
           </p>
@@ -68,3 +68,5 @@ export function About() {
 }
 
 /* TODO: estilizar a pagina de uma forma que a deixe interessante de ler */
+/* TODO: remover ou trocar o grafico no fim */
+/* TODO: fazer algo mexer ou deslizar na tela? */

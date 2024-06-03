@@ -12,4 +12,34 @@ export const StyledMonitoring = styled.main`
     color: var(--color-primary);
     font-weight: 500;
   }
+
+  p {
+    color: var(--color-gray-3);
+  }
+
+  .monitoring-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .first-section,
+  .second-section,
+  .third-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .second-section-text-container,
+  .third-section-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .second-section-text-container > h3,
+  .third-section-text-container > h3 {
+    color: var(--color-accent);
+  }
 `;
