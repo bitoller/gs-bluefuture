@@ -14,8 +14,8 @@ export const StyledMonitoring = styled.main`
   }
 
   p {
-    color: #333333;
-    line-height: 30px;
+    color: var(--color-gray-4);
+    line-height: 1.875rem;
     font-size: 1.2rem;
   }
 
@@ -33,6 +33,32 @@ export const StyledMonitoring = styled.main`
     align-items: center;
     gap: 2rem;
     max-width: 80%;
+    opacity: 0;
+    transform: translateX(0);
+    transition: transform 1s, opacity 1s;
+  }
+
+  .first-section.animate-left,
+  .third-section.animate-left {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .second-section.animate-right {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .first-section {
+    transform: translateX(-100%);
+  }
+
+  .second-section {
+    transform: translateX(100%);
+  }
+
+  .third-section {
+    transform: translateX(-100%);
   }
 
   img {
@@ -60,6 +86,7 @@ export const StyledMonitoring = styled.main`
       text-align: center;
       max-width: 90%;
     }
+
     p {
       font-size: 1rem;
       text-align: left;

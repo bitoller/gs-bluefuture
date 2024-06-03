@@ -57,6 +57,8 @@ body::-webkit-scrollbar-track {
   --color-gray-1: #FFFFFF;
   --color-gray-2: #7A7A7A;
   --color-gray-3: #000000;
+  --color-gray-4: #333333;
+  --color-gray-5: #effafe;
   --color-blue-1: #0B468A;
   --color-blue-2: #5199BA;
 }

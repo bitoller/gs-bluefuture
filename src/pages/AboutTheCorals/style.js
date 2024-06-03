@@ -8,12 +8,12 @@ export const StyledAbout = styled.main`
 
   .about-corals {
     display: flex;
-    padding: 25px 0;
+    padding: 1.5625rem 0;
     flex-direction: column;
     align-items: center;
     gap: 1.875rem;
     width: 100vw;
-    background-color: #effafe;
+    background-color: var(--color-gray-5);
   }
 
   .about-corals > h1 {
@@ -24,10 +24,10 @@ export const StyledAbout = styled.main`
   }
 
   .about-corals > p {
-    color: #333333;
-    line-height: 30px;
+    color: var(--color-gray-4);
+    line-height: 1.875rem;
     text-align: left;
-    max-width: 1400px;
+    max-width: 87.5rem;
     width: 80%;
     font-size: 1.2rem;
   }
@@ -49,7 +49,16 @@ export const StyledAbout = styled.main`
     height: auto;
   }
 
-  > h2 {
+  .coral-region {
+    display: flex;
+    padding: 1.5625rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+    width: 100vw;
+  }
+
+  .coral-region > h2 {
     font-size: 1.875rem;
     color: var(--color-accent);
     font-weight: 500;
