@@ -92,7 +92,7 @@ export function Home() {
           {/* video pitch vem aqui */}
         </section>
         <section ref={containerRef} className="group-container">
-          <h2>Conheça os devs do Team Coral:</h2>
+          <h2>Conheça os devs do Grupo TC:</h2>
           <div
             className={`color-group-1 group-member ${
               animate ? "animate-left" : ""
