@@ -1,15 +1,16 @@
+import React, { useState, useEffect, useRef } from "react";
+import axios from "axios";
+import "intersection-observer";
 import { Header } from "../../components/Header";
 import { ImagesCarousel } from "../../components/ImagesCarousel";
 import { BackToTopArrow } from "../../components/BackToTopArrow";
 import { Footer } from "../../components/Footer";
-import React, { useState, useEffect, useRef } from "react";
-import axios from "axios";
-import "intersection-observer";
 import { StyledHome } from "./style";
 
 export function Home() {
   const [users, setUsers] = useState([]);
   const [animate, setAnimate] = useState(false);
+  const [isVideoVisible, setIsVideoVisible] = useState(false);
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -82,6 +83,10 @@ export function Home() {
     }
   };
 
+  const handleCoverClick = () => {
+    setIsVideoVisible(true);
+  };
+
   return (
     <>
       <Header />
@@ -89,7 +94,31 @@ export function Home() {
       <StyledHome>
         <h1>Bem-vindo ao mundo dos Recifes de Corais!</h1>
         <section className="video-container">
-          {/* video pitch vem aqui */}
+          {!isVideoVisible && (
+            <div className="video-cover">
+              <div className="cover-content">
+                <h2>Video Pitch</h2>
+                <p>
+                  A importância dos recifes de corais é imensurável, pois servem
+                  como habitat essencial para cerca de 25% de toda a vida
+                  marinha. O monitoramento e o replantio de corais desempenham
+                  um papel crucial na preservação desse ecossistema vital.
+                </p>
+                <button onClick={handleCoverClick}>Assistir ao video</button>
+              </div>
+              <div className="wave-shape"></div>
+            </div>
+          )}
+          {isVideoVisible && (
+            <iframe
+              width="760"
+              height="415"
+              src="https://www.youtube.com/embed/L3Ne_vstIF8?si=7cY6mOEEBi5ygN5f&autoplay=1"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          )}
         </section>
         <section ref={containerRef} className="group-container">
           <h2>Conheça os devs do Grupo TC:</h2>
@@ -151,5 +180,3 @@ export function Home() {
     </>
   );
 }
-
-/* TODO: adicionar video pitch e breve descricao da solucao */

@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import WaveVideo from "../../assets/wave-video.png";
+import PlayerVideo from "../../assets/player-video.png";
 
 export const StyledHome = styled.main`
   padding: 1.25rem;
@@ -8,7 +10,7 @@ export const StyledHome = styled.main`
   gap: 1.875rem;
 
   > h1 {
-    font-size: 2.5rem;
+    font-size: 1.875rem;
     color: var(--color-primary);
     font-weight: 500;
   }
@@ -87,6 +89,114 @@ export const StyledHome = styled.main`
 
   .animate-right {
     animation: slideInRight 2s forwards;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 760px; /* Tamanho máximo */
+    height: 415px; /* Altura fixa */
+    margin: 0 auto; /* Centraliza na página */
+    overflow: hidden;
+  }
+
+  .video-container iframe,
+  .video-container .video-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url(${PlayerVideo}) no-repeat;
+    background-position: center right;
+    background-size: 60% auto;
+    color: white;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .cover-content {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+  }
+
+  .cover-content h2 {
+    margin: 0 0 10px;
+    font-size: 2rem; /* Tamanho fixo para telas maiores */
+  }
+
+  .cover-content p {
+    margin: 0 0 20px;
+    font-size: 1rem; /* Tamanho fixo para telas maiores */
+    text-align: left;
+    line-height: 25px;
+  }
+
+  .cover-content button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    font-size: 2rem; /* Tamanho fixo para telas maiores */
+    cursor: pointer;
+  }
+
+  .wave-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: url(${WaveVideo}) no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  .animate-out {
+    animation: slideWave 3s forwards;
+  }
+
+  @keyframes slideWave {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .video-container {
+      height: auto;
+      padding-bottom: 56.25%; /* Aspect Ratio 16:9 */
+    }
+
+    .cover-content h2 {
+      font-size: 1.5rem; /* Responsivo para telas menores */
+    }
+
+    .cover-content p {
+      display: none;
+    }
+
+    .cover-content button {
+      font-size: 1rem;
+      padding: 8px 16px; /* Ajuste para telas menores */
+    }
   }
 
   @keyframes slideInLeft {
