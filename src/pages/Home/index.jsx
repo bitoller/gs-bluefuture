@@ -104,7 +104,7 @@ export function Home() {
                   marinha. O monitoramento e o replantio de corais desempenham
                   um papel crucial na preservação desse ecossistema vital.
                 </p>
-                <button onClick={handleCoverClick}>Assistir ao video</button>
+                <button onClick={handleCoverClick}>Assistir ao vídeo</button>
               </div>
               <div className="wave-shape"></div>
             </div>
