@@ -9,7 +9,7 @@ import mapSouthAsia from "../../assets/maps/map-south-asia.jpg";
 import mapEastAsia from "../../assets/maps/map-east-asia.jpg";
 import mapPacific from "../../assets/maps/map-pacific.jpg";
 import mapBrazil from "../../assets/maps/map-brazil.jpg";
-import coralGraphic from "../../assets/coral-graphic.png";
+import coralGraphic from "../../assets/infos-graphs/coral-graphic.png";
 import data from "./data.json";
 import React, { useEffect, useState, useRef } from "react";
 import tippy from "tippy.js";
@@ -223,3 +223,7 @@ export function WorldMap() {
     </div>
   );
 }
+
+/* TODO: ao fazer o hover nos paises, as frases que aparecem nao estao no mesmo formato para todas */
+/* TODO: ao clicar em um pais (australia por ex), o texto dentro do quadrado de paises incluidos vaza pra fora,
+verificar outros tanto desktop/responsivo */
