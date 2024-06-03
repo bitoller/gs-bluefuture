@@ -59,7 +59,7 @@ export const StyledHeader = styled.header`
     cursor: pointer;
   }
 
-  @media (max-width: 923px) {
+  @media (max-width: 1311px) {
     .custom-nav {
       display: none;
       flex-direction: column;
