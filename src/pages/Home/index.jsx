@@ -11,7 +11,10 @@ export function Home() {
   const [users, setUsers] = useState([]);
   const [animate, setAnimate] = useState(false);
   const [isVideoVisible, setIsVideoVisible] = useState(false);
+  const [isVideoCoverVisible, setIsVideoCoverVisible] = useState(false);
   const containerRef = useRef(null);
+  const videoContainerRef = useRef(null);
+  const coverRef = useRef(null);
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -48,7 +51,12 @@ export function Home() {
     const observerCallback = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          setAnimate(true);
+          if (entry.target === containerRef.current) {
+            setAnimate(true);
+          }
+          if (entry.target === videoContainerRef.current) {
+            setIsVideoCoverVisible(true);
+          }
           observer.unobserve(entry.target);
         }
       });
@@ -56,9 +64,12 @@ export function Home() {
 
     const observer = new IntersectionObserver(observerCallback, options);
     if (containerRef.current) observer.observe(containerRef.current);
+    if (videoContainerRef.current) observer.observe(videoContainerRef.current);
 
     return () => {
       if (containerRef.current) observer.unobserve(containerRef.current);
+      if (videoContainerRef.current)
+        observer.unobserve(videoContainerRef.current);
     };
   }, []);
 
@@ -85,6 +96,7 @@ export function Home() {
 
   const handleCoverClick = () => {
     setIsVideoVisible(true);
+    setIsVideoCoverVisible(false);
   };
 
   return (
@@ -93,9 +105,14 @@ export function Home() {
       <ImagesCarousel />
       <StyledHome>
         <h1>Bem-vindo ao mundo dos Recifes de Corais!</h1>
-        <section className="video-container">
+        <section ref={videoContainerRef} className="video-container">
           {!isVideoVisible && (
-            <div className="video-cover">
+            <div
+              ref={coverRef}
+              className={`video-cover ${
+                isVideoCoverVisible ? "animate-in" : ""
+              }`}
+            >
               <div className="cover-content">
                 <h2>Vídeo Pitch</h2>
                 <p>
@@ -104,7 +121,10 @@ export function Home() {
                   marinha. O monitoramento e o replantio de corais desempenham
                   um papel crucial na preservação desse ecossistema vital.
                 </p>
-                <button onClick={handleCoverClick}>Assistir ao vídeo</button>
+                <button onClick={handleCoverClick}>
+                  <span>Assistir o video</span>
+                  <div className="wave-btn"></div>
+                </button>
               </div>
               <div className="wave-shape"></div>
             </div>
@@ -180,6 +200,3 @@ export function Home() {
     </>
   );
 }
-
-/* TODO: onda do video pitch em mobile corta texto do botao */
-/* TODO: a ideia da onda no video nao era pra deslizar pro lado? */

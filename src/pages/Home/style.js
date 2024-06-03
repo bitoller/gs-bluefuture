@@ -1,6 +1,19 @@
+// style.js
 import videoWaveCover from "../../assets/video/video-wave-cover.png";
 import videoPlayer from "../../assets/video/video-player.png";
-import styled from "styled-components";
+import waveBtn from "../../assets/video/btn-wave.png";
+import styled, { keyframes } from "styled-components";
+
+const slideInCover = keyframes`
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
 
 export const StyledHome = styled.main`
   padding: 1.25rem;
@@ -147,11 +160,57 @@ export const StyledHome = styled.main`
   }
 
   .cover-content > button {
+    position: relative;
     background-color: transparent;
     color: white;
     border: 2px solid #ffffff;
     padding: 0.625rem 1.25rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    overflow: hidden;
+  }
+
+  .cover-content > button:hover > span {
+    color: #333333;
+  }
+
+  .cover-content > button > span {
+    position: relative;
+    z-index: 3000;
+    transition: 1s;
+  }
+
+  .cover-content > button > .wave-btn {
+    position: absolute;
+    top: calc(100% + 22px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    transition: 1s;
+  }
+
+  .cover-content > button:hover > .wave-btn {
+    top: 0;
+  }
+
+  .cover-content > button > .wave-btn::before {
+    content: "";
+    position: absolute;
+    top: -22px;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    background: url(${waveBtn});
+    animation: animateWave 0.8s linear infinite;
+  }
+
+  @keyframes animateWave {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 118px;
+    }
   }
 
   .wave-shape {
@@ -165,8 +224,23 @@ export const StyledHome = styled.main`
     z-index: 1;
   }
 
-  .animate-out {
-    animation: slideWave 3s forwards;
+  .video-cover.slide-out {
+    animation: slideOutLeft 0.5s forwards;
+  }
+
+  @keyframes slideOutLeft {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+
+  .animate-in {
+    animation: ${slideInCover} 1.5s forwards;
   }
 
   @keyframes slideWave {
