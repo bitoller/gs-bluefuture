@@ -1,6 +1,6 @@
+import videoWaveCover from "../../assets/video/video-wave-cover.png";
+import videoPlayer from "../../assets/video/video-player.png";
 import styled from "styled-components";
-import WaveVideo from "../../assets/wave-video.png";
-import PlayerVideo from "../../assets/player-video.png";
 
 export const StyledHome = styled.main`
   padding: 1.25rem;
@@ -10,7 +10,7 @@ export const StyledHome = styled.main`
   gap: 1.875rem;
 
   > h1 {
-    font-size: 1.875rem;
+    font-size: 2.5rem;
     color: var(--color-primary);
     font-weight: 500;
   }
@@ -94,9 +94,9 @@ export const StyledHome = styled.main`
   .video-container {
     position: relative;
     width: 100%;
-    max-width: 760px; /* Tamanho máximo */
-    height: 415px; /* Altura fixa */
-    margin: 0 auto; /* Centraliza na página */
+    max-width: 47.5rem;
+    height: 25.9375rem;
+    margin: 0 auto;
     overflow: hidden;
   }
 
@@ -114,7 +114,7 @@ export const StyledHome = styled.main`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: url(${PlayerVideo}) no-repeat;
+    background: url(${videoPlayer}) no-repeat;
     background-position: center right;
     background-size: 60% auto;
     color: white;
@@ -131,28 +131,27 @@ export const StyledHome = styled.main`
     height: 100%;
     position: relative;
     z-index: 2;
-    padding: 30px;
+    padding: 1.875rem;
   }
 
-  .cover-content h2 {
-    margin: 0 0 10px;
-    font-size: 2rem; /* Tamanho fixo para telas maiores */
+  .cover-content > h2 {
+    margin: 0 0 0.625rem;
+    font-size: 2rem;
   }
 
-  .cover-content p {
-    margin: 0 0 20px;
-    font-size: 1rem; /* Tamanho fixo para telas maiores */
+  .cover-content > p {
+    margin: 0 0 1.25rem;
+    font-size: 1rem;
     text-align: left;
-    line-height: 25px;
+    line-height: 1.5625rem;
   }
 
-  .cover-content button {
+  .cover-content > button {
     background-color: transparent;
     color: white;
     border: 2px solid #ffffff;
-    padding: 10px 20px;
-    font-size: 2rem; /* Tamanho fixo para telas maiores */
-    cursor: pointer;
+    padding: 0.625rem 1.25rem;
+    font-size: 2rem;
   }
 
   .wave-shape {
@@ -161,7 +160,7 @@ export const StyledHome = styled.main`
     left: 0;
     width: 70%;
     height: 100%;
-    background: url(${WaveVideo}) no-repeat;
+    background: url(${videoWaveCover}) no-repeat;
     background-size: cover;
     z-index: 1;
   }
@@ -182,20 +181,20 @@ export const StyledHome = styled.main`
   @media (max-width: 768px) {
     .video-container {
       height: auto;
-      padding-bottom: 56.25%; /* Aspect Ratio 16:9 */
+      padding-bottom: 56.25%;
     }
 
-    .cover-content h2 {
-      font-size: 1.5rem; /* Responsivo para telas menores */
+    .cover-content > h2 {
+      font-size: 1.5rem;
     }
 
-    .cover-content p {
+    .cover-content > p {
       display: none;
     }
 
-    .cover-content button {
+    .cover-content > button {
       font-size: 1rem;
-      padding: 8px 16px; /* Ajuste para telas menores */
+      padding: 0.5rem 1rem;
     }
   }
 
