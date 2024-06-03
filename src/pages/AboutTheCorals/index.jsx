@@ -2,7 +2,7 @@ import coralBenefits from "../../assets/infos-graphs/coral-reef-benefits.png";
 import { Header } from "../../components/Header";
 import { ImagesCarousel } from "../../components/ImagesCarousel";
 import { BackToTopArrow } from "../../components/BackToTopArrow";
-import { WorldMap } from "../../components/WorldMap/index.jsx";
+import { WorldMap } from "../../components/WorldMap";
 import { Footer } from "../../components/Footer";
 import { StyledAbout } from "./style.js";
 
@@ -55,11 +55,13 @@ export function About() {
             ecossistemas.
           </p>
         </section>
-        <h2>
-          Selecione uma região abaixo para saber mais sobre os recifes de
-          corais:
-        </h2>
-        <WorldMap />
+        <section className="coral-region">
+          <h2>
+            Selecione uma região abaixo para saber mais sobre os recifes de
+            corais:
+          </h2>
+          <WorldMap />
+        </section>
       </StyledAbout>
       <BackToTopArrow />
       <Footer />
@@ -67,6 +69,5 @@ export function About() {
   );
 }
 
-/* TODO: estilizar a pagina de uma forma que a deixe interessante de ler */
 /* TODO: remover ou trocar o grafico no fim */
-/* TODO: fazer algo mexer ou deslizar na tela? */
+/* TODO: arrumar o fundo azul claro atras do texto no responsivo, ele tem um espaco entre a imagem e ele */
