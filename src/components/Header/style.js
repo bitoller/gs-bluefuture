@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import WaveMenuTop from "../../assets/wave-menu-top.svg";
+import styled from "styled-components";
 
 export const StyledHeader = styled.header`
   display: flex;

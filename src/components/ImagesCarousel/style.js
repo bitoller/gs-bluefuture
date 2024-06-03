@@ -29,7 +29,6 @@ export const StyledImagesCarousel = styled.div`
   position: relative;
   top: 0;
   z-index: -1;
-  box-shadow: 0px 20px 16px 0px rgba(0, 0, 0, 0.1);
 
   .carousel-img {
     height: 100%;
@@ -39,12 +38,12 @@ export const StyledImagesCarousel = styled.div`
   }
 `;
 
-export const CarouselItem = styled.div`
+export const StyledCarouselItem = styled.div`
   position: relative;
   width: 100%;
 `;
 
-export const TextOverlayLeft = styled.div`
+export const StyledTextOverlayLeft = styled.div`
   position: absolute;
   top: 40%;
   left: 25%;
@@ -66,7 +65,7 @@ export const TextOverlayLeft = styled.div`
   }
 `;
 
-export const TextOverlayRight = styled.div`
+export const StyledTextOverlayRight = styled.div`
   position: absolute;
   top: 60%;
   right: 25%;
