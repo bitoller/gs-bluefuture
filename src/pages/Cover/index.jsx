@@ -17,3 +17,5 @@ export function Cover() {
     </StyledCover>
   );
 }
+
+/* TODO: fazer a onda no botao de mergulhar mantendo as cores usadas */

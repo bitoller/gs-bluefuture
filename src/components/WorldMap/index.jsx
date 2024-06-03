@@ -227,4 +227,3 @@ export function WorldMap() {
 /* TODO: ao fazer o hover nos paises, as frases que aparecem nao estao no mesmo formato para todas */
 /* TODO: ao clicar em um pais (australia por ex), o texto dentro do quadrado de paises incluidos vaza pra fora,
 verificar outros tanto desktop/responsivo */
-/* TODO: verificar se todos os textos no JSON estao corretos */
