@@ -9,7 +9,7 @@ export function About() {
   return (
     <>
       <Header />
-      <ImagesCarousel height="300px" />
+      <ImagesCarousel />
       <StyledAbout>
         <h1>Selecione uma região para saber mais sobre os recifes de corais</h1>
         <WorldMap />
