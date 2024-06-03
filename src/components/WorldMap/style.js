@@ -141,7 +141,8 @@ export const StyledRegion = styled.div`
     h2 {
       font-size: 2rem;
       margin-bottom: 0.5rem;
-      color: var(--color-gray-3);
+      color: var(--color-accent);
+      font-weight: 500;
     }
 
     p {
@@ -182,7 +183,7 @@ export const StyledRegion = styled.div`
 
     h3 > span {
       color: var(--color-blue-1);
-      border-bottom: 1px solid var(--color-blue-1);
+      border-bottom: 2px solid var(--color-accent);
       padding-bottom: 0.625rem;
     }
 
@@ -224,7 +225,7 @@ export const StyledRegion = styled.div`
 
     h3 > span {
       color: var(--color-blue-1);
-      border-bottom: 2px solid var(--color-blue-1);
+      border-bottom: 2px solid var(--color-accent);
       padding-bottom: 0.9375rem;
     }
 
@@ -306,13 +307,13 @@ export const StyledRegion = styled.div`
     h4 {
       font-size: 3.125rem;
       font-weight: 600;
-      color: var(--color-blue-1);
+      color: var(--color-accent);
     }
 
     p {
       display: flex;
       align-items: center;
-      color: var(--color-blue-1);
+      color: var(--color-gray-3);
       font-size: 1.25rem;
       width: 100%;
       height: 6.25rem;
@@ -337,7 +338,7 @@ export const StyledRegion = styled.div`
   }
 
   .back-to-map {
-    background-color: var(--color-blue-1);
+    background-color: var(--color-accent);
     margin: 1.25rem;
     display: flex;
     align-items: center;

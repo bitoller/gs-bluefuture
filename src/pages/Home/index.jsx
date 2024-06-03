@@ -87,7 +87,7 @@ export function Home() {
       <Header />
       <ImagesCarousel />
       <StyledHome>
-        <h1>Como os recifes de corais impactam no mundo em que vivemos</h1>
+        <h1>Bem-vindo ao mundo dos Recifes de Corais!</h1>
         <section className="video-container">
           {/* video pitch vem aqui */}
         </section>
