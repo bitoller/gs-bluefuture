@@ -5,17 +5,58 @@ import { Header } from "../../components/Header";
 import { ImagesCarousel } from "../../components/ImagesCarousel";
 import { BackToTopArrow } from "../../components/BackToTopArrow";
 import { Footer } from "../../components/Footer";
+import React, { useState, useEffect, useRef } from "react";
+import "intersection-observer";
 import { StyledMonitoring } from "./style";
 
 export function Monitoring() {
+  const [animate, setAnimate] = useState([false, false, false]);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1,
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const index = Array.from(containerRef.current.children).indexOf(
+            entry.target
+          );
+          setAnimate((prev) => {
+            const newAnimate = [...prev];
+            newAnimate[index] = true;
+            return newAnimate;
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, options);
+    const sections = containerRef.current.children;
+    Array.from(sections).forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      Array.from(sections).forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
+
   return (
     <>
       <Header />
       <ImagesCarousel />
       <StyledMonitoring>
         <h1>Como podemos facilitar o monitoramento</h1>
-        <section className="monitoring-container">
-          <div className="first-section">
+        <section ref={containerRef} className="monitoring-container">
+          <div className={`first-section ${animate[0] ? "animate-left" : ""}`}>
             <p>
               Os recifes de corais são verdadeiros oásis de vida no vasto azul
               dos oceanos, abrigando uma miríade de espécies marinhas e
@@ -30,7 +71,13 @@ export function Monitoring() {
             </p>
             <img src={submarine} alt="ícone de um submarino azul" />
           </div>
-          <div className="second-section">
+          <div
+            className={`second-section ${animate[1] ? "animate-right" : ""}`}
+          >
+            <img
+              src={diver}
+              alt={"imagem de um mergulhador medindo os corais"}
+            />
             <div className="second-section-text-container">
               <h3>Monitoramento por mergulhadores</h3>
               <p>
@@ -44,13 +91,8 @@ export function Monitoring() {
                 permitindo a tomada de decisões informadas para sua conservação.
               </p>
             </div>
-            <img
-              src={diver}
-              alt={"imagem de um mergulhador medindo os corais"}
-            />
           </div>
-          <div className="third-section">
-            <img src={drone} alt={"imagem de um drone autônomo"} />
+          <div className={`third-section ${animate[2] ? "animate-left" : ""}`}>
             <div className="third-section-text-container">
               <h3>Monitoramento por drones autônomos</h3>
               <p>
@@ -68,6 +110,7 @@ export function Monitoring() {
                 difícil acesso ou áreas remotas.
               </p>
             </div>
+            <img src={drone} alt={"imagem de um drone autônomo"} />
           </div>
         </section>
       </StyledMonitoring>
@@ -76,6 +119,3 @@ export function Monitoring() {
     </>
   );
 }
-
-/* TODO: estilizar a pagina de uma forma que a deixe interessante de ler */
-/* TODO: fazer algo mexer ou deslizar na tela? */
