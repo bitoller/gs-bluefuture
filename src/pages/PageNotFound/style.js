@@ -28,7 +28,7 @@ export const StyledPageNotFound = styled.main`
     gap: 3.75rem;
     width: 30%;
     height: auto;
-    background-color: #003b59d0;
+    background-color: #0f71d3c2;
     border-radius: 10px;
     padding: 3.125rem;
     transform: translate(-50%, -50%);
@@ -48,7 +48,7 @@ export const StyledPageNotFound = styled.main`
   }
 
   .text-container > a:hover {
-    color: #f58b01;
+    color: var(--color-accent);
   }
 
   @media (max-width: 923px) {
