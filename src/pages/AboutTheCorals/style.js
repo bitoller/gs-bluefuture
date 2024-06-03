@@ -38,7 +38,7 @@ export const StyledAbout = styled.main`
   }
 
   > h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
     color: var(--color-accent);
     font-weight: 500;
   }

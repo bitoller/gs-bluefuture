@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
-import axios from "axios";
-import "intersection-observer";
 import { Header } from "../../components/Header";
 import { ImagesCarousel } from "../../components/ImagesCarousel";
 import { BackToTopArrow } from "../../components/BackToTopArrow";
 import { Footer } from "../../components/Footer";
+import React, { useState, useEffect, useRef } from "react";
+import axios from "axios";
+import "intersection-observer";
 import { StyledHome } from "./style";
 
 export function Home() {
@@ -97,7 +97,7 @@ export function Home() {
           {!isVideoVisible && (
             <div className="video-cover">
               <div className="cover-content">
-                <h2>Video Pitch</h2>
+                <h2>Vídeo Pitch</h2>
                 <p>
                   A importância dos recifes de corais é imensurável, pois servem
                   como habitat essencial para cerca de 25% de toda a vida
@@ -180,3 +180,6 @@ export function Home() {
     </>
   );
 }
+
+/* TODO: onda do video pitch em mobile corta texto do botao */
+/* TODO: a ideia da onda no video nao era pra deslizar pro lado? */

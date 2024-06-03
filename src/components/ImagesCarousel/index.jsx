@@ -1,18 +1,18 @@
-import React from "react";
-import PropTypes from "prop-types";
 import coralReef1 from "../../assets/coral-reefs/coral-reef-1.jpg";
 import coralReef2 from "../../assets/coral-reefs/coral-reef-2.jpg";
 import coralReef3 from "../../assets/coral-reefs/coral-reef-3.jpg";
 import coralReef4 from "../../assets/coral-reefs/coral-reef-4.jpg";
 import coralReef5 from "../../assets/coral-reefs/coral-reef-5.jpg";
 import coralReef6 from "../../assets/coral-reefs/coral-reef-6.jpg";
+import React from "react";
+import PropTypes from "prop-types";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import {
   StyledImagesCarousel,
-  CarouselItem,
-  TextOverlayLeft,
-  TextOverlayRight,
+  StyledCarouselItem,
+  StyledTextOverlayLeft,
+  StyledTextOverlayRight,
 } from "./style.js";
 
 export function ImagesCarousel({ height }) {
@@ -50,17 +50,17 @@ export function ImagesCarousel({ height }) {
   ];
 
   const carouselItems = items.map((item, index) => (
-    <CarouselItem key={index}>
+    <StyledCarouselItem key={index}>
       <img
         src={item.image}
         alt={`imagem de um recife de corais ${index + 1}`}
         className="carousel-img"
       />
       <div>
-        <TextOverlayLeft>{item.textLeft}</TextOverlayLeft>
-        <TextOverlayRight>{item.textRight}</TextOverlayRight>
+        <StyledTextOverlayLeft>{item.textLeft}</StyledTextOverlayLeft>
+        <StyledTextOverlayRight>{item.textRight}</StyledTextOverlayRight>
       </div>
-    </CarouselItem>
+    </StyledCarouselItem>
   ));
 
   const responsive = {
@@ -71,7 +71,7 @@ export function ImagesCarousel({ height }) {
   };
 
   ImagesCarousel.propTypes = {
-    height: PropTypes.string, // Removido o isRequired
+    height: PropTypes.string,
   };
 
   return (
@@ -80,7 +80,7 @@ export function ImagesCarousel({ height }) {
         items={carouselItems}
         autoPlay={true}
         infinite={true}
-        autoPlayInterval={5000} // Alterado para 5 segundos
+        autoPlayInterval={5000}
         disableButtonsControls={true}
         itemsInSlide={1}
         disableDotsControls={true}

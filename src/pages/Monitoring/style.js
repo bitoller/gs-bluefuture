@@ -20,7 +20,7 @@ export const StyledMonitoring = styled.main`
   .monitoring-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   .first-section,
@@ -28,14 +28,14 @@ export const StyledMonitoring = styled.main`
   .third-section {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 0.9375rem;
   }
 
   .second-section-text-container,
   .third-section-text-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
   }
 
   .second-section-text-container > h3,

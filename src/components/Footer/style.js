@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import WaveMenuBottom from "../../assets/wave-menu-bottom.svg";
+import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
   display: flex;

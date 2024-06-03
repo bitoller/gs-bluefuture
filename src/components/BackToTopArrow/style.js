@@ -1,4 +1,3 @@
-// style.js
 import styled, { keyframes } from "styled-components";
 
 const bounce = keyframes`
@@ -15,10 +14,10 @@ const bounce = keyframes`
 
 export const StyledBackToTopArrow = styled.div`
   position: fixed;
-  bottom: 230px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
+  bottom: 14.375rem;
+  right: 1.25rem;
+  width: 3.125rem;
+  height: 3.125rem;
   cursor: pointer;
   z-index: 1000;
   animation: ${bounce} 2s infinite;
