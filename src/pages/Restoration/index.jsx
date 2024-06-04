@@ -208,4 +208,10 @@ export function Restoration() {
   );
 }
 
-/* TODO: tentar conter o texto dos super recifes dentro da svg. o primeiro p na esquerda e o segundo na direita? */
+/* TODO: talvez achar uma estilizacao melhor pra essa pagina, parece um carnaval */
+/* TODO: achar um jeito melhor de fazer o texto do que sao implantacoes de corais ficar dentro da img,
+no momento esta sendo usado um padding left enorme */
+/* TODO: a img em si do texto de implantacoes tem um corte no meio da parte rosa */
+/* TODO: talvez fazer essa img falada acima mexer a parte rosa um pouco com o hover? mesmo que nao seja clicavel */
+/* TODO: essa mesma img no responsivo foi removida, tentar manter ela, se nao nao tem problema */
+/* TODO: as imagens dentro dos cards de como fazer replantio tem tamanhos diferentes */

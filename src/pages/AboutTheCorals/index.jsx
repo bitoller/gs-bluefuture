@@ -69,5 +69,4 @@ export function About() {
   );
 }
 
-/* TODO: remover ou trocar o grafico no fim */
 /* TODO: arrumar o fundo azul claro atras do texto no responsivo, ele tem um espaco entre a imagem e ele */
