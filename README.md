@@ -51,7 +51,7 @@ O projeto está em desenvolvimento.
 
 ## 📁 Acesso ao Projeto
 
-- [Veja o nosso site funcionando](#)
+- [Veja o nosso site funcionando](https://global-solution-bluefuture.vercel.app/)
 - [Veja o repositório do nosso projeto no GitHub](https://github.com/bitoller/global-solution-bluefuture)
 - [Veja o Figma do nosso projeto](https://www.figma.com/design/P8bYNePWpcz4PxlcLPAk1F/Blue-Future?node-id=151-2&t=pPEU42JyHkSqW7Ka-0)
 - [Veja nosso vídeo de apresentação no YouTube](https://www.youtube.com/watch?v=avXvERKMJb8)
