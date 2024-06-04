@@ -84,7 +84,10 @@ export function Home() {
   };
 
   const handleCoverClick = () => {
-    setIsVideoVisible(true);
+    setTimeout(() => {
+      setIsVideoVisible(true);
+    }, 300);
+    coverRef.current.classList.toggle("slide-left");
   };
 
   return (
@@ -105,7 +108,7 @@ export function Home() {
                   um papel crucial na preservação desse ecossistema vital.
                 </p>
                 <button onClick={handleCoverClick}>
-                  <span>Assistir o vídeo</span>
+                  <span>Assistir o video</span>
                   <div className="wave-btn"></div>
                 </button>
               </div>
@@ -193,4 +196,4 @@ export function Home() {
   );
 }
 
-/* TODO: fazer a transicao entre o video de mentira e o de verdade um pouco menos violenta */
+/* TODO: fazer a transicao entre o video de mentira e o de verdade um pouco menos violenta - feito*/

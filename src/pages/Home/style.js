@@ -35,6 +35,7 @@ export const StyledHome = styled.main`
   }
 
   .video-cover {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,7 +45,7 @@ export const StyledHome = styled.main`
     background-size: 60% auto;
     color: white;
     text-align: center;
-    z-index: 1;
+    z-index: 2000;
   }
 
   .cover-content {
@@ -134,6 +135,21 @@ export const StyledHome = styled.main`
     background: url(${videoWaveCover}) no-repeat;
     background-size: cover;
     z-index: 1;
+  }
+
+  .video-cover.slide-left {
+    animation: slideLeft 0.5s ease-in-out forwards;
+  }
+
+  @keyframes slideLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(
+        -100%
+      ); /* Adjust the distance for the desired slide */
+    }
   }
 
   @keyframes slideWave {
