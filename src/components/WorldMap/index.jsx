@@ -159,7 +159,7 @@ export function WorldMap() {
                     countryInfo.countries.map((country) => (
                       <p key={country}>{country}</p>
                     ))}
-                  <h3>
+                  {/* <h3>
                     <span>Contat</span>o
                   </h3>
                   {countryInfo.contacts &&
@@ -169,7 +169,7 @@ export function WorldMap() {
                         <p>{contact.role}</p>
                         <p>{contact.email}</p>
                       </div>
-                    ))}
+                    ))} */}
                 </div>
               </div>
               <div className="regional-context">

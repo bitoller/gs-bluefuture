@@ -189,6 +189,8 @@ export const StyledRegion = styled.div`
     }
 
     p {
+      font-size: 1rem;
+      line-height: 25px;
       color: var(--color-gray-2);
       text-align: start;
       margin-top: 0.625rem;
