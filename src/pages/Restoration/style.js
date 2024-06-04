@@ -57,10 +57,14 @@ export const StyledRestoration = styled.main`
     width: 100%;
   }
 
+  .restoration-container p {
+    color: #686868;
+  }
+
   .first-container,
   .third-container,
   .fifth-container {
-    background-color: var(--color-accent);
+    background-color: #bbefff;
     display: flex;
     flex-direction: column;
     gap: 1.875rem;
@@ -74,7 +78,7 @@ export const StyledRestoration = styled.main`
 
   .second-container,
   .fourth-container {
-    background-color: var(--color-primary);
+    background-color: #dcf6ff;
     display: flex;
     flex-direction: column;
     gap: 1.875rem;
@@ -93,6 +97,8 @@ export const StyledRestoration = styled.main`
   .fifth-container > h3 {
     font-size: 1.5625rem;
     font-weight: 500;
+    text-align: center;
+    color: var(--color-primary);
   }
 
   .first-container > div,
@@ -110,7 +116,11 @@ export const StyledRestoration = styled.main`
   .third-container > div > img,
   .fourth-container > div > img,
   .fifth-container > div > img {
-    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    max-width: 300px;
+    max-height: 220px;
   }
 
   .monitoring-container {
@@ -187,6 +197,10 @@ export const StyledRestoration = styled.main`
     .fourth-container > div > img,
     .fifth-container > div > img {
       width: 80%;
+    }
+
+    p {
+      font-size: 1rem;
     }
   }
 `;
