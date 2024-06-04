@@ -65,6 +65,13 @@ export const StyledMonitoring = styled.main`
     width: 80%;
   }
 
+  .second-section > img,
+  .third-section > img {
+    border-radius: 50%;
+    width: 255.48px;
+    height: 255.48px;
+  }
+
   .second-section-text-container,
   .third-section-text-container {
     display: flex;
