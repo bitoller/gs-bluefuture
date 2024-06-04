@@ -54,7 +54,7 @@ O projeto está em desenvolvimento.
 - [Veja o nosso site funcionando](#)
 - [Veja o repositório do nosso projeto no GitHub](https://github.com/bitoller/global-solution-bluefuture)
 - [Veja o Figma do nosso projeto](https://www.figma.com/design/P8bYNePWpcz4PxlcLPAk1F/Blue-Future?node-id=151-2&t=pPEU42JyHkSqW7Ka-0)
-- [Veja nosso vídeo de apresentação no YouTube](#)
+- [Veja nosso vídeo de apresentação no YouTube](https://www.youtube.com/watch?v=avXvERKMJb8)
 
 Neste repositório, você tem acesso a todos os arquivos e códigos da aplicação.<br/>
 
