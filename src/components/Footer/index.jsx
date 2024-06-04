@@ -44,5 +44,3 @@ export function Footer() {
     </StyledFooter>
   );
 }
-
-/* TODO: arrumar tamanho da logo dos sponsors. tamanhos nao batem e parecem estar tortos. - feito */
