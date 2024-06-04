@@ -159,17 +159,6 @@ export function WorldMap() {
                     countryInfo.countries.map((country) => (
                       <p key={country}>{country}</p>
                     ))}
-                  {/* <h3>
-                    <span>Contat</span>o
-                  </h3>
-                  {countryInfo.contacts &&
-                    countryInfo.contacts.map((contact) => (
-                      <div key={contact.email}>
-                        <p>{contact.name}</p>
-                        <p>{contact.role}</p>
-                        <p>{contact.email}</p>
-                      </div>
-                    ))} */}
                 </div>
               </div>
               <div className="regional-context">
@@ -220,7 +209,3 @@ export function WorldMap() {
     </div>
   );
 }
-
-/* TODO: ao fazer o hover nos paises, as frases que aparecem nao estao no mesmo formato para todas */
-/* TODO: ao clicar em um pais (australia por ex), o texto dentro do quadrado de paises incluidos vaza pra fora,
-verificar outros tanto desktop/responsivo */
