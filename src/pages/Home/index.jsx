@@ -4,12 +4,16 @@ import { BackToTopArrow } from "../../components/BackToTopArrow";
 import { Footer } from "../../components/Footer";
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
+import "intersection-observer";
 import { StyledHome } from "./style";
 
 export function Home() {
   const [users, setUsers] = useState([]);
+  const [animate, setAnimate] = useState(false);
   const [isVideoVisible, setIsVideoVisible] = useState(false);
-  const [isVideoCoverVisible, setIsVideoCoverVisible] = useState(true);
+  const [isVideoCoverVisible, setIsVideoCoverVisible] = useState(false);
+  const containerRef = useRef(null);
+  const videoContainerRef = useRef(null);
   const coverRef = useRef(null);
 
   useEffect(() => {
@@ -33,6 +37,38 @@ export function Home() {
     };
 
     fetchUsers();
+  }, []);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1,
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target === containerRef.current) {
+            setAnimate(true);
+          }
+          if (entry.target === videoContainerRef.current) {
+            setIsVideoCoverVisible(true);
+          }
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, options);
+    if (containerRef.current) observer.observe(containerRef.current);
+    if (videoContainerRef.current) observer.observe(videoContainerRef.current);
+
+    return () => {
+      if (containerRef.current) observer.unobserve(containerRef.current);
+      if (videoContainerRef.current)
+        observer.unobserve(videoContainerRef.current);
+    };
   }, []);
 
   const getGitHubUser = async (user, storedUser) => {
@@ -65,9 +101,14 @@ export function Home() {
       <ImagesCarousel />
       <StyledHome>
         <h1>Bem-vindo ao mundo dos Recifes de Corais!</h1>
-        <section className="video-container">
-          {isVideoCoverVisible && (
-            <div ref={coverRef} className="video-cover">
+        <section ref={videoContainerRef} className="video-container">
+          {!isVideoVisible && (
+            <div
+              ref={coverRef}
+              className={`video-cover ${
+                isVideoCoverVisible ? "animate-in" : ""
+              }`}
+            >
               <div className="cover-content">
                 <h2>Vídeo Pitch</h2>
                 <p>
@@ -95,10 +136,14 @@ export function Home() {
             ></iframe>
           )}
         </section>
-        <section className="group-container">
+        <section ref={containerRef} className="group-container">
           <h2>Conheça os devs do Grupo TC:</h2>
           <div className="group-cards">
-            <div className="color-group-1 group-member">
+            <div
+              className={`color-group-1 group-member ${
+                animate ? "animate-left" : ""
+              }`}
+            >
               <a
                 href="https://www.linkedin.com/in/bianca-toller"
                 target="_blank"
@@ -123,7 +168,11 @@ export function Home() {
                 </div>
               </a>
             </div>
-            <div className="color-group-2 group-member">
+            <div
+              className={`color-group-2 group-member ${
+                animate ? "animate-right" : ""
+              }`}
+            >
               <a href="https://www.linkedin.com/in/bruno-marc/" target="_blank">
                 <div className="member-pic-container">
                   {users.length > 1 && (
@@ -152,3 +201,6 @@ export function Home() {
     </>
   );
 }
+
+/* TODO: remover a animacao do video, talvez colocar um hover onde ai o card laranja vai um pouco pra esquerda e volta
+quando o mouse sai */

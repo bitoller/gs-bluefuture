@@ -1,7 +1,18 @@
 import videoWaveCover from "../../assets/video/video-wave-cover.png";
 import videoPlayer from "../../assets/video/video-player.png";
 import waveBtn from "../../assets/video/btn-wave.png";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const slideInCover = keyframes`
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
 
 export const StyledHome = styled.main`
   padding: 1.25rem;
@@ -136,6 +147,34 @@ export const StyledHome = styled.main`
     z-index: 1;
   }
 
+  .video-cover.slide-out {
+    animation: slideOutLeft 0.5s forwards;
+  }
+
+  @keyframes slideOutLeft {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+
+  .animate-in {
+    animation: ${slideInCover} 1.5s forwards;
+  }
+
+  @keyframes slideWave {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
   .group-container {
     display: flex;
     flex-direction: column;
@@ -211,6 +250,36 @@ export const StyledHome = styled.main`
   .member-info-stack {
     color: var(--color-gray-1);
     font-size: 1.25rem;
+  }
+
+  .animate-left {
+    animation: slideInLeft 2s forwards;
+  }
+
+  .animate-right {
+    animation: slideInRight 2s forwards;
+  }
+
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 
   @media (max-width: 768px) {
