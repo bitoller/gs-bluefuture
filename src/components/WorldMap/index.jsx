@@ -215,9 +215,6 @@ export function WorldMap() {
               </div>
             </div>
           )}
-          <div className="section">
-            <img src={coralGraphic} alt={"gráfico sobre corais"} />
-          </div>
         </StyledRegion>
       )}
     </div>

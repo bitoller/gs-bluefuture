@@ -360,15 +360,4 @@ export const StyledRegion = styled.div`
     background-color: #0b6cb1;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
   }
-
-  .section {
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    img {
-      width: 70%;
-    }
-  }
 `;
