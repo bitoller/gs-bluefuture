@@ -119,8 +119,8 @@ export const StyledRestoration = styled.main`
     display: flex;
     align-items: center;
     border-radius: 3px;
-    max-width: 300px;
-    max-height: 220px;
+    max-width: 18.75rem;
+    max-height: 13.75rem;
   }
 
   .monitoring-container {
@@ -197,10 +197,6 @@ export const StyledRestoration = styled.main`
     .fourth-container > div > img,
     .fifth-container > div > img {
       width: 80%;
-    }
-
-    p {
-      font-size: 1rem;
     }
   }
 `;

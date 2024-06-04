@@ -146,9 +146,7 @@ export const StyledHome = styled.main`
       transform: translateX(0);
     }
     to {
-      transform: translateX(
-        -100%
-      ); /* Adjust the distance for the desired slide */
+      transform: translateX(-100%);
     }
   }
 
@@ -299,8 +297,8 @@ export const StyledHome = styled.main`
 
   @media (max-width: 1562px) {
     .group-member {
-      min-width: 226px;
-      min-height: 451px;
+      min-width: 14.125rem;
+      min-height: 28.1875rem;
       height: auto;
     }
   }
