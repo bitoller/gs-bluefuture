@@ -190,7 +190,7 @@ export const StyledRegion = styled.div`
 
     p {
       font-size: 1rem;
-      line-height: 25px;
+      line-height: 1.5625rem;
       color: var(--color-gray-2);
       text-align: start;
       margin-top: 0.625rem;
