@@ -159,6 +159,15 @@ export const StyledHome = styled.main`
     font-size: 1.875rem;
   }
 
+  .group-container > p {
+    color: var(--color-gray-4);
+  }
+
+  .group-container > p > span {
+    color: #e91c5d;
+    font-weight: 500;
+  }
+
   .group-cards {
     display: flex;
     flex-wrap: wrap;

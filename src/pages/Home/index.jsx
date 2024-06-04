@@ -97,7 +97,7 @@ export function Home() {
           {!isVideoVisible && (
             <div ref={coverRef} className="video-cover">
               <div className="cover-content">
-                <h2>Video Pitch</h2>
+                <h2>Vídeo Pitch</h2>
                 <p>
                   A importância dos recifes de corais é imensurável, pois servem
                   como habitat essencial para cerca de 25% de toda a vida
@@ -125,6 +125,10 @@ export function Home() {
         </section>
         <section ref={containerRef} className="group-container">
           <h2>Conheça os devs do Grupo TC:</h2>
+          <p>
+            Somos alunos do segundo semestre de Engenharia de Software na
+            <span> FIAP</span>
+          </p>
           <div className="group-cards">
             <div
               className={`color-group-1 group-member ${
@@ -189,5 +193,4 @@ export function Home() {
   );
 }
 
-/* TODO: remover a animacao do video, talvez colocar um hover onde ai o card laranja vai um pouco pra esquerda e volta
-quando o mouse sai */
+/* TODO: fazer a transicao entre o video de mentira e o de verdade um pouco menos violenta */
