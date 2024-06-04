@@ -48,7 +48,7 @@ export const StyledFooter = styled.footer`
   }
 
   .sponsors-container > img {
-    width: 10%;
+    width: 12%;
     height: auto;
   }
 

@@ -45,4 +45,4 @@ export function Footer() {
   );
 }
 
-/* TODO: arrumar tamanho da logo dos sponsors. tamanhos nao batem e parecem estar tortos. */
+/* TODO: arrumar tamanho da logo dos sponsors. tamanhos nao batem e parecem estar tortos. - feito */
