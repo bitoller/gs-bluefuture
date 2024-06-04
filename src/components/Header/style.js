@@ -1,4 +1,4 @@
-import WaveMenuTop from "../../assets/wave-menu-top.svg";
+import waveMenuTop from "../../assets/backgrounds/wave-menu-top.svg";
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
@@ -7,7 +7,7 @@ export const StyledHeader = styled.header`
   align-items: center;
   gap: 1.5625rem;
   padding: 1.25rem;
-  background-image: url(${WaveMenuTop});
+  background-image: url(${waveMenuTop});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

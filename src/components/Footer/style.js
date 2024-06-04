@@ -1,4 +1,4 @@
-import WaveMenuBottom from "../../assets/wave-menu-bottom.svg";
+import waveMenuBottom from "../../assets/backgrounds/wave-menu-bottom.svg";
 import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
@@ -7,7 +7,7 @@ export const StyledFooter = styled.footer`
   align-items: flex-end;
   gap: 1.5625rem;
   padding: 1.25rem;
-  background-image: url(${WaveMenuBottom});
+  background-image: url(${waveMenuBottom});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
