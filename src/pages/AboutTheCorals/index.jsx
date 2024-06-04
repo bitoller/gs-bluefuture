@@ -68,5 +68,3 @@ export function About() {
     </>
   );
 }
-
-/* TODO: arrumar o fundo azul claro atras do texto no responsivo, ele tem um espaco entre a imagem e ele */

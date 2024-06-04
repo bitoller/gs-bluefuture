@@ -9,7 +9,9 @@ export function PageNotFound() {
         <img
           className="not-found-img"
           src={notFoundImg}
-          alt={"imagem de dois peixes laranja no meio de uma anêmona."}
+          alt={
+            "imagem de dois peixes laranja no meio de uma anêmona. Credit: Gregory Piper / Ocean Image Bank"
+          }
         />
         <div className="text-container">
           <p>Você encontrou o Nemo, mas não a página que estava procurando.</p>

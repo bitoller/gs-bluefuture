@@ -92,3 +92,14 @@ export function ImagesCarousel({ height }) {
 }
 
 /* TODO: ver o que vai ser feito sobre as frases por img. talvez diminuir para frases por pagina. popular as frases */
+/* TODO: arrumar o espaco entre as imagens do carrossel e o resto da pagina no responsivo */
+
+
+/* creditos:
+coral-reef-1: Credit: Brook Peterson / Ocean Image Bank
+coral-reef-2: Credit: Renata Romeo / Ocean Image Bank
+coral-reef-3: Credit: Cinzia Osele Bismarck / Ocean Image Bank
+coral-reef-4: Credit: Gregory Piper / Ocean Image Bank
+coral-reef-5: Credit: Kimberly Jeffries / Ocean Image Bank
+coral-reef-6: Credit: Martin Colognoli / Ocean Image Bank
+*/
