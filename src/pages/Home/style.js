@@ -1,18 +1,7 @@
 import videoWaveCover from "../../assets/video/video-wave-cover.png";
 import videoPlayer from "../../assets/video/video-player.png";
 import waveBtn from "../../assets/video/btn-wave.png";
-import styled, { keyframes } from "styled-components";
-
-const slideInCover = keyframes`
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-`;
+import styled from "styled-components";
 
 export const StyledHome = styled.main`
   padding: 1.25rem;
@@ -145,25 +134,6 @@ export const StyledHome = styled.main`
     background: url(${videoWaveCover}) no-repeat;
     background-size: cover;
     z-index: 1;
-  }
-
-  .video-cover.slide-out {
-    animation: slideOutLeft 0.5s forwards;
-  }
-
-  @keyframes slideOutLeft {
-    0% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-  }
-
-  .animate-in {
-    animation: ${slideInCover} 1.5s forwards;
   }
 
   @keyframes slideWave {

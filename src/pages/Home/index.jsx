@@ -11,7 +11,6 @@ export function Home() {
   const [users, setUsers] = useState([]);
   const [animate, setAnimate] = useState(false);
   const [isVideoVisible, setIsVideoVisible] = useState(false);
-  const [isVideoCoverVisible, setIsVideoCoverVisible] = useState(false);
   const containerRef = useRef(null);
   const videoContainerRef = useRef(null);
   const coverRef = useRef(null);
@@ -52,9 +51,6 @@ export function Home() {
           if (entry.target === containerRef.current) {
             setAnimate(true);
           }
-          if (entry.target === videoContainerRef.current) {
-            setIsVideoCoverVisible(true);
-          }
           observer.unobserve(entry.target);
         }
       });
@@ -62,12 +58,9 @@ export function Home() {
 
     const observer = new IntersectionObserver(observerCallback, options);
     if (containerRef.current) observer.observe(containerRef.current);
-    if (videoContainerRef.current) observer.observe(videoContainerRef.current);
 
     return () => {
       if (containerRef.current) observer.unobserve(containerRef.current);
-      if (videoContainerRef.current)
-        observer.unobserve(videoContainerRef.current);
     };
   }, []);
 
@@ -92,7 +85,6 @@ export function Home() {
 
   const handleCoverClick = () => {
     setIsVideoVisible(true);
-    setIsVideoCoverVisible(false);
   };
 
   return (
@@ -103,14 +95,9 @@ export function Home() {
         <h1>Bem-vindo ao mundo dos Recifes de Corais!</h1>
         <section ref={videoContainerRef} className="video-container">
           {!isVideoVisible && (
-            <div
-              ref={coverRef}
-              className={`video-cover ${
-                isVideoCoverVisible ? "animate-in" : ""
-              }`}
-            >
+            <div ref={coverRef} className="video-cover">
               <div className="cover-content">
-                <h2>Vídeo Pitch</h2>
+                <h2>Video Pitch</h2>
                 <p>
                   A importância dos recifes de corais é imensurável, pois servem
                   como habitat essencial para cerca de 25% de toda a vida
