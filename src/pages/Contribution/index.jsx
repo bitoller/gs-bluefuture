@@ -1,3 +1,5 @@
+import oceanCleaning from "../../assets/coral-reefs/ocean-cleaning.png";
+import bulletPoint from "../../assets/icons/bullet-point.svg";
 import { Header } from "../../components/Header";
 import { ImagesCarousel } from "../../components/ImagesCarousel";
 import { BackToTopArrow } from "../../components/BackToTopArrow";
@@ -10,10 +12,92 @@ export function Contribution() {
       <Header />
       <ImagesCarousel />
       <StyledContribution>
-        <h1>eu sou a doe screen</h1>
+        <h1>Como posso ajudar a manter os recifes de corais</h1>
+        <section className="donate-container"></section>
+        <section className="help-container">
+          <h2>De quais outras maneiras posso ajudar?</h2>
+          <div className="all-content-container">
+            <div className="all-text-container">
+              <div className="text-snippet">
+                <img src={bulletPoint} alt={"ícone de um círculo azul"} />
+                <p>
+                  Reduza o uso de plástico: Evite produtos plásticos de uso
+                  único e opte por alternativas reutilizáveis. O plástico pode
+                  se acumular nos oceanos, poluindo os recifes de corais e
+                  prejudicando a vida marinha.
+                </p>
+              </div>
+              <div className="text-snippet">
+                <img src={bulletPoint} alt={"ícone de um círculo azul"} />
+                <p>
+                  Escolha produtos sustentáveis: Opte por produtos de empresas
+                  que seguem práticas sustentáveis de pesca e produção,
+                  reduzindo assim a pressão sobre os ecossistemas marinhos.
+                </p>
+              </div>
+              <div className="text-snippet">
+                <img src={bulletPoint} alt={"ícone de um círculo azul"} />
+                <p>
+                  Pratique mergulho responsável: Ao mergulhar ou fazer snorkel
+                  nos recifes de corais, siga as práticas de mergulho
+                  responsável para evitar danos aos corais e à vida marinha.
+                </p>
+              </div>
+              <div className="text-snippet">
+                <img src={bulletPoint} alt={"ícone de um círculo azul"} />
+                <p>
+                  Apoie organizações de conservação: Faça doações ou participe
+                  de programas de voluntariado de organizações que trabalham na
+                  conservação e restauração dos recifes de corais.
+                </p>
+              </div>
+              <div className="text-snippet">
+                <img src={bulletPoint} alt={"ícone de um círculo azul"} />
+                <p>
+                  Eduque-se e conscientize os outros: Aprenda mais sobre os
+                  recifes de corais e compartilhe esse conhecimento com amigos,
+                  familiares e comunidades. Quanto mais pessoas estiverem
+                  cientes da importância dos recifes de corais, maior será o
+                  apoio à sua proteção.
+                </p>
+              </div>
+              <div className="text-snippet">
+                <img src={bulletPoint} alt={"ícone de um círculo azul"} />
+                <p>
+                  Reduza as emissões de carbono: Reduza suas emissões de carbono
+                  usando transporte público, bicicleta ou caminhando sempre que
+                  possível e optando por fontes de energia renovável.
+                </p>
+              </div>
+              <div className="text-snippet">
+                <img src={bulletPoint} alt={"ícone de um círculo azul"} />
+                <p>
+                  Participe de limpezas costeiras: Junte-se a iniciativas de
+                  limpeza de praias e costas para ajudar a remover o lixo que
+                  pode prejudicar os recifes de corais.
+                </p>
+              </div>
+              <div className="text-snippet">
+                <img src={bulletPoint} alt={"ícone de um círculo azul"} />
+                <p>
+                  Seja um consumidor responsável de frutos do mar: Escolha
+                  frutos do mar sustentáveis e evite espécies ameaçadas de
+                  sobre-exploração.
+                </p>
+              </div>
+            </div>
+            <img
+              src={oceanCleaning}
+              alt={"imagem de uma pessoa ajudando a limpar uma praia"}
+              className="trash-img"
+            />
+          </div>
+        </section>
       </StyledContribution>
       <BackToTopArrow />
       <Footer />
     </>
   );
 }
+
+/* TODO: terminar a pagina e estilizacao */
