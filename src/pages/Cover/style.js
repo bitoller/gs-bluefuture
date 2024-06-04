@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import waveBtn from "../../assets/wave-cover-btn.png";
 
 export const StyledCover = styled.main`
   .video-container {
@@ -17,7 +18,7 @@ export const StyledCover = styled.main`
     transform: translate(-50%, -50%);
   }
 
-  .video-container > a {
+  .dive-button {
     position: absolute;
     top: 80%;
     left: 50%;
@@ -25,14 +26,18 @@ export const StyledCover = styled.main`
     padding: 1.25rem;
     font-size: 1.875rem;
     font-weight: 700;
-    text-align: center;
-    background-color: var(--color-primary);
-    border: none;
+    background: var(--color-primary);
+    background-image: url(${waveBtn});
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
     border-radius: 5px;
-    transition: background-color 0.3s;
-  }
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+    transition: background-position 1.8s ease, background-color 1.2s;
+    text-align: center;
 
-  .video-container > a:hover {
-    background-color: var(--color-accent);
+    &:hover {
+      background-position: 500% 100%;
+    }
   }
 `;

@@ -12,7 +12,9 @@ export function Cover() {
           />
           O seu browser não suporta essa tag de vídeo.
         </video>
-        <Link to="/home">VAMOS MERGULHAR?</Link>
+        <Link to="/home" className="dive-button">
+          VAMOS MERGULHAR?
+        </Link>
       </div>
     </StyledCover>
   );
