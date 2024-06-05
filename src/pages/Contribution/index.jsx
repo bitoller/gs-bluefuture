@@ -6,12 +6,43 @@ import { ImagesCarousel } from "../../components/ImagesCarousel";
 import { BackToTopArrow } from "../../components/BackToTopArrow";
 import { Footer } from "../../components/Footer";
 import { StyledContribution } from "./style";
+import coralReef10 from "../../assets/coral-reefs/coral-reef-10.jpg";
+import coralReef11 from "../../assets/coral-reefs/coral-reef-11.jpg";
+import coralReef12 from "../../assets/coral-reefs/coral-reef-12.jpg";
+import coralReef13 from "../../assets/coral-reefs/coral-reef-13.jpg";
 
 export function Contribution() {
+  const aboutItems = [
+    {
+      image: coralReef10,
+      textLeft: "Os recifes de corais dependem da ...",
+      textRight: "...nossa ajuda para sobreviver",
+      alt: "imagem antes e depois de um recife de corais morto. Credit: Martin Colognoli / Ocean Image Bank",
+    },
+    {
+      image: coralReef11,
+      textLeft: "Sem nossa ajuda, os recifes de corais...",
+      textRight: "...podem desaparecer até 2050",
+      alt: "imagem antes e depois de um recife de corais morto. Credit: Martin Colognoli",
+    },
+    {
+      image: coralReef12,
+      textLeft: "Ajude a restaurar ...",
+      textRight: "...os recifes de corais",
+      alt: "imagem de um mergulhador replantando mudas de corais. Credit: Martin Colognoli / Ocean Image Bank",
+    },
+    {
+      image: coralReef13,
+      textLeft: "Sua ação hoje garante...",
+      textRight: "...um oceano saudável amanhã",
+      alt: "imagem de um recife de corais com cores vibrantes. Credit: Alex Mustard / Ocean Image Bank",
+    },
+  ];
+
   return (
     <>
       <Header />
-      <ImagesCarousel />
+      <ImagesCarousel items={aboutItems} />
       <StyledContribution>
         <h1>Como posso ajudar a manter os recifes de corais</h1>
         <section className="donate-container">
