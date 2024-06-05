@@ -1,4 +1,5 @@
 import oceanCleaning from "../../assets/coral-reefs/ocean-cleaning.png";
+import donateImg from "../../assets/coral-reefs/donate-img-1.png";
 import bulletPoint from "../../assets/icons/bullet-point.svg";
 import { Header } from "../../components/Header";
 import { ImagesCarousel } from "../../components/ImagesCarousel";
@@ -13,7 +14,45 @@ export function Contribution() {
       <ImagesCarousel />
       <StyledContribution>
         <h1>Como posso ajudar a manter os recifes de corais</h1>
-        <section className="donate-container"></section>
+        <section className="donate-container">
+          <div className="donate-container-title">
+            <h3>Adote um coral e acompanhe todo o seu desenvolvimento</h3>
+            <p>
+              Com sua contribuição, podemos restaurar os recifes de corais,
+              protegendo a vida marinha e garantindo a saúde dos oceanos para as
+              gerações futuras. Junte-se a nós nessa missão vital hoje mesmo.
+            </p>
+          </div>
+          <div className="donate-levels">
+            <h4>Niveis de ajuda</h4>
+            <ul>
+              <li className="donate-choices">
+                <img src={donateImg} alt="imagem de um coral" />
+                <h5>R$ 20</h5>
+                <p>
+                  Adote um coral: Dê um nome a ele, acompanhe seu crescimento e
+                  receba atualizações frequentes.
+                </p>
+              </li>
+              <li className="donate-choices">
+                <img src={donateImg} alt="imagem de um coral" />
+                <h5>R$ 60</h5>
+                <p>
+                  Tenha acesso ao monitoramento dos recifes e fique sempre por
+                  dentro do nosso progresso
+                </p>
+              </li>
+              <li className="donate-choices">
+                <img src={donateImg} alt="imagem de um coral" />
+                <h5>R$ 100</h5>
+                <p>
+                  Participe das nossas missões de replantio de corais como
+                  espectador.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
         <section className="help-container">
           <h2>De quais outras maneiras posso ajudar?</h2>
           <div className="all-content-container">
