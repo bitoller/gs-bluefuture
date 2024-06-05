@@ -20,37 +20,37 @@ const defaultItems = [
     image: coralReef1,
     textLeft: "Belo recife de corais 1",
     textRight: "Exploração submarina",
-    alt: "Imagem de um belo recife de corais 1",
+    alt: "Imagem de um recife de corais com peixes Credit: Brook Peterson / Ocean Image Bank",
   },
   {
     image: coralReef2,
     textLeft: "Belo recife de corais 2",
     textRight: "Vida marinha vibrante",
-    alt: "Imagem de um belo recife de corais 2",
+    alt: "Imagem de um recife de corais com anênoma Credit: Renata Romeo / Ocean Image Bank",
   },
   {
     image: coralReef3,
     textLeft: "Belo recife de corais 3",
     textRight: "Colorido e diversificado",
-    alt: "Imagem de um belo recife de corais 3",
+    alt: "Imagem de um recife de corais coloridos e peixes coloridos Credit: Cinzia Osele Bismarck / Ocean Image Bank",
   },
   {
     image: coralReef4,
     textLeft: "Belo recife de corais 4",
     textRight: "Um mundo subaquático",
-    alt: "Imagem de um belo recife de corais 4",
+    alt: "Imagem de um recife de corais com um mergulhador Gregory Piper / Ocean Image Bank",
   },
   {
     image: coralReef5,
     textLeft: "Belo recife de corais 5",
     textRight: "Tesouro do oceano",
-    alt: "Imagem de um belo recife de corais 5",
+    alt: "Imagem de um belo recife de corais Credit: Kimberly Jeffries / Ocean Image Bank",
   },
   {
     image: coralReef6,
     textLeft: "Belo recife de corais 6",
     textRight: "Beleza natural",
-    alt: "Imagem de um belo recife de corais 6",
+    alt: "Imagem a meia-água de um recife de corais: Martin Colognoli / Ocean Image Bank",
   },
 ];
 
