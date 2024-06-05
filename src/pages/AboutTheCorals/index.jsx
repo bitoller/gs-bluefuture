@@ -7,18 +7,27 @@ import { Footer } from "../../components/Footer";
 import { StyledAbout } from "./style.js";
 import coralReef7 from "../../assets/coral-reefs/coral-reef-7.jpg";
 import coralReef8 from "../../assets/coral-reefs/coral-reef-8.jpg";
+import coralReef9 from "../../assets/coral-reefs/coral-reef-9.jpg";
 
 export function About() {
   const aboutItems = [
     {
       image: coralReef7,
-      textLeft: "Utilize o mapa abaixo e saiba ",
+      textLeft: "Explore o mapa abaixo e saiba ",
       textRight: "mais sobres os recifes do mundo todo",
+      alt: "Imagem de uma tartaruga em um recife de corais  Credit: Jordan Robins / Ocean Image Bank",
     },
     {
       image: coralReef8,
-      textLeft: "Novo Coral 2",
-      textRight: "Beleza Marinha",
+      textLeft: "A importância dos recifes de",
+      textRight: "corais para nosso planeta ",
+      alt: "Imagem a meia-água de um recife de corais Credit: Matt Curnock / Ocean Image Bank",
+    },
+    {
+      image: coralReef9,
+      textLeft: "Descubra como os recifes de corais",
+      textRight: "são essenciais para milhões de vidas",
+      alt: "Imagem de uma tartaruga em um recife de corais  Credit: Gaby Barathieu / Ocean Image Bank",
     },
   ];
   return (

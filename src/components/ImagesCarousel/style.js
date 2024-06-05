@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 
 const fadeInLeft = keyframes`
   0% {
@@ -24,7 +24,7 @@ const fadeInRight = keyframes`
 
 export const StyledImagesCarousel = styled.div`
   width: 100%;
-  height: ${(props) => props.height || "calc(100vh - 5rem)"};
+  height: calc(100vh - 9rem);
   overflow: hidden;
   position: relative;
   top: 0;
@@ -45,7 +45,7 @@ export const StyledCarouselItem = styled.div`
 
 export const StyledTextOverlayLeft = styled.div`
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 25%;
   transform: translate(-50%, -50%);
   color: white;
@@ -55,6 +55,13 @@ export const StyledTextOverlayLeft = styled.div`
   padding: 1rem;
   text-align: center;
   animation: ${fadeInLeft} 1s forwards;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+
+  ${({ isEmpty }) =>
+    isEmpty &&
+    css`
+      display: none;
+    `}
 
   @media (max-width: 768px) {
     font-size: 2rem;
@@ -67,16 +74,24 @@ export const StyledTextOverlayLeft = styled.div`
 
 export const StyledTextOverlayRight = styled.div`
   position: absolute;
-  top: 60%;
+  top: 50%;
   right: 25%;
   transform: translate(50%, -50%);
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem;
   text-align: center;
   animation: ${fadeInRight} 1s forwards;
+  border-radius: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  ${({ isEmpty }) =>
+    isEmpty &&
+    css`
+      display: none;
+    `}
 
   @media (max-width: 768px) {
     font-size: 2rem;

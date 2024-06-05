@@ -18,52 +18,53 @@ import {
 const defaultItems = [
   {
     image: coralReef1,
-    textLeft: "Belo recife de corais 1",
-    textRight: "Exploração submarina",
-    alt: "Imagem de um recife de corais com peixes Credit: Brook Peterson / Ocean Image Bank",
+    textLeft: "Descubra a beleza e",
+    textRight: "importância dos recifes de corais",
+    alt: "imagem de um recife de corais com peixes. Credit: Brook Peterson / Ocean Image Bank",
   },
   {
     image: coralReef2,
-    textLeft: "Belo recife de corais 2",
-    textRight: "Vida marinha vibrante",
-    alt: "Imagem de um recife de corais com anênoma Credit: Renata Romeo / Ocean Image Bank",
+    textLeft: "Explore os ecossistemas que",
+    textRight: "sustentam 25% da vida marinha.",
+    alt: "imagem de um recife de corais com peixes dentro de uma anêmona. Credit: Renata Romeo / Ocean Image Bank",
   },
   {
     image: coralReef3,
-    textLeft: "Belo recife de corais 3",
-    textRight: "Colorido e diversificado",
-    alt: "Imagem de um recife de corais coloridos e peixes coloridos Credit: Cinzia Osele Bismarck / Ocean Image Bank",
+    textLeft: "",
+    textRight: "",
+    alt: "imagem de um recife de corais e peixes coloridos. Credit: Cinzia Osele Bismarck / Ocean Image Bank",
   },
   {
     image: coralReef4,
-    textLeft: "Belo recife de corais 4",
-    textRight: "Um mundo subaquático",
-    alt: "Imagem de um recife de corais com um mergulhador Gregory Piper / Ocean Image Bank",
+    textLeft: "Saiba como os recifes de corais",
+    textRight: "sustentam milhões de vidas",
+    alt: "imagem de um recife de corais com um mergulhador. Credit: Gregory Piper / Ocean Image Bank",
   },
   {
     image: coralReef5,
-    textLeft: "Belo recife de corais 5",
-    textRight: "Tesouro do oceano",
-    alt: "Imagem de um belo recife de corais Credit: Kimberly Jeffries / Ocean Image Bank",
+    textLeft: "",
+    textRight: "",
+    alt: "imagem de um belo recife de corais. Credit: Kimberly Jeffries / Ocean Image Bank",
   },
   {
     image: coralReef6,
-    textLeft: "Belo recife de corais 6",
-    textRight: "Beleza natural",
-    alt: "Imagem a meia-água de um recife de corais: Martin Colognoli / Ocean Image Bank",
+    textLeft: "Mergulhe na fascinante vida",
+    textRight: "dos recifes de corais",
+    alt: "imagem a meia-água de um recife de corais. Credit: Martin Colognoli / Ocean Image Bank",
   },
 ];
 
-export function ImagesCarousel({
-  height = "calc(100vh - 5rem)",
-  items = defaultItems,
-}) {
+export function ImagesCarousel({ items = defaultItems }) {
   const carouselItems = items.map((item, index) => (
     <StyledCarouselItem key={index}>
       <img src={item.image} alt={item.alt} className="carousel-img" />
       <div>
-        <StyledTextOverlayLeft>{item.textLeft}</StyledTextOverlayLeft>
-        <StyledTextOverlayRight>{item.textRight}</StyledTextOverlayRight>
+        {item.textLeft && (
+          <StyledTextOverlayLeft>{item.textLeft}</StyledTextOverlayLeft>
+        )}
+        {item.textRight && (
+          <StyledTextOverlayRight>{item.textRight}</StyledTextOverlayRight>
+        )}
       </div>
     </StyledCarouselItem>
   ));
@@ -76,7 +77,7 @@ export function ImagesCarousel({
   };
 
   return (
-    <StyledImagesCarousel height={height}>
+    <StyledImagesCarousel>
       <AliceCarousel
         items={carouselItems}
         autoPlay={true}
@@ -93,12 +94,11 @@ export function ImagesCarousel({
 }
 
 ImagesCarousel.propTypes = {
-  height: PropTypes.string,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.string.isRequired,
-      textLeft: PropTypes.string.isRequired,
-      textRight: PropTypes.string.isRequired,
+      textLeft: PropTypes.string,
+      textRight: PropTypes.string,
       alt: PropTypes.string,
     })
   ),
@@ -106,12 +106,3 @@ ImagesCarousel.propTypes = {
 
 /* TODO: ver o que vai ser feito sobre as frases por img. talvez diminuir para frases por pagina. popular as frases */
 /* TODO: arrumar o espaco entre as imagens do carrossel e o resto da pagina no responsivo */
-
-/* creditos:
-coral-reef-1: Credit: Brook Peterson / Ocean Image Bank
-coral-reef-2: Credit: Renata Romeo / Ocean Image Bank
-coral-reef-3: Credit: Cinzia Osele Bismarck / Ocean Image Bank
-coral-reef-4: Credit: Gregory Piper / Ocean Image Bank
-coral-reef-5: Credit: Kimberly Jeffries / Ocean Image Bank
-coral-reef-6: Credit: Martin Colognoli / Ocean Image Bank
-*/
