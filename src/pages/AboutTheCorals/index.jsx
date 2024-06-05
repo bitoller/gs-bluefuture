@@ -13,21 +13,21 @@ export function About() {
   const aboutItems = [
     {
       image: coralReef7,
-      textLeft: "Explore o mapa abaixo e saiba ",
-      textRight: "mais sobres os recifes do mundo todo",
-      alt: "Imagem de uma tartaruga em um recife de corais  Credit: Jordan Robins / Ocean Image Bank",
+      textLeft: "Explore o mapa abaixo e saiba...",
+      textRight: "...mais sobres os recifes do mundo todo",
+      alt: "imagem de uma tartaruga em um recife de corais. Credit: Jordan Robins / Ocean Image Bank",
     },
     {
       image: coralReef8,
-      textLeft: "A importância dos recifes de",
-      textRight: "corais para nosso planeta ",
-      alt: "Imagem a meia-água de um recife de corais Credit: Matt Curnock / Ocean Image Bank",
+      textLeft: "A importância dos recifes de...",
+      textRight: "...corais para nosso planeta ",
+      alt: "imagem a meia-água de um recife de corais. Credit: Matt Curnock / Ocean Image Bank",
     },
     {
       image: coralReef9,
-      textLeft: "Descubra como os recifes de corais",
-      textRight: "são essenciais para milhões de vidas",
-      alt: "Imagem de uma tartaruga em um recife de corais  Credit: Gaby Barathieu / Ocean Image Bank",
+      textLeft: "Descubra como os recifes de corais...",
+      textRight: "...são essenciais para milhões de vidas",
+      alt: "imagem de uma tartaruga em um recife de corais.  Credit: Gaby Barathieu / Ocean Image Bank",
     },
   ];
   return (
