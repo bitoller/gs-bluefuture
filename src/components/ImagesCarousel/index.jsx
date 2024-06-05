@@ -20,37 +20,37 @@ const defaultItems = [
     image: coralReef1,
     textLeft: "Belo recife de corais 1",
     textRight: "Exploração submarina",
-    alt: "Imagem de um recife de corais com peixes Credit: Brook Peterson / Ocean Image Bank",
+    alt: "imagem de um recife de corais com peixes. Credit: Brook Peterson / Ocean Image Bank",
   },
   {
     image: coralReef2,
     textLeft: "Belo recife de corais 2",
     textRight: "Vida marinha vibrante",
-    alt: "Imagem de um recife de corais com anênoma Credit: Renata Romeo / Ocean Image Bank",
+    alt: "imagem de um recife de corais com peixes dentro de uma anêmona. Credit: Renata Romeo / Ocean Image Bank",
   },
   {
     image: coralReef3,
     textLeft: "Belo recife de corais 3",
     textRight: "Colorido e diversificado",
-    alt: "Imagem de um recife de corais coloridos e peixes coloridos Credit: Cinzia Osele Bismarck / Ocean Image Bank",
+    alt: "imagem de um recife de corais e peixes coloridos. Credit: Cinzia Osele Bismarck / Ocean Image Bank",
   },
   {
     image: coralReef4,
     textLeft: "Belo recife de corais 4",
     textRight: "Um mundo subaquático",
-    alt: "Imagem de um recife de corais com um mergulhador Gregory Piper / Ocean Image Bank",
+    alt: "imagem de um recife de corais com um mergulhador. Credit: Gregory Piper / Ocean Image Bank",
   },
   {
     image: coralReef5,
     textLeft: "Belo recife de corais 5",
     textRight: "Tesouro do oceano",
-    alt: "Imagem de um belo recife de corais Credit: Kimberly Jeffries / Ocean Image Bank",
+    alt: "imagem de um belo recife de corais. Credit: Kimberly Jeffries / Ocean Image Bank",
   },
   {
     image: coralReef6,
     textLeft: "Belo recife de corais 6",
     textRight: "Beleza natural",
-    alt: "Imagem a meia-água de um recife de corais: Martin Colognoli / Ocean Image Bank",
+    alt: "imagem a meia-água de um recife de corais. Credit: Martin Colognoli / Ocean Image Bank",
   },
 ];
 
@@ -106,12 +106,3 @@ ImagesCarousel.propTypes = {
 
 /* TODO: ver o que vai ser feito sobre as frases por img. talvez diminuir para frases por pagina. popular as frases */
 /* TODO: arrumar o espaco entre as imagens do carrossel e o resto da pagina no responsivo */
-
-/* creditos:
-coral-reef-1: Credit: Brook Peterson / Ocean Image Bank
-coral-reef-2: Credit: Renata Romeo / Ocean Image Bank
-coral-reef-3: Credit: Cinzia Osele Bismarck / Ocean Image Bank
-coral-reef-4: Credit: Gregory Piper / Ocean Image Bank
-coral-reef-5: Credit: Kimberly Jeffries / Ocean Image Bank
-coral-reef-6: Credit: Martin Colognoli / Ocean Image Bank
-*/
