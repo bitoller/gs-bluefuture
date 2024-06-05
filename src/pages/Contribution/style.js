@@ -60,58 +60,58 @@ export const StyledContribution = styled.main`
     width: 100vw;
     background: radial-gradient(ellipse at bottom, #0d1d31 40%, #0c0d13 100%);
     height: auto;
-    padding: 20px 0;
+    padding: 1.25rem 0;
   }
 
   .donate-container-title {
-    max-width: 800px;
+    max-width: 50rem;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 1.25rem;
   }
 
   .donate-container-title > h3 {
     display: inline;
     background: var(--color-accent);
-    color: #fff;
-    margin-top: 10px;
+    color: var(--color-gray-1);
+    margin-top: 0.625rem;
     font-size: 2.5rem;
     line-height: 1.65;
-    padding: 0 15px;
+    padding: 0 0.9375rem;
     border-radius: 3px;
-    letter-spacing: 5px;
+    letter-spacing: 0.3125rem;
   }
 
   .donate-container-title > p {
     font-size: 1.5rem;
     margin-top: 2rem;
     font-weight: 500;
-    color: #fff;
+    color: var(--color-gray-1);
   }
 
   .donate-levels {
-    background-color: #fff;
-    max-width: 510px;
+    background-color: var(--color-gray-1);
+    max-width: 31.875rem;
     height: auto;
     border-radius: 5px;
   }
   .donate-levels > h4 {
     max-width: 100%;
     color: var(--color-accent);
-    background-color: #212427;
+    background-color: var(--color-gray-6);
     text-align: center;
-    padding: 15px;
+    padding: 0.9375rem;
     font-size: 1.2rem;
     font-weight: 600;
     border-radius: 4px 4px 0 0;
   }
 
   .donate-choices {
-    margin: 15px;
+    margin: 0.9375rem;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr;
-    gap: 15px;
-    border: 1px solid #212427;
+    gap: 0.9375rem;
+    border: 1px solid var(--color-gray-6);
     cursor: pointer;
   }
 
@@ -125,15 +125,16 @@ export const StyledContribution = styled.main`
   }
 
   .donate-choices > h5 {
-    padding-top: 10px;
-    font-size: 28px;
-    color: #212427;
+    padding-top: 0.625rem;
+    font-size: 1.75rem;
+    color: var(--color-gray-6);
   }
+
   .donate-choices > p {
     width: 80%;
-    color: #212427;
+    color: var(--color-gray-6);
     justify-items: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
   }
 
@@ -141,9 +142,11 @@ export const StyledContribution = styled.main`
     .trash-img {
       display: none;
     }
+
     .donate-container-title > h3 {
       font-size: 1.3rem;
     }
+
     .donate-container-title > p {
       font-size: 0.8rem;
     }

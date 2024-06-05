@@ -52,14 +52,15 @@ body::-webkit-scrollbar-track {
 }
 
 :root {
-  --color-primary: #0F71D3;
-  --color-accent: #F58B01;
-  --color-gray-1: #FFFFFF;
-  --color-gray-2: #7A7A7A;
+  --color-primary: #0f71d3;
+  --color-accent: #f58b01;
+  --color-gray-1: #ffffff;
+  --color-gray-2: #7a7a7a;
   --color-gray-3: #000000;
   --color-gray-4: #333333;
   --color-gray-5: #effafe;
-  --color-blue-1: #0B468A;
-  --color-blue-2: #5199BA;
+  --color-gray-6: #212427;
+  --color-blue-1: #0b468a;
+  --color-blue-2: #5199ba;
 }
 `;
