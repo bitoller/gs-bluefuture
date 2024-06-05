@@ -18,68 +18,38 @@ import {
 const defaultItems = [
   {
     image: coralReef1,
-<<<<<<< HEAD
     textLeft: "Descubra a beleza e",
     textRight: "importância dos recifes de corais",
-=======
-    textLeft: "Belo recife de corais 1",
-    textRight: "Exploração submarina",
->>>>>>> 3bddf51e71e51ddd95e1ae4c1a700c4eae355cbd
     alt: "imagem de um recife de corais com peixes. Credit: Brook Peterson / Ocean Image Bank",
   },
   {
     image: coralReef2,
-<<<<<<< HEAD
     textLeft: "Explore os ecossistemas que",
     textRight: "sustentam 25% da vida marinha.",
-=======
-    textLeft: "Belo recife de corais 2",
-    textRight: "Vida marinha vibrante",
->>>>>>> 3bddf51e71e51ddd95e1ae4c1a700c4eae355cbd
     alt: "imagem de um recife de corais com peixes dentro de uma anêmona. Credit: Renata Romeo / Ocean Image Bank",
   },
   {
     image: coralReef3,
-<<<<<<< HEAD
     textLeft: "",
     textRight: "",
-=======
-    textLeft: "Belo recife de corais 3",
-    textRight: "Colorido e diversificado",
->>>>>>> 3bddf51e71e51ddd95e1ae4c1a700c4eae355cbd
     alt: "imagem de um recife de corais e peixes coloridos. Credit: Cinzia Osele Bismarck / Ocean Image Bank",
   },
   {
     image: coralReef4,
-<<<<<<< HEAD
     textLeft: "Saiba como os recifes de corais",
     textRight: "sustentam milhões de vidas",
-=======
-    textLeft: "Belo recife de corais 4",
-    textRight: "Um mundo subaquático",
->>>>>>> 3bddf51e71e51ddd95e1ae4c1a700c4eae355cbd
     alt: "imagem de um recife de corais com um mergulhador. Credit: Gregory Piper / Ocean Image Bank",
   },
   {
     image: coralReef5,
-<<<<<<< HEAD
     textLeft: "",
     textRight: "",
-=======
-    textLeft: "Belo recife de corais 5",
-    textRight: "Tesouro do oceano",
->>>>>>> 3bddf51e71e51ddd95e1ae4c1a700c4eae355cbd
     alt: "imagem de um belo recife de corais. Credit: Kimberly Jeffries / Ocean Image Bank",
   },
   {
     image: coralReef6,
-<<<<<<< HEAD
     textLeft: "Mergulhe na fascinante vida",
     textRight: "dos recifes de corais",
-=======
-    textLeft: "Belo recife de corais 6",
-    textRight: "Beleza natural",
->>>>>>> 3bddf51e71e51ddd95e1ae4c1a700c4eae355cbd
     alt: "imagem a meia-água de um recife de corais. Credit: Martin Colognoli / Ocean Image Bank",
   },
 ];
