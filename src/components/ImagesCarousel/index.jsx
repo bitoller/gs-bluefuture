@@ -18,14 +18,14 @@ import {
 const defaultItems = [
   {
     image: coralReef1,
-    textLeft: "Descubra a beleza e",
-    textRight: "importância dos recifes de corais",
+    textLeft: "Descubra a beleza e...",
+    textRight: "...importância dos recifes de corais",
     alt: "imagem de um recife de corais com peixes. Credit: Brook Peterson / Ocean Image Bank",
   },
   {
     image: coralReef2,
-    textLeft: "Explore os ecossistemas que",
-    textRight: "sustentam 25% da vida marinha.",
+    textLeft: "Explore os ecossistemas que...",
+    textRight: "...sustentam 25% da vida marinha.",
     alt: "imagem de um recife de corais com peixes dentro de uma anêmona. Credit: Renata Romeo / Ocean Image Bank",
   },
   {
@@ -36,8 +36,8 @@ const defaultItems = [
   },
   {
     image: coralReef4,
-    textLeft: "Saiba como os recifes de corais",
-    textRight: "sustentam milhões de vidas",
+    textLeft: "Saiba como os recifes de corais...",
+    textRight: "...sustentam milhões de vidas",
     alt: "imagem de um recife de corais com um mergulhador. Credit: Gregory Piper / Ocean Image Bank",
   },
   {
@@ -48,8 +48,8 @@ const defaultItems = [
   },
   {
     image: coralReef6,
-    textLeft: "Mergulhe na fascinante vida",
-    textRight: "dos recifes de corais",
+    textLeft: "Mergulhe na fascinante vida...",
+    textRight: "...dos recifes de corais",
     alt: "imagem a meia-água de um recife de corais. Credit: Martin Colognoli / Ocean Image Bank",
   },
 ];
