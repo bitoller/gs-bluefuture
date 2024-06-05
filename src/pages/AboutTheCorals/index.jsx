@@ -5,12 +5,26 @@ import { BackToTopArrow } from "../../components/BackToTopArrow";
 import { WorldMap } from "../../components/WorldMap";
 import { Footer } from "../../components/Footer";
 import { StyledAbout } from "./style.js";
+import coralReef7 from "../../assets/coral-reefs/coral-reef-7.jpg";
+import coralReef8 from "../../assets/coral-reefs/coral-reef-8.jpg";
 
 export function About() {
+  const aboutItems = [
+    {
+      image: coralReef7,
+      textLeft: "Utilize o mapa abaixo e saiba ",
+      textRight: "mais sobres os recifes do mundo todo",
+    },
+    {
+      image: coralReef8,
+      textLeft: "Novo Coral 2",
+      textRight: "Beleza Marinha",
+    },
+  ];
   return (
     <>
       <Header />
-      <ImagesCarousel />
+      <ImagesCarousel items={aboutItems} />
       <StyledAbout>
         <section className="about-corals">
           <h1>Como os recifes de corais impactam o mundo em que vivemos</h1>

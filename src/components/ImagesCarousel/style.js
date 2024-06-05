@@ -24,7 +24,7 @@ const fadeInRight = keyframes`
 
 export const StyledImagesCarousel = styled.div`
   width: 100%;
-  height: calc(100vh - 5rem);
+  height: ${(props) => props.height || "calc(100vh - 5rem)"};
   overflow: hidden;
   position: relative;
   top: 0;

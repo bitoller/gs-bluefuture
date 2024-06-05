@@ -1,11 +1,11 @@
+import React from "react";
+import PropTypes from "prop-types";
 import coralReef1 from "../../assets/coral-reefs/coral-reef-1.jpg";
 import coralReef2 from "../../assets/coral-reefs/coral-reef-2.jpg";
 import coralReef3 from "../../assets/coral-reefs/coral-reef-3.jpg";
 import coralReef4 from "../../assets/coral-reefs/coral-reef-4.jpg";
 import coralReef5 from "../../assets/coral-reefs/coral-reef-5.jpg";
 import coralReef6 from "../../assets/coral-reefs/coral-reef-6.jpg";
-import React from "react";
-import PropTypes from "prop-types";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import {
@@ -15,40 +15,43 @@ import {
   StyledTextOverlayRight,
 } from "./style.js";
 
-export function ImagesCarousel({ height }) {
-  const items = [
-    {
-      image: coralReef1,
-      textLeft: "Belo recife de corais 1",
-      textRight: "Exploração submarina",
-    },
-    {
-      image: coralReef2,
-      textLeft: "Belo recife de corais 2",
-      textRight: "Vida marinha vibrante",
-    },
-    {
-      image: coralReef3,
-      textLeft: "Belo recife de corais 3",
-      textRight: "Colorido e diversificado",
-    },
-    {
-      image: coralReef4,
-      textLeft: "Belo recife de corais 4",
-      textRight: "Um mundo subaquático",
-    },
-    {
-      image: coralReef5,
-      textLeft: "Belo recife de corais 5",
-      textRight: "Tesouro do oceano",
-    },
-    {
-      image: coralReef6,
-      textLeft: "Belo recife de corais 6",
-      textRight: "Beleza natural",
-    },
-  ];
+const defaultItems = [
+  {
+    image: coralReef1,
+    textLeft: "Belo recife de corais 1",
+    textRight: "Exploração submarina",
+  },
+  {
+    image: coralReef2,
+    textLeft: "Belo recife de corais 2",
+    textRight: "Vida marinha vibrante",
+  },
+  {
+    image: coralReef3,
+    textLeft: "Belo recife de corais 3",
+    textRight: "Colorido e diversificado",
+  },
+  {
+    image: coralReef4,
+    textLeft: "Belo recife de corais 4",
+    textRight: "Um mundo subaquático",
+  },
+  {
+    image: coralReef5,
+    textLeft: "Belo recife de corais 5",
+    textRight: "Tesouro do oceano",
+  },
+  {
+    image: coralReef6,
+    textLeft: "Belo recife de corais 6",
+    textRight: "Beleza natural",
+  },
+];
 
+export function ImagesCarousel({
+  height = "calc(100vh - 5rem)",
+  items = defaultItems,
+}) {
   const carouselItems = items.map((item, index) => (
     <StyledCarouselItem key={index}>
       <img
@@ -70,12 +73,8 @@ export function ImagesCarousel({ height }) {
     },
   };
 
-  ImagesCarousel.propTypes = {
-    height: PropTypes.string,
-  };
-
   return (
-    <StyledImagesCarousel style={{ height: height }}>
+    <StyledImagesCarousel height={height}>
       <AliceCarousel
         items={carouselItems}
         autoPlay={true}
@@ -91,15 +90,13 @@ export function ImagesCarousel({ height }) {
   );
 }
 
-/* TODO: ver o que vai ser feito sobre as frases por img. talvez diminuir para frases por pagina. popular as frases */
-/* TODO: arrumar o espaco entre as imagens do carrossel e o resto da pagina no responsivo */
-
-
-/* creditos:
-coral-reef-1: Credit: Brook Peterson / Ocean Image Bank
-coral-reef-2: Credit: Renata Romeo / Ocean Image Bank
-coral-reef-3: Credit: Cinzia Osele Bismarck / Ocean Image Bank
-coral-reef-4: Credit: Gregory Piper / Ocean Image Bank
-coral-reef-5: Credit: Kimberly Jeffries / Ocean Image Bank
-coral-reef-6: Credit: Martin Colognoli / Ocean Image Bank
-*/
+ImagesCarousel.propTypes = {
+  height: PropTypes.string,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string.isRequired,
+      textLeft: PropTypes.string.isRequired,
+      textRight: PropTypes.string.isRequired,
+    })
+  ),
+};
