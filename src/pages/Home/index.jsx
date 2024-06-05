@@ -119,8 +119,8 @@ export function Home() {
             <iframe
               width="760"
               height="415"
-              src="https://www.youtube.com/embed/L3Ne_vstIF8?si=7cY6mOEEBi5ygN5f&autoplay=1"
-              title="YouTube video player"
+              src="https://www.youtube.com/embed/avXvERKMJb8"
+              title="Fiap Global Solution Blue Future pitch"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
@@ -197,3 +197,4 @@ export function Home() {
 }
 
 /* TODO: o botao de assistir video na tela menor de celular corta o texto */
+/* TODO: video nao esta com autoplay */
