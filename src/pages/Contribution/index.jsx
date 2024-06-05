@@ -1,5 +1,5 @@
-import oceanCleaning from "../../assets/coral-reefs/ocean-cleaning.png";
 import donateImg from "../../assets/coral-reefs/donate-img-1.png";
+import oceanCleaning from "../../assets/coral-reefs/ocean-cleaning.png";
 import bulletPoint from "../../assets/icons/bullet-point.svg";
 import { Header } from "../../components/Header";
 import { ImagesCarousel } from "../../components/ImagesCarousel";
@@ -24,10 +24,10 @@ export function Contribution() {
             </p>
           </div>
           <div className="donate-levels">
-            <h4>Niveis de ajuda</h4>
+            <h4>Níveis de ajuda</h4>
             <ul>
               <li className="donate-choices">
-                <img src={donateImg} alt="imagem de um coral" />
+                <img src={donateImg} alt={"imagem de um coral"} />
                 <h5>R$ 20</h5>
                 <p>
                   Adote um coral: Dê um nome a ele, acompanhe seu crescimento e
@@ -35,7 +35,7 @@ export function Contribution() {
                 </p>
               </li>
               <li className="donate-choices">
-                <img src={donateImg} alt="imagem de um coral" />
+                <img src={donateImg} alt={"imagem de um coral"} />
                 <h5>R$ 60</h5>
                 <p>
                   Tenha acesso ao monitoramento dos recifes e fique sempre por
@@ -43,7 +43,7 @@ export function Contribution() {
                 </p>
               </li>
               <li className="donate-choices">
-                <img src={donateImg} alt="imagem de um coral" />
+                <img src={donateImg} alt={"imagem de um coral"} />
                 <h5>R$ 100</h5>
                 <p>
                   Participe das nossas missões de replantio de corais como
