@@ -32,7 +32,7 @@ export const StyledImagesCarousel = styled.div`
 
   .carousel-img {
     height: 100%;
-    min-height: 43.75rem;
+    min-height: 48rem;
     width: 100%;
     object-fit: cover;
   }
