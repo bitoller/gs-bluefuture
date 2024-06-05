@@ -1,4 +1,7 @@
-import donateImg from "../../assets/coral-reefs/donate-img-1.png";
+import React, { useState } from "react";
+import donateImg1 from "../../assets/coral-reefs/donate-img-1.png";
+import donateImg2 from "../../assets/coral-reefs/donate-img-2.png";
+import donateImg3 from "../../assets/coral-reefs/donate-img-3.png";
 import oceanCleaning from "../../assets/coral-reefs/ocean-cleaning.png";
 import bulletPoint from "../../assets/icons/bullet-point.svg";
 import { Header } from "../../components/Header";
@@ -12,6 +15,8 @@ import coralReef12 from "../../assets/coral-reefs/coral-reef-12.jpg";
 import coralReef13 from "../../assets/coral-reefs/coral-reef-13.jpg";
 
 export function Contribution() {
+  const [selectedItem, setSelectedItem] = useState(null);
+
   const aboutItems = [
     {
       image: coralReef10,
@@ -39,6 +44,27 @@ export function Contribution() {
     },
   ];
 
+  const donateItems = [
+    {
+      amount: "R$ 20",
+      description:
+        "Adote um coral: Dê um nome a ele, acompanhe seu crescimento e receba atualizações frequentes.",
+      image: donateImg1,
+    },
+    {
+      amount: "R$ 60",
+      description:
+        "Tenha acesso ao monitoramento dos recifes e fique sempre por dentro do nosso progresso.",
+      image: donateImg2,
+    },
+    {
+      amount: "R$ 100",
+      description:
+        "Participe das nossas missões de replantio de corais como espectador.",
+      image: donateImg3,
+    },
+  ];
+
   return (
     <>
       <Header />
@@ -57,30 +83,19 @@ export function Contribution() {
           <div className="donate-levels">
             <h4>Níveis de ajuda</h4>
             <ul>
-              <li className="donate-choices">
-                <img src={donateImg} alt={"imagem de um coral"} />
-                <h5>R$ 20</h5>
-                <p>
-                  Adote um coral: Dê um nome a ele, acompanhe seu crescimento e
-                  receba atualizações frequentes.
-                </p>
-              </li>
-              <li className="donate-choices">
-                <img src={donateImg} alt={"imagem de um coral"} />
-                <h5>R$ 60</h5>
-                <p>
-                  Tenha acesso ao monitoramento dos recifes e fique sempre por
-                  dentro do nosso progresso
-                </p>
-              </li>
-              <li className="donate-choices">
-                <img src={donateImg} alt={"imagem de um coral"} />
-                <h5>R$ 100</h5>
-                <p>
-                  Participe das nossas missões de replantio de corais como
-                  espectador.
-                </p>
-              </li>
+              {donateItems.map((item, index) => (
+                <li
+                  key={index}
+                  className={`donate-choices ${
+                    selectedItem === index ? "selected" : ""
+                  }`}
+                  onClick={() => setSelectedItem(index)}
+                >
+                  <img src={item.image} alt="imagem de um coral" />
+                  <h5>{item.amount}</h5>
+                  <p>{item.description}</p>
+                </li>
+              ))}
             </ul>
           </div>
         </section>
@@ -169,5 +184,3 @@ export function Contribution() {
     </>
   );
 }
-
-/* TODO: terminar a pagina e estilizacao */

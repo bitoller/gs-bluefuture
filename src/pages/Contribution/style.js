@@ -58,9 +58,9 @@ export const StyledContribution = styled.main`
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100vw;
-    background: radial-gradient(ellipse at bottom, #0d1d31 40%, #0c0d13 100%);
+    background: linear-gradient(to bottom, #1c92d2, #f2fcfe);
     height: auto;
-    padding: 1.25rem 0;
+    padding: 1.8rem 0;
   }
 
   .donate-container-title {
@@ -113,10 +113,15 @@ export const StyledContribution = styled.main`
     gap: 0.9375rem;
     border: 1px solid var(--color-gray-6);
     cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .donate-choices.selected {
+    background-color: var(--color-accent);
   }
 
   .donate-choices:hover {
-    background-color: var(--color-accent);
+    border: 1px solid var(--color-accent);
   }
 
   .donate-choices > img {
