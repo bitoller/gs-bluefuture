@@ -51,6 +51,7 @@ export const StyledTextOverlayLeft = styled.div`
   color: white;
   font-size: 3rem;
   font-weight: bold;
+  font-family: var(--font-family-2);
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem;
   text-align: center;

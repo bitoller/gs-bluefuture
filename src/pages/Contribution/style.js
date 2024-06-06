@@ -84,6 +84,7 @@ export const StyledContribution = styled.main`
     padding: 0 0.9375rem;
     border-radius: 3px;
     letter-spacing: 0.3125rem;
+    font-family: var(--font-family-4);
   }
 
   .donate-container-title > p {
@@ -91,6 +92,7 @@ export const StyledContribution = styled.main`
     margin-top: 2rem;
     font-weight: 500;
     color: var(--color-gray-1);
+    font-family: var(--font-family-2);
   }
 
   .donate-levels {
@@ -140,6 +142,7 @@ export const StyledContribution = styled.main`
     font-size: 1.5625rem;
     font-weight: 500;
     color: var(--color-gray-6);
+    font-family: var(--font-family-4);
   }
 
   .donate-choices > p {
@@ -148,6 +151,7 @@ export const StyledContribution = styled.main`
     justify-items: center;
     font-size: 1.25rem;
     font-weight: 500;
+    font-family: var(--font-family-1);
   }
 
   @media (max-width: 1120px) {

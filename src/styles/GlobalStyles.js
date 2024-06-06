@@ -22,9 +22,13 @@ time, mark, audio, video, button, input {
 	vertical-align: baseline;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--color-gray-1);
   list-style-type: none;
+}
+
+h1 {
+  font-family: var(--font-family-2);
 }
 
 button, a, input {
@@ -62,5 +66,9 @@ body::-webkit-scrollbar-track {
   --color-gray-6: #212427;
   --color-blue-1: #0b468a;
   --color-blue-2: #5199ba;
+  --font-family-1: "Roboto", sans-serif;
+  --font-family-2: "Poppins", sans-serif;
+  --font-family-3: "Montserrat", sans-serif;
+  --font-family-4: "Passion One", sans-serif;
 }
 `;
