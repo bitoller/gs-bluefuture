@@ -122,8 +122,9 @@ export const StyledRestoration = styled.main`
     display: flex;
     align-items: center;
     border-radius: 3px;
-    max-width: 18.75rem;
-    max-height: 13.75rem;
+    width: 18.75rem;
+    height: 13.75rem;
+    object-fit: cover;
   }
 
   .monitoring-container {
