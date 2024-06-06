@@ -31,7 +31,6 @@ export const StyledHeader = styled.header`
   .custom-nav > a {
     font-size: 1.625rem;
     font-weight: 700;
-    font-family: var(--font-family-3);
     transition: color 0.3s;
     position: relative;
   }

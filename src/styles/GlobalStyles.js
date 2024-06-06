@@ -22,13 +22,9 @@ time, mark, audio, video, button, input {
 	vertical-align: baseline;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--color-gray-1);
   list-style-type: none;
-}
-
-h1 {
-  font-family: var(--font-family-2);
 }
 
 button, a, input {

@@ -50,7 +50,7 @@ export const StyledTextOverlayLeft = styled.div`
   transform: translate(-50%, -50%);
   color: white;
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 600;
   font-family: var(--font-family-2);
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem;
@@ -80,7 +80,8 @@ export const StyledTextOverlayRight = styled.div`
   transform: translate(50%, -50%);
   color: white;
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 600;
+  font-family: var(--font-family-2);
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem;
   text-align: center;
