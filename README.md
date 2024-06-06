@@ -57,7 +57,7 @@ Nesta página, destacamos as diversas maneiras pelas quais uma pessoa pode contr
 
 ## ⌛ Status do Projeto
 
-O projeto está em desenvolvimento.
+O projeto foi concluído.
 
 ## 📁 Acesso ao Projeto
 
