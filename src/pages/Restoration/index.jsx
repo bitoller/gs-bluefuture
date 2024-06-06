@@ -57,13 +57,15 @@ export function Restoration() {
       <ImagesCarousel />
       <StyledRestoration>
         <h1>Processo para implantar os corais</h1>
-        <p>
-          A implantação de corais é um processo de restauração de recifes de
-          coral, que visa repovoar áreas danificadas ou degradadas por meio do
-          plantio de fragmentos de coral saudáveis. Os corais são cultivados em
-          viveiros marinhos ou terrestres e, uma vez que atingem um tamanho
-          adequado, são transplantados para o ambiente marinho.
-        </p>
+        <div className="container-picture">
+          <p>
+            A implantação de corais é um processo de restauração de recifes de
+            coral, que visa repovoar áreas danificadas ou degradadas por meio do
+            plantio de fragmentos de coral saudáveis. Os corais são cultivados
+            em viveiros marinhos ou terrestres e, uma vez que atingem um tamanho
+            adequado, são transplantados para o ambiente marinho.
+          </p>
+        </div>
         <section className="super-corals-container">
           <h2>O que é um Super Recife?</h2>
           <p>

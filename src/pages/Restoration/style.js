@@ -1,4 +1,4 @@
-import pictureContainer from "../../assets/backgrounds/container-picture.svg";
+import pictureContainer from "../../assets/backgrounds/container-picture.png";
 import styled from "styled-components";
 
 export const StyledRestoration = styled.main`
@@ -8,7 +8,7 @@ export const StyledRestoration = styled.main`
   align-items: center;
   gap: 1.875rem;
 
-  > p {
+  .container-picture {
     width: 70%;
     min-height: 25rem;
     background-image: url(${pictureContainer});
@@ -18,7 +18,10 @@ export const StyledRestoration = styled.main`
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 0.625rem 0.625rem 0.625rem 45.3125rem;
+  }
+
+  .container-picture > p {
+    width: 45%;
   }
 
   p {
@@ -164,6 +167,10 @@ export const StyledRestoration = styled.main`
   }
 
   @media (max-width: 1490px) {
+    .container-picture {
+      display: none;
+    }
+
     > p {
       width: 90%;
       background-image: none;
