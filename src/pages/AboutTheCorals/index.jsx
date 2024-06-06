@@ -1,20 +1,20 @@
 import coralBenefits from "../../assets/infos-graphs/coral-reef-benefits.png";
+import coralReef7 from "../../assets/coral-reefs/coral-reef-7.jpg";
+import coralReef8 from "../../assets/coral-reefs/coral-reef-8.jpg";
+import coralReef9 from "../../assets/coral-reefs/coral-reef-9.jpg";
 import { Header } from "../../components/Header";
 import { ImagesCarousel } from "../../components/ImagesCarousel";
 import { BackToTopArrow } from "../../components/BackToTopArrow";
 import { WorldMap } from "../../components/WorldMap";
 import { Footer } from "../../components/Footer";
 import { StyledAbout } from "./style.js";
-import coralReef7 from "../../assets/coral-reefs/coral-reef-7.jpg";
-import coralReef8 from "../../assets/coral-reefs/coral-reef-8.jpg";
-import coralReef9 from "../../assets/coral-reefs/coral-reef-9.jpg";
 
 export function About() {
   const aboutItems = [
     {
       image: coralReef7,
       textLeft: "Explore o mapa abaixo e saiba...",
-      textRight: "...mais sobres os recifes do mundo todo",
+      textRight: "...mais sobre os recifes do mundo todo",
       alt: "imagem de uma tartaruga em um recife de corais. Credit: Jordan Robins / Ocean Image Bank",
     },
     {
@@ -30,6 +30,7 @@ export function About() {
       alt: "imagem de uma tartaruga em um recife de corais.  Credit: Gaby Barathieu / Ocean Image Bank",
     },
   ];
+
   return (
     <>
       <Header />

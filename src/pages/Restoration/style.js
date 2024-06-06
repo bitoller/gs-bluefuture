@@ -175,7 +175,7 @@ export const StyledRestoration = styled.main`
 
     .container-picture > p {
       width: 100%;
-      color: #333333;
+      color: var(--color-gray-4);
     }
 
     > p {

@@ -68,8 +68,8 @@ export const StyledMonitoring = styled.main`
   .second-section > img,
   .third-section > img {
     border-radius: 50%;
-    width: 255.48px;
-    height: 255.48px;
+    width: 15.9675rem;
+    height: 15.9675rem;
   }
 
   .second-section-text-container,

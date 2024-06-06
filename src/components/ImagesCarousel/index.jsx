@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
 import coralReef1 from "../../assets/coral-reefs/coral-reef-1.jpg";
 import coralReef2 from "../../assets/coral-reefs/coral-reef-2.jpg";
 import coralReef3 from "../../assets/coral-reefs/coral-reef-3.jpg";
 import coralReef4 from "../../assets/coral-reefs/coral-reef-4.jpg";
 import coralReef5 from "../../assets/coral-reefs/coral-reef-5.jpg";
 import coralReef6 from "../../assets/coral-reefs/coral-reef-6.jpg";
+import React from "react";
+import PropTypes from "prop-types";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import {

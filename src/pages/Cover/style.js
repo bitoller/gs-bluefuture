@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import waveBtn from "../../assets/backgrounds/wave-cover-btn.png";
+import styled from "styled-components";
 
 export const StyledCover = styled.main`
   .video-container {
