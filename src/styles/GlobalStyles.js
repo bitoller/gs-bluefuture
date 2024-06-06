@@ -22,7 +22,8 @@ time, mark, audio, video, button, input {
 	vertical-align: baseline;
   box-sizing: border-box;
   text-decoration: none;
-  /* font-family: var(--font-family-2); */
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-gray-1);
   list-style-type: none;
 }
 
@@ -31,13 +32,39 @@ button, a, input {
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
   font-size: 1rem;
 }
 
-/* :root {
-  --color-primary: #0b0c12;
-  --color-accent: #d02030;
-} */
+body::-webkit-scrollbar {
+  background: transparent;
+  width: 0.1875rem;
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  background-color: transparent;
+}
+
+:root {
+  --color-primary: #0f71d3;
+  --color-accent: #f58b01;
+  --color-gray-1: #ffffff;
+  --color-gray-2: #7a7a7a;
+  --color-gray-3: #000000;
+  --color-gray-4: #333333;
+  --color-gray-5: #effafe;
+  --color-gray-6: #212427;
+  --color-blue-1: #0b468a;
+  --color-blue-2: #5199ba;
+  --font-family-1: "Roboto", sans-serif;
+  --font-family-2: "Poppins", sans-serif;
+  --font-family-3: "Montserrat", sans-serif;
+  --font-family-4: "Passion One", sans-serif;
+}
 `;

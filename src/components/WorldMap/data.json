@@ -1,0 +1,399 @@
+{
+  "regions": [
+    {
+      "class": "brazil",
+      "name": "Brasil",
+      "countries": ["Brasil"],
+      "contacts": [
+        {
+          "name": "Beatrice Padovani Ferreira",
+          "role": "Principal ponto de contato GCRMN",
+          "email": "beatrice@ufpe.br"
+        },
+        {
+          "name": "Mariana Vitali",
+          "role": "Segundo ponto de contato GCRMN",
+          "email": "mariana.vitali@mma.gov.br"
+        }
+      ],
+      "regionalContext": {
+        "title": "A importância dos recifes de coral",
+        "content": "O Brasil abriga os únicos recifes de coral do Atlântico Sul, que se estendem por 3.000 km ao longo da costa, desde 0°50'S até 18°00'S. Os recifes costeiros, que emergem durante as marés baixas, são uma característica marcante desta região. Eles inspiraram nomes de cidades como Recife, oferecem proteção costeira essencial e sustentam a maior parte das capturas da pesca artesanal predominante na área.",
+        "keyNumbers": [
+          {
+            "value": "1.226",
+            "description": "Área total dos recifes de corais (km²)"
+          },
+          {
+            "value": "0.47%",
+            "description": "Proporção dos recifes de corais do mundo"
+          },
+          { "value": "1", "description": "Países com recifes de corais" },
+          {
+            "value": "4",
+            "description": "Regiões Ecológicas Marinhas do Mundo (MEOW)"
+          }
+        ]
+      }
+    },
+    {
+      "class": "australia",
+      "name": "Austrália",
+      "countries": ["Austrália"],
+      "contacts": [
+        {
+          "name": "John Smith",
+          "role": "Principal ponto de contato GCRMN",
+          "email": "john.smith@example.com"
+        },
+        {
+          "name": "Emma Johnson",
+          "role": "Segundo ponto de contato GCRMN",
+          "email": "emma.johnson@example.com"
+        }
+      ],
+      "regionalContext": {
+        "title": "A importância dos recifes de coral",
+        "content": "A região da GCRMN na Austrália abriga cerca de 16% (41.802 km²) dos recifes de coral do mundo. Entre eles está a icônica Grande Barreira de Coral (GBR), o maior complexo de recifes do planeta, composto por quase 3.000 recifes individuais e que se estende por mais de 2.300 km ao longo da costa de Queensland. A Austrália também é o lar do recife de franja mais longo do mundo, o Ningaloo Reef, na Austrália Ocidental. Recifes de coral ocorrem em todas as águas tropicais do norte da Austrália, estendendo-se até a Ilha Lord Howe (31°S) na costa leste e as Ilhas Houtman Abrolhos (29°S) na costa da Austrália Ocidental. Os recifes de coral da Austrália são ecossistemas altamente diversificados, suportando mais de 400 espécies de corais duros e exibindo uma variedade de formas, incluindo recifes de franja, particularmente ao longo das costas da Austrália Ocidental, Queensland e ilhas continentais offshore como a Ilha Christmas, Ilha Lord Howe e aquelas dentro da GBR, recifes de plataforma no meio da plataforma continental, atóis offshore e bancos submersos. Os recifes de coral, especialmente a GBR, fazem parte da identidade nacional da Austrália e têm sido centrais para a rica cultura dos povos aborígenes costeiros e das Ilhas do Estreito de Torres há milênios. Os recifes de coral da Austrália são economicamente importantes. Só a GBR contribui com cerca de 6,4 bilhões de dólares por ano para a economia australiana e sustenta 64.000 empregos nos setores de turismo baseado em recifes, pesca, recreação e pesquisa.",
+        "additionalInfo2": {
+          "title": "Governança",
+          "content": "O monitoramento dos recifes de coral na Austrália era irregular até a criação do Programa de Monitoramento de Longo Prazo do Instituto Australiano de Ciência Marinha (AIMS LTMP) em 1985, que, na época, se preocupava principalmente em avaliar o tamanho e os impactos das populações de estrelas-do-mar coroa-de-espinhos na GBR, utilizando o método de arrasto de manta. Desde então, o AIMS LTMP evoluiu para fornecer uma avaliação rigorosa da saúde geral da GBR e medir a eficácia das intervenções de gestão, especialmente os arranjos de gestão espacial (zoneamento) na GBR. O monitoramento dos recifes de coral na Austrália Ocidental tem sido focado em recifes específicos e é realizado por várias agências e organizações. O programa de monitoramento mais antigo na Austrália Ocidental começou em 1991 e é focado no Ningaloo Reef. O monitoramento nos recifes Scott e Rowley Shoals começou em 1994/95 e nas Ilhas Cocos-Keeling e Christmas em 1998 e 2005, respectivamente. No entanto, o monitoramento em muitas partes da Austrália Ocidental ainda é esporádico, com intervalos de dois anos ou mais entre levantamentos oportunistas."
+        },
+        "keyNumbers": [
+          {
+            "value": "41.802",
+            "description": "Área total dos recifes de corais (km²)"
+          },
+          {
+            "value": "16.1%",
+            "description": "Proporção dos recifes de corais do mundo"
+          },
+          {
+            "value": "25",
+            "description": "Países com recifes de corais"
+          },
+          {
+            "value": "10",
+            "description": "Regiões Ecológicas Marinhas do Mundo (MEOW)"
+          }
+        ]
+      }
+    },
+    {
+      "class": "eastern-pacific",
+      "name": "Pacífico Tropical Oriental",
+      "countries": [
+        "México, França (Atol das Rocas), Costa Rica, Nicarágua, El Salvador, Guatemala, Panamá, Colômbia, Equador, Chile (Ilha de Páscoa)"
+      ],
+      "contacts": [
+        {
+          "name": "Francis Staub",
+          "role": "Principal ponto de contato GCRMN",
+          "email": "fstaub@icriforum.org"
+        }
+      ],
+      "regionalContext": {
+        "title": "A importância dos recifes de coral",
+        "content": "A região é delimitada pelas correntes subtropicais do Pacífico Norte e Sul e pelo sistema de correntes equatoriais do Pacífico Oriental. Outra característica importante da região é a piscina de água quente do Pacífico Oriental, localizada ao longo da plataforma da América Central. A dinâmica oceanográfica da região é fortemente influenciada pelos ventos alísios de baixa latitude, pela topografia (como quebras na plataforma continental), por uma camada de água quente e pela variação climática associada ao El Niño. Essas condições atmosféricas e oceanográficas criam um ambiente único para o desenvolvimento de recifes de coral, além de afetar a conectividade e a diversidade das espécies de corais na região.",
+        "keyNumbers": [
+          {
+            "value": "780",
+            "description": "Área total de recifes de coral (km²)"
+          },
+          {
+            "value": "0.30%",
+            "description": "Proporção dos recifes de coral do mundo"
+          },
+          {
+            "value": "9",
+            "description": "Países com recifes de coral"
+          },
+          {
+            "value": "13",
+            "description": "Regiões Ecológicas Marinhas do Mundo (MEOW)"
+          }
+        ]
+      }
+    },
+    {
+      "class": "caribbean",
+      "name": "Caribe",
+      "countries": [
+        "Antígua e Barbuda, Aruba, Bahamas, Barbados, Belize, Ilhas Virgens Britânicas, Colômbia, Costa Rica, Cuba, Curaçao, Dominica, República Dominicana, Granada, Guadalupe, Guatemala, Haiti, Honduras, Jamaica, Martinica, México, Montserrat, Nicarágua, Panamá, Porto Rico, São Cristóvão e Nevis, Santa Lúcia, São Vicente e Granadinas, Trinidad e Tobago, Ilhas Virgens dos EUA, Venezuela"
+      ],
+      "contacts": [
+        {
+          "name": "Melanie McField",
+          "role": "Co-presidente do Comitê Diretor do Caribe e Fundadora e Diretora da Iniciativa Recifes Saudáveis para Pessoas Saudáveis (HRI)",
+          "email": "mcfield@healthyreefs.org"
+        }
+      ],
+      "regionalContext": {
+        "title": "A importância dos recifes de coral",
+        "content": "A região do Caribe representa apenas 1% do ambiente marinho da Terra, mas abriga 10% dos recifes de coral do mundo. Esses recifes incluem recifes de franja, que são os mais comuns, recifes de barreira como o Recife Mesoamericano, que é o maior recife de barreira do Hemisfério Ocidental, recifes de banco, recifes isolados e alguns atóis.",
+        "additionalInfo2": {
+          "title": "Governança",
+          "content": "A GCRMN-Caribbean é liderada por um Comitê Diretivo (CD) composto por quinze especialistas regionais, assistidos por membros consultores. Os membros do CD representam uma variedade de conhecimentos técnicos, científicos e políticos, incluindo representação institucional e individual. O CD é co-presidido pelo Centro de Atividades Regionais para o Protocolo de Áreas Especialmente Protegidas e Vida Silvestre (SPAW-RAC) sob a Convenção de Cartagena e pelo Programa Ambiental do Caribe da ONU (UN Environment – CEP). Os membros consultores são indivíduos aos quais o CD pode recorrer para obter conselhos técnicos e apoio na implementação de ações específicas, sendo mantidos informados sobre as atividades e deliberações da rede. Os membros consultores são equilibrados regional e de gênero, incluindo membros de organizações regionais importantes."
+        },
+        "keyNumbers": [
+          {
+            "value": "26.307",
+            "description": "Área total de recifes de coral (km²)"
+          },
+          {
+            "value": "10.17%",
+            "description": "Proporção dos recifes de coral do mundo"
+          },
+          {
+            "value": "25",
+            "description": "Países com recifes de coral"
+          },
+          {
+            "value": "10",
+            "description": "Regiões Ecológicas Marinhas do Mundo (MEOW)"
+          }
+        ]
+      }
+    },
+    {
+      "class": "western-indian",
+      "name": "Oceano Índico Ocidental",
+      "countries": [
+        "Somália, Quênia, Tanzânia, Moçambique, África do Sul, Maurício, Madagascar, Comores, Seychelles, Reunião (França)"
+      ],
+      "contacts": [
+        {
+          "name": "Melanie McField",
+          "role": "Co-presidente do Comitê Diretivo do Caribe e Fundador e Diretor da Iniciativa Recifes Saudáveis para Pessoas Saudáveis (HRI)",
+          "email": "mcfield@healthyreefs.org"
+        }
+      ],
+      "regionalContext": {
+        "title": "A importância dos recifes de coral",
+        "content": "A região do Oceano Índico Ocidental (WIO) abrange cerca de 6% (aproximadamente 15.180 km²) da área total de recifes de coral do mundo, sendo um hotspot globalmente importante para a biodiversidade dos recifes de coral.",
+        "additionalInfo2": {
+          "title": "Governança",
+          "content": "O monitoramento dos recifes de coral no Oceano Índico Ocidental (WIO) tem sido realizado sob a égide da Rede Global de Monitoramento de Recifes de Coral (GCRMN) e da Força-Tarefa de Recifes de Coral (CRTF) da Convenção de Nairóbi desde o final da década de 1990. A CRTF foi constituída por uma decisão da Convenção de Nairóbi em 2001, com um representante de cada país. Tradicionalmente, as ilhas do sudoeste do Oceano Índico (SWIO) e os nós da África Oriental continental da GCRMN operavam de forma independente, mas na última década, esses esforços foram integrados mais de perto por meio da CRTF. Esse esforço é apoiado por projetos do Programa Marinho da Comissão do Oceano Índico – o Projeto ISLANDS (2009-13) e o Projeto de Biodiversidade (2014-2018)."
+        },
+        "keyNumbers": [
+          {
+            "value": "15.180",
+            "description": "Área total de recifes de coral (km²)"
+          },
+          {
+            "value": "5.85%",
+            "description": "Proporção dos recifes de coral do mundo"
+          },
+          {
+            "value": "10",
+            "description": "Países com recifes de coral"
+          },
+          {
+            "value": "10",
+            "description": "Regiões Ecológicas Marinhas do Mundo (MEOW)"
+          }
+        ]
+      }
+    },
+    {
+      "class": "red-sea",
+      "name": "Mar Vermelho e Golfo de Aden",
+      "countries": [
+        "Djibuti, Egito, Eritreia, Israel, Jordânia, Arábia Saudita, Somália, Sudão e Iêmen"
+      ],
+      "contacts": [
+        {
+          "name": "Melanie McField",
+          "role": "Co-presidente do Comitê Diretor do Caribe e Fundador e Diretor da Iniciativa Recifes Saudáveis para Pessoas Saudáveis (HRI)",
+          "email": "mcfield@healthyreefs.org"
+        }
+      ],
+      "regionalContext": {
+        "title": "A importância dos recifes de coral",
+        "content": "O Mar Vermelho contém as comunidades de recifes de coral mais biologicamente diversas fora do triângulo de corais do sudeste asiático. Ele compartilha muitas das espécies encontradas em outras partes do Indo-Pacífico, mas aproximadamente 10% das espécies são endêmicas, tornando esta região um dos repositórios mais valiosos de biodiversidade marinha do mundo. Os recifes de coral na região do Mar Vermelho e do Golfo de Aden cobrem 13.605 km², o que representa cerca de 5,3% da área total de recifes de coral do mundo.",
+        "additionalInfo2": {
+          "title": "Governança",
+          "content": "O monitoramento e o estado dos recifes de coral no Mar Vermelho e no Golfo de Aden (Região PERSGA) são realizados sob o guarda-chuva do Protocolo sobre a Conservação da Diversidade Biológica e o Estabelecimento da Rede de Áreas Protegidas no Mar Vermelho e no Golfo de Aden (2005), Plano de Ação Regional para Recifes de Coral e a Convenção de Jeddah (1982). Em cada estado membro da PERSGA, existe uma equipe de monitoramento de recifes de coral, que realiza regularmente levantamentos dos recifes de coral e da biota associada em suas áreas costeiras, recifes submersos e dentro de áreas protegidas. A sede da PERSGA tem dois programas, o Programa de Biodiversidade e Áreas Marinhas Protegidas (AMPs) e o Programa de Monitoramento de Habitats Sensíveis. Todas essas entidades e programas trabalham em harmonia para realizar levantamentos e coletar dados dos recifes de coral, a fim de produzir Relatórios de Estado e Tendências dos Recifes de Coral (SOMERs) ao longo do Mar Vermelho e do Golfo de Aden."
+        },
+        "keyNumbers": [
+          {
+            "value": "13.605",
+            "description": "Área total de recifes de coral (km²)"
+          },
+          {
+            "value": "5.24%",
+            "description": "Proporção dos recifes de coral do mundo"
+          },
+          {
+            "value": "9",
+            "description": "Países com recifes de coral"
+          },
+          {
+            "value": "3",
+            "description": "Regiões Ecológicas Marinhas do Mundo (MEOW)"
+          }
+        ]
+      }
+    },
+    {
+      "class": "ropme",
+      "name": "Organização Regional para a Proteção do Meio Marinho (ROPME)",
+      "countries": [
+        "Bahrein, Irã, Iraque, Kuwait, Omã, Catar, Arábia Saudita, Emirados Árabes Unidos"
+      ],
+      "contacts": [
+        {
+          "name": "Melanie McField",
+          "role": "Co-presidente do Comitê Diretivo do Caribe e Fundador e Diretor da Iniciativa Recifes Saudáveis para Pessoas Saudáveis (HRI)",
+          "email": "mcfield@healthyreefs.org"
+        }
+      ],
+      "regionalContext": {
+        "title": "A importância dos recifes de coral",
+        "content": "A região contém pouco menos de 1% (2.009 km²) da área total de recifes de coral do mundo. Os recifes de coral são o ecossistema mais biodiverso nesta região árida e sustentam um setor pesqueiro que é o segundo apenas para o setor petrolífero em termos econômicos. Os recifes de coral da região são caracterizados pela tolerância a condições ambientais extremas e altamente variáveis, com recifes ocorrendo em ambientes pseudo-de alta latitude (área de ressurgência no sul de Omã) e no mar mais quente do mundo (sul do Golfo Pérsico/Arábico), tornando esta região um 'laboratório natural' sem igual para entender as respostas fisiológicas e adaptativas dos corais a extremos.",
+        "additionalInfo2": {
+          "title": "Governança",
+          "content": "A Área Marinha da Organização Regional para a Proteção do Meio Ambiente Marinho (ROPME) inclui oito nações que fazem fronteira com o Golfo Pérsico/Arábico e o Mar de Omã, cada uma das quais contém recifes de coral (variando de recifes verdadeiros bem desenvolvidos a carpetes de coral laminar). Historicamente, a pesquisa de recifes de coral tem sido altamente fragmentada, mas o interesse científico tanto regional quanto de pesquisadores internacionais tem levado a um crescimento exponencial na ciência regional de recifes nos últimos anos. A maioria dos pesquisadores ativos de recifes nos países da ROPME está envolvida na maior sociedade pan-regional de recifes do Oriente Médio, que realizou várias conferências e workshops ao longo da última década para reunir cientistas regionais e conservacionistas e entender melhor as tendências na ciência regional de recifes."
+        },
+        "keyNumbers": [
+          {
+            "value": "2.009",
+            "description": "Área total de recifes de coral (km²)"
+          },
+          {
+            "value": "0.77%",
+            "description": "Proporção dos recifes de coral do mundo"
+          },
+          {
+            "value": "9",
+            "description": "Países com recifes de coral"
+          },
+          {
+            "value": "3",
+            "description": "Regiões Ecológicas Marinhas do Mundo (MEOW)"
+          }
+        ]
+      }
+    },
+    {
+      "class": "south-asia",
+      "name": "Sul da Ásia",
+      "countries": [
+        "Bangladesh, Índia, Maldivas, Mianmar, Paquistão, Sri Lanka e Arquipélago de Chagos"
+      ],
+      "contacts": [
+        {
+          "name": "Melanie McField",
+          "role": "Co-presidente do Comitê Diretor do Caribe e Fundador e Diretor da Iniciativa Recifes Saudáveis para Pessoas Saudáveis (HRI)",
+          "email": "mcfield@healthyreefs.org"
+        }
+      ],
+      "regionalContext": {
+        "title": "A importância dos recifes de coral",
+        "content": "A região da Ásia Meridional é uma das menores regiões da GCRMN em termos de área de recifes de coral, representando apenas 4,2% (10.949 km²) da área global de recifes de coral. Apesar de sua área relativamente pequena, a Ásia Meridional contém uma ampla variedade de habitats de recifes de coral que variam significativamente em estrutura de recifes, biodiversidade, proximidade com os continentes e impactos antropogênicos. Comunidades costeiras em toda a região dependem diretamente dos recursos dos recifes.",
+        "additionalInfo2": {
+          "title": "Governança",
+          "content": "A Força-Tarefa de Recifes de Coral da Ásia Meridional (SACRTF) foi lançada em julho de 2007. O estabelecimento da SACRTF foi endossado na 10ª Reunião do Conselho Diretor da SACEP realizada em 2007, e o progresso foi relatado na 4ª Reunião do Mecanismo de Implementação do Plano de Ação Estratégico para o Sul da Ásia (4IMM-SASP) realizada em 22 de maio de 2008 em Jaipur, Índia. O objetivo da SACRTF era facilitar e coordenar a gestão dos recifes de coral e ecossistemas associados em nível nacional, e promover ação colaborativa em nível regional, incentivando sinergias para respostas transfronteiriças aos desafios ambientais compartilhados e aumentando o perfil político e público das questões relacionadas aos recifes de coral na região do SAS. A SACEP e a Iniciativa Internacional de Recifes de Coral (ICRI) estão negociando uma colaboração para revitalizar a SACRTF, conectando-a à Rede Global de Monitoramento de Recifes de Coral (GCRMN)."
+        },
+        "keyNumbers": [
+          {
+            "value": "10.949",
+            "description": "Área total de recifes de coral (km²)"
+          },
+          {
+            "value": "4.22%",
+            "description": "Proporção dos recifes de coral do mundo"
+          },
+          {
+            "value": "7",
+            "description": "Países com recifes de coral"
+          },
+          {
+            "value": "6",
+            "description": "Regiões Ecológicas Marinhas do Mundo (MEOW)"
+          }
+        ]
+      }
+    },
+    {
+      "class": "east-asia",
+      "name": "Leste da Ásia",
+      "countries": [
+        "China, Hong Kong, Taiwan, Japão, Coreia do Sul, Brunei Darussalam, Camboja, Indonésia, Malásia, Mianmar, Filipinas, Singapura, Tailândia e Vietnã"
+      ],
+      "contacts": [
+        {
+          "name": "Melanie McField",
+          "role": "Co-presidente do Comitê Diretor do Caribe e Fundador e Diretor da Iniciativa Recifes Saudáveis para Pessoas Saudáveis (HRI)",
+          "email": "mcfield@healthyreefs.org"
+        }
+      ],
+      "regionalContext": {
+        "title": "A importância dos recifes de coral",
+        "content": "A região suporta a maior área de recifes de coral de todas as regiões da GCRMN, representando mais de 30% (78.272 km²) do total mundial. A região também é lar de dois dos maiores estados arquipelágicos do mundo — Indonésia, com mais de 17.000 ilhas, e Filipinas, com mais de 7.000 ilhas. Sobrepondo-se ao Triângulo de Coral, uma área reconhecida como o epicentro global da biodiversidade marinha, a região EAS ostenta a maior diversidade de corais construtores de recifes do mundo, com quase 600 espécies, seis das sete espécies de tartarugas marinhas do mundo e mais de 2.000 espécies de peixes de recife. Também inclui alguns dos locais de desova mais importantes para espécies de atum comercialmente importantes, apoiando as maiores pescarias de atum do mundo.",
+        "additionalInfo2": {
+          "title": "Governança",
+          "content": "A região da Ásia Oriental da GCRMN é operada por dois coordenadores regionais (um é do antigo nó do Sudeste Asiático e outro é do antigo nó do Nordeste Asiático da GCRMN) e pontos focais nacionais de 14 países e estados membros, com apoio financeiro do Ministério do Meio Ambiente do Japão. Os pontos focais de 14 países e estados também formam um comitê diretivo da Sociedade de Recifes de Coral da Ásia-Pacífico (APCoRS), que é um grupo voluntário formado para organizar o Simpósio de Recifes de Coral da Ásia-Pacífico (APCRS), um simpósio internacional sobre estudos de recifes de coral, a cada 4 anos, desde 2006."
+        },
+        "keyNumbers": [
+          {
+            "value": "78.272",
+            "description": "Área total de recifes de coral (km²)"
+          },
+          {
+            "value": "30.15%",
+            "description": "Proporção dos recifes de coral do mundo"
+          },
+          {
+            "value": "14",
+            "description": "Países com recifes de coral"
+          },
+          {
+            "value": "24",
+            "description": "Regiões Ecológicas Marinhas do Mundo (MEOW)"
+          }
+        ]
+      }
+    },
+    {
+      "class": "pacific",
+      "name": "Pacífico",
+      "countries": [
+        "Samoa Americana (EUA), Comunidade das Marianas do Norte (EUA), Ilhas Cook, Fiji, Estados Federados da Micronésia, Polinésia Francesa, Ilhas Principais e do Noroeste do Havaí (EUA), Reino de Tonga, República de Kiribati, República das Ilhas Marshall, Nauru, Nova Caledônia (França), Niue, República de Palau, Pitcairn (Reino Unido), Área Insular Remota do Pacífico (EUA), Papua Nova Guiné, Samoa, Ilhas Salomão, Tokelau (Nova Zelândia), Tuvalu, Vanuatu e Wallis e Futuna (França)"
+      ],
+      "contacts": [
+        {
+          "name": "Melanie McField",
+          "role": "Co-presidente do Comitê Diretor do Caribe e Fundador e Diretor da Iniciativa Recifes Saudáveis para Pessoas Saudáveis (HRI)",
+          "email": "mcfield@healthyreefs.org"
+        }
+      ],
+      "regionalContext": {
+        "title": "A importância dos recifes de coral",
+        "content": "A região do Pacífico é de longe a maior das regiões da GCRMN em termos de área de superfície e é única porque os recifes de coral ocorrem principalmente ao redor de ilhas oceânicas. Ela inclui mais de 25.000 ilhas e suporta quase 27% (cerca de 69.424 km²) da área total de recifes de coral do mundo. Espalhados por uma área tão grande, esses recifes variam consideravelmente em termos de proximidade com os continentes, estrutura de recifes e biodiversidade, bem como a frequência e intensidade de distúrbios naturais. Os recifes de coral são parte integrante da cultura do Pacífico e fornecem uma quantidade significativa de proteína dietética (25-100%).",
+        "additionalInfo2": {
+          "title": "Governança",
+          "content": "Na região do Pacífico, Jérémy Wicquart garante o processo de integração de dados. Durante a produção de um relatório, as análises e rascunhos elaborados pelos editores passam por revisão pelos proprietários dos dados, sob supervisão do gestor da equipe, Serge Planes."
+        },
+        "keyNumbers": [
+          {
+            "value": "69.424",
+            "description": "Área total de recifes de coral (km²)"
+          },
+          {
+            "value": "26.73%",
+            "description": "Proporção dos recifes de coral do mundo"
+          },
+          {
+            "value": "17",
+            "description": "Países com recifes de coral"
+          },
+          {
+            "value": "24",
+            "description": "Regiões Ecológicas Marinhas do Mundo (MEOW)"
+          }
+        ]
+      }
+    }
+  ]
+}

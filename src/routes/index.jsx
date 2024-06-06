@@ -1,21 +1,27 @@
-import { Route, Routes, Navigate } from "react-router-dom";
 import { Cover } from "../pages/Cover";
 import { Home } from "../pages/Home";
 import { About } from "../pages/AboutTheCorals";
-import { Idea } from "../pages/TheIdea";
-import { Donate } from "../pages/Donate";
+import { Monitoring } from "../pages/Monitoring";
+import { Restoration } from "../pages/Restoration";
+import { Contribution } from "../pages/Contribution";
 import { PageNotFound } from "../pages/PageNotFound";
+import { ScrollToTop } from "../components/ScrollToTop";
+import { Route, Routes, Navigate } from "react-router-dom";
 
 export function MainRoutes() {
   return (
-    <Routes>
-      <Route path="/welcome" element={<Cover />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/the_idea" element={<Idea />} />
-      <Route path="/donate" element={<Donate />} />
-      <Route path="/" element={<Navigate to="/welcome" />} />
-      <Route path="*" element={<PageNotFound />} />
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/welcome" element={<Cover />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about_the_corals" element={<About />} />
+        <Route path="/monitoring" element={<Monitoring />} />
+        <Route path="/restoration" element={<Restoration />} />
+        <Route path="/contribution" element={<Contribution />} />
+        <Route path="/" element={<Navigate to="/welcome" />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </>
   );
 }
