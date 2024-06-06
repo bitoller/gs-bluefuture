@@ -1,4 +1,4 @@
-import waveMenuTop from "../../assets/backgrounds/container-picture.png";
+import waveMenuTop from "../../assets/backgrounds/wave-menu-top.png";
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
