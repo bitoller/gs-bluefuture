@@ -103,6 +103,3 @@ ImagesCarousel.propTypes = {
     })
   ),
 };
-
-/* TODO: ver o que vai ser feito sobre as frases por img. talvez diminuir para frases por pagina. popular as frases */
-/* TODO: arrumar o espaco entre as imagens do carrossel e o resto da pagina no responsivo */
