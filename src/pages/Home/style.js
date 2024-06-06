@@ -275,6 +275,12 @@ export const StyledHome = styled.main`
     }
   }
 
+  @media (max-width: 374px) {
+    .cover-content > button > span {
+      font-size: 0.5rem;
+    }
+  }
+
   @media (max-width: 768px) {
     .video-container {
       height: auto;
