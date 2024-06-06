@@ -25,7 +25,7 @@ const defaultItems = [
   {
     image: coralReef2,
     textLeft: "Explore os ecossistemas que...",
-    textRight: "...sustentam 25% da vida marinha.",
+    textRight: "...sustentam 25% da vida marinha",
     alt: "imagem de um recife de corais com peixes dentro de uma anêmona. Credit: Renata Romeo / Ocean Image Bank",
   },
   {
@@ -103,6 +103,3 @@ ImagesCarousel.propTypes = {
     })
   ),
 };
-
-/* TODO: ver o que vai ser feito sobre as frases por img. talvez diminuir para frases por pagina. popular as frases */
-/* TODO: arrumar o espaco entre as imagens do carrossel e o resto da pagina no responsivo */
