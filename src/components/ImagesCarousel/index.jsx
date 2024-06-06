@@ -25,7 +25,7 @@ const defaultItems = [
   {
     image: coralReef2,
     textLeft: "Explore os ecossistemas que...",
-    textRight: "...sustentam 25% da vida marinha.",
+    textRight: "...sustentam 25% da vida marinha",
     alt: "imagem de um recife de corais com peixes dentro de uma anêmona. Credit: Renata Romeo / Ocean Image Bank",
   },
   {

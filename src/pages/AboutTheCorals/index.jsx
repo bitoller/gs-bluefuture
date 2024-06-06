@@ -20,7 +20,7 @@ export function About() {
     {
       image: coralReef8,
       textLeft: "A importância dos recifes de...",
-      textRight: "...corais para nosso planeta ",
+      textRight: "...corais para nosso planeta",
       alt: "imagem a meia-água de um recife de corais. Credit: Matt Curnock / Ocean Image Bank",
     },
     {
