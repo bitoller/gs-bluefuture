@@ -168,7 +168,13 @@ export const StyledRestoration = styled.main`
 
   @media (max-width: 1490px) {
     .container-picture {
-      display: none;
+      width: 90%;
+      background-image: none;
+    }
+
+    .container-picture > p {
+      width: 100%;
+      color: #333333;
     }
 
     > p {
