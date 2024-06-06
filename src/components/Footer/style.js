@@ -1,4 +1,4 @@
-import waveMenuBottom from "../../assets/backgrounds/wave-menu-bottom.svg";
+import waveMenuBottom from "../../assets/backgrounds/wave-menu-bottom.png";
 import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
