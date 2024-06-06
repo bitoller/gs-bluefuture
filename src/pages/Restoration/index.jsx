@@ -209,5 +209,3 @@ export function Restoration() {
     </>
   );
 }
-
-/* TODO: as imagens dentro dos cards de como fazer replantio tem tamanhos diferentes */
