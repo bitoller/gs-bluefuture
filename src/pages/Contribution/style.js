@@ -94,6 +94,7 @@ export const StyledContribution = styled.main`
     height: auto;
     border-radius: 5px;
   }
+
   .donate-levels > h4 {
     max-width: 100%;
     color: var(--color-accent);

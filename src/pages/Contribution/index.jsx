@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import coralReef10 from "../../assets/coral-reefs/coral-reef-10.jpg";
+import coralReef11 from "../../assets/coral-reefs/coral-reef-11.jpg";
+import coralReef12 from "../../assets/coral-reefs/coral-reef-12.jpg";
+import coralReef13 from "../../assets/coral-reefs/coral-reef-13.jpg";
 import donateImg1 from "../../assets/coral-reefs/donate-img-1.png";
 import donateImg2 from "../../assets/coral-reefs/donate-img-2.png";
 import donateImg3 from "../../assets/coral-reefs/donate-img-3.png";
@@ -8,11 +11,8 @@ import { Header } from "../../components/Header";
 import { ImagesCarousel } from "../../components/ImagesCarousel";
 import { BackToTopArrow } from "../../components/BackToTopArrow";
 import { Footer } from "../../components/Footer";
+import React, { useState } from "react";
 import { StyledContribution } from "./style";
-import coralReef10 from "../../assets/coral-reefs/coral-reef-10.jpg";
-import coralReef11 from "../../assets/coral-reefs/coral-reef-11.jpg";
-import coralReef12 from "../../assets/coral-reefs/coral-reef-12.jpg";
-import coralReef13 from "../../assets/coral-reefs/coral-reef-13.jpg";
 
 export function Contribution() {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -20,7 +20,7 @@ export function Contribution() {
   const aboutItems = [
     {
       image: coralReef10,
-      textLeft: "Os recifes de corais dependem da ...",
+      textLeft: "Os recifes de corais dependem da...",
       textRight: "...nossa ajuda para sobreviver",
       alt: "imagem antes e depois de um recife de corais morto. Credit: Martin Colognoli / Ocean Image Bank",
     },
@@ -32,7 +32,7 @@ export function Contribution() {
     },
     {
       image: coralReef12,
-      textLeft: "Ajude a restaurar ...",
+      textLeft: "Ajude a restaurar...",
       textRight: "...os recifes de corais",
       alt: "imagem de um mergulhador replantando mudas de corais. Credit: Martin Colognoli / Ocean Image Bank",
     },
