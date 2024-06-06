@@ -1,30 +1,40 @@
 # GLOBAL SOLUTION - BLUE FUTURE
 
--texto sobre o projeto aqui-
+Este projeto tem como objetivo garantir que as atividades humanas nos oceanos sejam ecologicamente responsáveis, socialmente inclusivas e economicamente sustentáveis a longo prazo. Para isso, é fundamental adotar práticas eficazes de gestão ambiental, desenvolver tecnologias inovadoras e promover uma colaboração estreita entre governos, empresas e comunidades locais.
+
+Os oceanos enfrentam desafios significativos, como a destruição de habitats marinhos, a poluição e as mudanças climáticas. Esses problemas não apenas afetam os ecossistemas marinhos, mas também têm um impacto direto sobre a economia global.
 
 ## 🔨 Funcionalidades do Projeto
 
--texto sobre funcionalidades aqui-
+Este site é composto por cinco páginas distintas:
+
+- Início: Apresenta uma visão geral do projeto e destaca a sua importância.
+- Corais: Explica detalhadamente a relevância dos corais para os ecossistemas marinhos e para a humanidade.
+- Monitoramento: Descreve os métodos e tecnologias utilizadas para monitorar a saúde e o crescimento dos corais.
+- Replantio: Fornece informações sobre as iniciativas de replantio de corais, incluindo as técnicas e os esforços colaborativos envolvidos.
+- Contribuição: Informa como as pessoas podem apoiar e participar do projeto, seja através de doações, voluntariado ou outras formas de envolvimento.
 
 ### Início
 
--texto sobre a tela inicial aqui-
+Nesta página, apresentamos brevemente a ideia inovadora concebida por nosso grupo para enfrentar um dos grandes problemas dos nossos oceanos: a morte dos recifes de corais. A página inclui um vídeo criado e editado por nosso grupo, que explica o problema que estamos nos propondo a resolver, identifica o público-alvo e potenciais clientes, descreve a solução que oferecemos, destaca o diferencial da nossa abordagem e aponta as fontes de receita previstas.
+
+Além disso, a página menciona os integrantes do nosso grupo, com links para seus perfis no LinkedIn, permitindo que os visitantes conheçam melhor as qualificações e experiências dos membros do time.
 
 ### Corais
 
--texto sobre a tela dos corais aqui-
+Nesta página, oferecemos explicações detalhadas sobre a importância dos recifes de corais para o mundo, destacando seus papéis cruciais em várias áreas. A página inclui um mapa interativo que mostra as regiões onde existem corais, detalhando a importância dos recifes em cada área específica selecionada. O mapa também fornece informações sobre governança e apresenta números chave, como a área total dos recifes de corais, a proporção em relação ao resto do mundo, e outros dados relevantes.
 
 ### Monitoramento
 
--texto sobre a tela de monitoramento aqui-
+Nesta página, explicamos a importância crucial do monitoramento dos recifes de corais. Detalhamos como o monitoramento ajuda a proteger e conservar esses ecossistemas vitais, permitindo a detecção precoce de problemas e a implementação de medidas corretivas. Descrevemos os diferentes tipos de monitoramento utilizados.
 
 ### Replantio
 
--texto sobre a tela de replantio aqui-
+Nesta página, discutimos os estudos sobre os super recifes, explorando como eles funcionam e como podem ser utilizados para o replantio de corais em outras áreas. Explicamos o conceito de super recifes. Detalhamos as características que tornam esses recifes tão robustos e os fatores que contribuem para sua resiliência. Descrevemos como os super recifes podem ser utilizados como uma fonte de corais para replantio em áreas degradadas. Explicamos o processo de seleção e coleta de fragmentos de corais destes recifes resilientes.
 
 ### Contribuição
 
--texto sobre a tela de contribuição aqui-
+Nesta página, destacamos as diversas maneiras pelas quais uma pessoa pode contribuir com o projeto e ajudar a preservar os oceanos e os recifes de corais. Oferecemos diferentes níveis de ajuda financeira, cada um com seus respectivos benefícios. Além das contribuições monetárias, mencionamos outras formas de apoio. Destacamos a importância do envolvimento comunitário e como cada ação, por menor que seja, pode fazer uma grande diferença na preservação dos oceanos e recifes de corais.
 
 ## ✔️ Tecnologias e Ferramentas Utilizadas
 
