@@ -40,6 +40,7 @@ export const StyledContribution = styled.main`
     display: flex;
     flex-direction: column;
     gap: 1.875rem;
+    padding: 0.625rem;
   }
 
   .text-snippet {
@@ -51,6 +52,10 @@ export const StyledContribution = styled.main`
   .text-snippet > img {
     width: 0.9375rem;
     height: auto;
+  }
+
+  .text-snippet > p {
+    font-size: 1.25rem;
   }
 
   .donate-container {
@@ -155,6 +160,14 @@ export const StyledContribution = styled.main`
 
     .donate-container-title > p {
       font-size: 0.8rem;
+    }
+
+    .donate-levels {
+      width: 90%;
+    }
+
+    .donate-choices > p {
+      font-size: 0.75rem;
     }
   }
 `;
