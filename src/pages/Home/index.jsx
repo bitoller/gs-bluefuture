@@ -104,8 +104,9 @@ export function Home() {
                 <p>
                   A importância dos recifes de corais é imensurável, pois servem
                   como habitat essencial para cerca de 25% de toda a vida
-                  marinha. O monitoramento e o replantio de corais desempenham
-                  um papel crucial na preservação desse ecossistema vital.
+                  marinha. A tecnologia no monitoramento e no replantio de
+                  corais desempenham um papel crucial na preservação desse
+                  ecossistema vital.
                 </p>
                 <button onClick={handleCoverClick}>
                   <span>Assistir o vídeo</span>
