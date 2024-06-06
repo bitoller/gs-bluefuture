@@ -46,21 +46,21 @@ export function Contribution() {
 
   const donateItems = [
     {
-      amount: "R$ 20",
+      tier: "Bronze - R$ 20",
       description:
         "Adote um coral: Dê um nome a ele, acompanhe seu crescimento e receba atualizações frequentes.",
       image: donateImg1,
     },
     {
-      amount: "R$ 60",
+      tier: "Prata - R$ 60",
       description:
         "Tenha acesso ao monitoramento dos recifes e fique sempre por dentro do nosso progresso.",
       image: donateImg2,
     },
     {
-      amount: "R$ 100",
+      tier: "Ouro - R$ 100",
       description:
-        "Participe das nossas missões de replantio de corais como espectador.",
+        "Participe das nossas missões de replantio como espectador e visite nossas fazendas de corais.",
       image: donateImg3,
     },
   ];
@@ -92,7 +92,7 @@ export function Contribution() {
                   onClick={() => setSelectedItem(index)}
                 >
                   <img src={item.image} alt="imagem de um coral" />
-                  <h5>{item.amount}</h5>
+                  <h5>{item.tier}</h5>
                   <p>{item.description}</p>
                 </li>
               ))}

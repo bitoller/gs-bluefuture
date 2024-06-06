@@ -137,7 +137,8 @@ export const StyledContribution = styled.main`
 
   .donate-choices > h5 {
     padding-top: 0.625rem;
-    font-size: 1.75rem;
+    font-size: 1.5625rem;
+    font-weight: 500;
     color: var(--color-gray-6);
   }
 
@@ -164,6 +165,10 @@ export const StyledContribution = styled.main`
 
     .donate-levels {
       width: 90%;
+    }
+
+    .donate-choices > h5 {
+      font-size: 1.125rem;
     }
 
     .donate-choices > p {
