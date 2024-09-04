@@ -36,7 +36,10 @@ export function WorldMap() {
 
   const fetchAndAppendSVG = async () => {
     try {
-      const response = await fetch("./src/assets/maps/map-world.svg");
+      const response = await fetch("./src/assets/maps/map-world.svg", {
+        mode: "cors",
+        credentials: "same-origin",
+      });
       const svgText = await response.text();
       const parser = new DOMParser();
       const svgDOM = parser.parseFromString(svgText, "image/svg+xml");
