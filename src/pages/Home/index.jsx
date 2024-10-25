@@ -128,7 +128,7 @@ export function Home() {
           )}
         </section>
         <section ref={containerRef} className="group-container">
-          <h2>Conheça os devs do Grupo TC:</h2>
+          <h2>Conheça os devs do Grupo Byte Me:</h2>
           <p>
             Somos alunos do segundo semestre de Engenharia de Software na
             <span> FIAP</span>
