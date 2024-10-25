@@ -13,6 +13,7 @@ import data from "./data.json";
 import React, { useEffect, useState, useRef } from "react";
 import tippy from "tippy.js";
 import "tippy.js/dist/tippy.css";
+import DOMPurify from "dompurify";
 import { StyledSVGContainer, StyledRegion } from "./style";
 
 export function WorldMap() {
@@ -38,23 +39,29 @@ export function WorldMap() {
     try {
       const response = await fetch("./src/assets/maps/map-world.svg");
       const svgText = await response.text();
+      
+      // Sanitize the SVG text
+      const cleanSvgText = DOMPurify.sanitize(svgText, { USE_PROFILES: { svg: true } });
+      
       const parser = new DOMParser();
-      const svgDOM = parser.parseFromString(svgText, "image/svg+xml");
+      const svgDOM = parser.parseFromString(cleanSvgText, "image/svg+xml");
       const svgContainer = document.getElementById("svg-container");
       svgContainer.innerHTML = "";
       svgContainer.appendChild(svgDOM.documentElement);
       setSvgLoaded(true);
-
+  
       initializeTooltips();
-
+  
       const paths = svgContainer.querySelectorAll("path");
       paths.forEach((path) => {
         path.addEventListener("click", handleCountryClick);
       });
-
+  
       svgContainer.addEventListener("mouseover", handleMouseOver);
       svgContainer.addEventListener("mouseout", handleMouseOut);
-    } catch (error) {}
+    } catch (error) {
+      console.error("Failed to fetch and append SVG:", error);
+    }
   };
 
   const initializeTooltips = () => {
