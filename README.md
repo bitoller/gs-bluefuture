@@ -1,49 +1,49 @@
 # GLOBAL SOLUTION - BLUE FUTURE
 
-Este projeto tem como objetivo garantir que as atividades humanas nos oceanos sejam ecologicamente responsáveis, socialmente inclusivas e economicamente sustentáveis a longo prazo. Para isso, é fundamental adotar práticas eficazes de gestão ambiental, desenvolver tecnologias inovadoras e promover uma colaboração estreita entre governos, empresas e comunidades locais.
+This project aims to ensure that human activities in the oceans are ecologically responsible, socially inclusive, and economically sustainable in the long term. For this, it is essential to adopt effective environmental management practices, develop innovative technologies, and promote close collaboration between governments, companies, and local communities.
 
-Os oceanos enfrentam desafios significativos, como a destruição de habitats marinhos, a poluição e as mudanças climáticas. Esses problemas não apenas afetam os ecossistemas marinhos, mas também têm um impacto direto sobre a economia global.
+The oceans face significant challenges, such as the destruction of marine habitats, pollution, and climate change. These problems not only affect marine ecosystems but also have a direct impact on the global economy.
 
-## 🔨 Funcionalidades do Projeto
+## 🔨 Project Functionalities
 
-Este site é composto por cinco páginas distintas:
+This site is composed of five distinct pages:
 
-- Início: Apresenta uma visão geral do projeto e destaca a sua importância.
-- Corais: Explica detalhadamente a relevância dos corais para os ecossistemas marinhos e para a humanidade.
-- Monitoramento: Descreve os métodos e tecnologias utilizadas para monitorar a saúde e o crescimento dos corais.
-- Replantio: Fornece informações sobre as iniciativas de replantio de corais, incluindo as técnicas e os esforços colaborativos envolvidos.
-- Contribuição: Informa como as pessoas podem apoiar e participar do projeto, seja através de doações, voluntariado ou outras formas de envolvimento.
+- Home: Presents an overview of the project and highlights its importance.
+- Corals: Explains in detail the relevance of corals to marine ecosystems and to humanity.
+- Monitoring: Describes the methods and technologies used to monitor the health and growth of corals.
+- Replanting: Provides information about coral replanting initiatives, including the techniques and collaborative efforts involved.
+- Contribution: Informs how people can support and participate in the project, whether through donations, volunteering, or other forms of involvement.
 
-### Início
+### Home
 
-Nesta página, apresentamos brevemente a ideia inovadora concebida por nosso grupo para enfrentar um dos grandes problemas dos nossos oceanos: a morte dos recifes de corais. A página inclui um vídeo criado e editado por nosso grupo, que explica o problema que estamos nos propondo a resolver, identifica o público-alvo e potenciais clientes, descreve a solução que oferecemos, destaca o diferencial da nossa abordagem e aponta as fontes de receita previstas.
+On this page, we briefly present the innovative idea conceived by our group to face one of the major problems of our oceans: the death of coral reefs. The page includes a video created and edited by our group, which explains the problem we propose to solve, identifies the target audience and potential customers, describes the solution we offer, highlights the differential of our approach, and points out the projected revenue sources.
 
-Além disso, a página menciona os integrantes do nosso grupo, com links para seus perfis no LinkedIn, permitindo que os visitantes conheçam melhor as qualificações e experiências dos membros do time.
+In addition, the page mentions the members of our group, with links to their LinkedIn profiles, allowing visitors to learn more about the qualifications and experiences of the team members.
 
-### Corais
+### Corals
 
-Nesta página, oferecemos explicações detalhadas sobre a importância dos recifes de corais para o mundo, destacando seus papéis cruciais em várias áreas. A página inclui um mapa interativo que mostra as regiões onde existem corais, detalhando a importância dos recifes em cada área específica selecionada. O mapa também fornece informações sobre governança e apresenta números chave, como a área total dos recifes de corais, a proporção em relação ao resto do mundo, e outros dados relevantes.
+On this page, we offer detailed explanations about the importance of coral reefs to the world, highlighting their crucial roles in various areas. The page includes an interactive map that shows the regions where corals exist, detailing the importance of the reefs in each specific selected area. The map also provides information about governance and presents key numbers, such as the total area of coral reefs, the proportion in relation to the rest of the world, and other relevant data.
 
-### Monitoramento
+### Monitoring
 
-Nesta página, explicamos a importância crucial do monitoramento dos recifes de corais. Detalhamos como o monitoramento ajuda a proteger e conservar esses ecossistemas vitais, permitindo a detecção precoce de problemas e a implementação de medidas corretivas. Descrevemos os diferentes tipos de monitoramento utilizados.
+On this page, we explain the crucial importance of monitoring coral reefs. We detail how monitoring helps to protect and conserve these vital ecosystems, allowing early detection of problems and the implementation of corrective measures. We describe the different types of monitoring used.
 
-### Replantio
+### Replanting
 
-Nesta página, discutimos os estudos sobre os super recifes, explorando como eles funcionam e como podem ser utilizados para o replantio de corais em outras áreas. Explicamos o conceito de super recifes. Detalhamos as características que tornam esses recifes tão robustos e os fatores que contribuem para sua resiliência. Descrevemos como os super recifes podem ser utilizados como uma fonte de corais para replantio em áreas degradadas. Explicamos o processo de seleção e coleta de fragmentos de corais destes recifes resilientes.
+On this page, we discuss studies on super reefs, exploring how they work and how they can be used for coral replanting in other areas. We explain the concept of super reefs. We detail the characteristics that make these reefs so robust and the factors that contribute to their resilience. We describe how super reefs can be used as a source of corals for replanting in degraded areas. We explain the process of selecting and collecting coral fragments from these resilient reefs.
 
-### Contribuição
+### Contribution
 
-Nesta página, destacamos as diversas maneiras pelas quais uma pessoa pode contribuir com o projeto e ajudar a preservar os oceanos e os recifes de corais. Oferecemos diferentes níveis de ajuda financeira, cada um com seus respectivos benefícios. Além das contribuições monetárias, mencionamos outras formas de apoio. Destacamos a importância do envolvimento comunitário e como cada ação, por menor que seja, pode fazer uma grande diferença na preservação dos oceanos e recifes de corais.
+On this page, we highlight the various ways in which a person can contribute to the project and help preserve the oceans and coral reefs. We offer different levels of financial support, each with its respective benefits. In addition to monetary contributions, we mention other forms of support. We highlight the importance of community involvement and how each action, no matter how small, can make a big difference in preserving the oceans and coral reefs.
 
-## ✔️ Tecnologias e Ferramentas Utilizadas
+## ✔️ Technologies and Tools Used
 
-- `React v18.2.0`: Utilizado para desenvolver a aplicação do projeto.
-- `HTML/CSS`: Responsáveis pela estrutura e estilização da interface do projeto.
-- `API do GitHub`: Utilizada para obter informações dos membros do grupo.
-- `JSON do Mapa de Corais`: O membro Bruno criou um JSON para demonstrar as regiões onde se encontram recifes de corais.
+- `React v18.2.0`: Used to develop the project application.
+- `HTML/CSS`: Responsible for the structure and styling of the project interface.
+- `GitHub API`: Used to obtain information about the group members.
+- `Coral Map JSON`: Member Bruno created a JSON to demonstrate the regions where coral reefs are located.
 
-## ✔️ Bibliotecas e Frameworks Utilizados
+## ✔️ Libraries and Frameworks Used
 
 - axios `v1.7.2`
 - react-dom `v18.2.0`
@@ -55,25 +55,25 @@ Nesta página, destacamos as diversas maneiras pelas quais uma pessoa pode contr
 - tippy.js `v6.3.7`
 - vite `v5.2.0`
 
-## ⌛ Status do Projeto
+## ⌛ Project Status
 
-O projeto foi concluído.
+The project was completed.
 
-## 📁 Acesso ao Projeto
+## 📁 Access to the Project
 
-- [Veja o nosso site funcionando](https://global-solution-bluefuture.vercel.app/)
-- [Veja o repositório do nosso projeto no GitHub](https://github.com/bitoller/global-solution-bluefuture)
-- [Veja o Figma do nosso projeto](https://www.figma.com/design/P8bYNePWpcz4PxlcLPAk1F/Blue-Future?node-id=151-2&t=pPEU42JyHkSqW7Ka-0)
-- [Veja nosso vídeo de apresentação no YouTube](https://www.youtube.com/watch?v=avXvERKMJb8)
+- [See our site working](https://global-solution-bluefuture.vercel.app/)
+- [See the repository of our project on GitHub](https://github.com/bitoller/global-solution-bluefuture)
+- [See the Figma of our project](https://www.figma.com/design/P8bYNePWpcz4PxlcLPAk1F/Blue-Future?node-id=151-2&t=pPEU42JyHkSqW7Ka-0)
+- [See our presentation video on YouTube](https://www.youtube.com/watch?v=avXvERKMJb8)
 
-Neste repositório, você tem acesso a todos os arquivos e códigos da aplicação.<br/>
+In this repository, you have access to all the application files and codes.<br/>
 
-## 🛠️ Abrir e Rodar o Projeto
+## 🛠️ Open and Run the Project
 
-Para abrir o projeto, basta clonar o repositório e digitar o comando `npm install` no terminal, para instalar os pacotes do projeto.<br/>
-Para rodar o projeto, bastar digitar o comando `npm run dev` no terminal, e navegar para o local host especificado.
+To open the project, just clone the repository and type the command `npm install` in the terminal, to install the project packages.<br/>
+To run the project, just type the command `npm run dev` in the terminal, and navigate to the specified local host.
 
-## 👩‍💻 Desenvolvedores do Projeto
+## 👩‍💻 Project Developers
 
 - <a href="https://www.linkedin.com/in/bianca-toller" target="_blank">Bianca Toller</a>
 - <a href="https://www.linkedin.com/in/bruno-marc" target="_blank">Bruno Marcelino Guimarães</a>
